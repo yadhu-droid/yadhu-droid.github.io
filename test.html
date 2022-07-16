@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Best 75 Movies (4) | BLIZZ</title>
+	<link rel="icon" type="image/x-icon" href="blizz.png">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat|Ubuntu" rel="stylesheet">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
+	<script src="https://kit.fontawesome.com/1230b940db.js" crossorigin="anonymous"></script>
+	<style>
+		body {
+			font-family: "Montserrat";
+		 }
+		 img.logo {
+	            object-fit: cover;
+  				border-radius: 50%;
+    			height: 16px;
+    			width: 20px;
+		}
+		.TopRow input[type=text] {
+    			font-size: 25px;
+    			border: none;
+    			padding-left: 1em;
+    			border-left: solid;
+    			border-radius: 15px;
+		}
+    	.TopRow input[type=button] {
+    		padding-top: 5px;
+    		padding-left: 8px;
+    		padding-right: 8px;
+    		padding-bottom: 3px;
+    		border: solid;
+    		height: 27px;
+    		border-radius: 10px;
+    	}
+    	.TopRow input[type=button]:hover {
+    		background-color: #0cf;
+    		cursor: pointer;
+    	}
+		hr.top {
+    		border-top: 1px solid;
+    		border-color: #e0e0de;
+    	}
+    	div.heading {
+    		text-align: center; 
+    		color: #353634; 
+    		font-size: 25px; 
+    		font-weight: bold;
+    	}
+		.page1 {
+    		border:solid;
+    	    padding: 13px; 
+    	    font-weight: bolder;
+    	    background-color: black;
+    	    color: white;
+    	}
+    	.leftmovie {
+    		float: left;
+    		width: 46%;
+    		margin-left: 3em;
+    		height: 350px;
+    		background-size: contain;
+			background-size: cover;
+			background-size: 100%;
+			overflow: hidden;
+		}
+    	.rightmovie {
+    		float: right;
+    		width: 46%;
+    		margin-right:3em;
+    		height:350px;
+    		background-size: contain;
+			background-size: cover;
+			background-size: 100%;
+    	}
+    	.bigfont{
+    		font-size: 28px;
+    		color: white;
+    		font-weight: bolder;
+    		font-family: "Audiowide", sans-serif;
+    	}
+    	.smallfont {
+    		color: #626663;
+    		font-weight: bolder;
+    		font-family: "Audiowide", sans-serif;
+    	}
+    	.brightsmallfont{
+    		color: #cccdcf;
+    		font-weight: bolder;
+    		font-family: "Audiowide", sans-serif;
+    	}
+    	.number {
+    		float: left;
+    		font-size: 63px;
+    		font-family: "Audiowide", sans-serif;
+    		padding-left: 10px;
+    		color: white;
+    		font-weight: bolder;
+    	}
+    	a.imdblink, a.imdbstar {
+    		text-decoration: none;
+    		color: white;
+    	}
+    	.break {
+    		clear: both;
+    		visibility: hidden;
+    	}
+    	.moviename{
+    		padding-left: 10px;
+    		float: left;
+
+    	}
+    	.moviemark {
+    		color: white;
+    		background-color: black;
+    		border-radius: 20px;
+    	}
+    	.pagelink {
+    		text-decoration: none;
+    		color: white;
+    	}
+    	.countrymark {
+    		color: black;
+    		background-color: yellow;
+    		border-radius: 20px;
+    	}
+	</style>
+</head>
+<body>
+	<div class="TopRow" id="navbar">
+	<br>
+		<span class = "blizz" id="0">
+			BLIZZ 
+		</span>
+		<span style="float: right; margin-right: 2em;">
+			<input type="text" placeholder="Search.." id="search">
+			<input type="button" value="Go" onclick="search(document.getElementById('search').value)">
+		</span>
+	</div>
+<script>
+window.onscroll = function() {myFunction()};
+
+var navbar = document.getElementById("navbar");
+var sticky = navbar.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+</script>
+<br>
+<div class="heading">
+		AWESOME, INTERESTING, ELEGANT CINEMA.
+	</div>
+	 <hr class="break"><br>
+	 <div class="movielist">
+	 	<div class="Row" >
+			<div class="leftmovie" style="background-image: url(https://www.indiewire.com/wp-content/uploads/2021/01/donnie-darko.png), url(nopic.png);">
+				<br>
+				<span class="star">
+					<a class="imdbstar" href="https://www.imdb.com/title/tt0246578/" target="_blank">				
+					<i class="fa fa-star fa-2x" aria-hidden="true"></i></a>&nbsp;&nbsp;
+					<span class="bigfont">
+						<a class="imdblink" href="https://www.imdb.com/title/tt0246578/" target="_blank">8.0</a></span><span class="smallfont">/10</span> &nbsp;
+					<br><span class="smallfont">740,448 Ratings&nbsp;</span>
+				</span><br><br><br><br><br><br><br><br><br><br><br>
+				<div class="number">
+					61 |
+				</div>
+				<div class="moviename">
+					<span class="bigfont"><mark class="moviemark">&nbsp;<a href="interstellar/interstellar.html" target="_blank" class="pagelink">DONNIE DARKO</a>&nbsp;</mark></span><br><br><span class="smallfont"><mark class="moviemark">&nbsp;RICHARD KELLY | 2001&nbsp;</mark></span><br>
+					<span class="smallfont"><mark class="countrymark">&nbsp;US | Sci-Fi/Fantasy&nbsp;</mark></span>
+				</div>
+			</div>
+			
+
+			<div class="rightmovie" style="background-image: url(https://i.pinimg.com/originals/46/7d/bf/467dbfab2c63aa62ca63177951094786.jpg),url(nopic.png);">
+				<br>
+				<span class="star">
+					<a class="imdbstar" href="https://www.imdb.com/title/tt2369135/" target="_blank">				
+					<i class="fa fa-star fa-2x" aria-hidden="true"></i></a>&nbsp;&nbsp;
+					<span class="bigfont">
+						<a class="imdblink" href="https://www.imdb.com/title/tt2369135/" target="_blank">6.4</a></span><span class="brightsmallfont">/10</span> &nbsp;
+					<br><span class="brightsmallfont">182,851 Ratings&nbsp;</span>
+				</span>
+				<div class="number">
+					62 |
+				</div>
+				<div class="moviename">
+					<span class="bigfont"><mark class="moviemark">&nbsp;<a href="" target="_blank" class="pagelink">NEED FOR SPEED</a>&nbsp;</mark></span><br><br><span class="smallfont"><mark class="moviemark">&nbsp;SCOTT WAUGH | 2014&nbsp;</mark></span><br>
+					<span class="smallfont"><mark class="countrymark">&nbsp;US | Action/Drama&nbsp;</mark></span>
+				</div>
+			</div>
+
+		   </div>
+	</div>
+</body>
+</html>

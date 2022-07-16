@@ -1,0 +1,763 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>
+		The Number 23 (2007) | BLIZZ
+	</title>
+	<link rel="icon" type="image/x-icon" href="../blizz.png">
+	<meta name="viewport" content="width=device-width, initial-scale=0.5">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat|Ubuntu" rel="stylesheet">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
+	<script src="https://kit.fontawesome.com/1230b940db.js" crossorigin="anonymous"></script>
+	<style>
+		body {font-family: Segoe UI; margin: 0;}
+		.blizz {
+			font-weight: bold;
+			font-size: 22px;
+			padding-top: 2em;
+			text-decoration: none;
+			cursor: pointer;
+			color: black;
+		}
+		::selection {
+  			color: white;
+  			background: red;
+		}
+		.TopRow {
+			padding-bottom: 0.2em;
+		}
+		img.logo {
+	            object-fit: cover;
+  				border-radius: 50%;
+    			height: 16px;
+    			width: 20px;
+		}
+		.TopRow input[type=text] {
+    			font-size: 20px;
+    			border: none;
+    			padding-left: 1em;
+    			border-left: solid;
+    			border-radius: 15px;
+    	}
+    	.TopRow input[type=text]:hover {
+    		background-color: #fafcb1;
+    	}
+    	.TopRow input[type=button] {
+    		padding-top: 5px;
+    		padding-left: 8px;
+    		padding-right: 8px;
+    		padding-bottom: 3px;
+    		border: none;
+    		border-radius: 10px;
+    	}
+    	.TopRow input[type=button]:hover {
+    		background-color: #0cf;
+    		cursor: pointer;
+    	}
+    	hr.top {
+    		border-top: 1px solid;
+    		border-color: #e0e0de;
+    	}
+    	div.heading {
+    		text-align: center; 
+    		color:  #626663; 
+    		font-size: 25px; 
+    		font-weight: bold;
+    	}
+    	.heading:hover {
+    		color: black;
+    	}
+    	.mainImage{
+    		height: 540px; 
+    		width: 100%; 
+    		background-color: black;
+    		background-image: url(main7.jpg); 
+    		background-repeat: no-repeat;
+            background-size: 65% 100%;
+    		background-position: 60% 50%;
+    		color: white;
+    		font-size: 25px;
+    		font-weight: bold;
+    	}
+    	.youtube {
+    		font-size: 15px;
+    		text-decoration: none;
+    		color: #626663; 
+    	}
+    	.youtube:hover{
+    		text-decoration: underline;
+    		color: white;
+    	}
+    	.fa-play-circle-o{ 
+    		size: 15px;
+    		text-decoration: none;
+    		color: #626663; 
+    	}
+    	.fa-play-circle-o:hover{
+    		color: white;
+    	}
+    	.fa-star{
+    		color: white;
+    	}
+    	.ratingBG {
+    		color: #626663; 
+    		font-size: 20px;
+    	}
+    	.direct {
+    		font-weight: normal;
+    	    font-size: 18px;
+    	}
+    	.genre {
+    		font-weight: normal;
+    		font-size: 18px;
+    		color: #626663; 
+    	}
+    	.fa-clock-o {
+    		color: #626663; 
+    	}
+    	.column {
+    		float: left;
+    		width: 25%;
+    		text-align: center;
+    		font-size: 15px;
+    		color: #626663;
+    	}
+    	.row:after {
+    		content: "";
+    		display: table;
+    		clear: both;
+    	}
+    	.award-desc {
+    		font-weight: normal;
+    		color: #626663;
+    	}
+    	ul {
+    		list-style-type: none;
+    	}
+    	li {
+    		float: left;
+    		padding-left: 12px;
+    	}
+    	img {
+    		max-height: 100%;
+    		max-width: 100%;
+    		border-radius: 40px 0 40px 0;
+    	}
+    	.castimage {
+    		height: 170px;
+    		width: 163px;
+    	}
+    	.castimage:hover {
+    		opacity: 0.9;
+    	}
+    	div.name:hover {
+    		text-decoration: underline;
+    		color: #626663;
+    	}
+    	.castName {
+    		color: #626663;
+    		font-size: 18px;
+    		font-weight: bolder;
+    		padding-left: 8px;
+    	}
+    	.crewrole {
+    		color: #999999;
+    		padding-left: 8px;
+    		font-size: 15px;
+    		font-weight: bold;
+    	}
+    	.ExtraLarge {
+    		font-size: 30px;
+    	}
+    	.Reviews{
+    		clear: both;
+    		background-color: #faf0f9;
+    	}
+    	.smallheight {
+    		line-height: 16px;
+    	}
+    	.largeheight {
+    		line-height: 30px;
+    	}
+    	.subhead {
+    		color:#626663; 
+    		font-weight: bold;
+    		font-size: 20px;
+    	}
+    	.showall {
+    		float: right; 
+    		font-size: 15px;
+    	    color:#626663; 
+    		font-weight: bold;
+    	}
+    	.showall1{
+    		float: right; 
+    		font-size: 15px;
+    	    color:#626663; 
+    		font-weight: bold;
+    		padding-right: 1em;
+    	}
+    	#star{
+    		color: black;
+    	}
+    	#nostar{
+    		color: #bababa;
+    	}
+    	.review1 {
+    		float: left;
+    		width: 33%;
+    	}
+    	.reviewhead {
+    		text-align: center;
+    		font-size: 50px;
+    		font-family: Newyork;
+    		padding: 1em 1em 0 1em;
+    	}
+    	@font-face{
+    		font-family: Newyork;
+    		src:url("../chomsky.otf") format("opentype");
+    	}
+    	.reviewdesc {
+    		padding:0 10px 0 10px;
+    		font-size: 20px;
+    		font-family: "Montserrat";
+    	}
+    	.reviewdesc:after{
+    		content: "";  
+    		display: block;
+   			margin: 0 auto; 
+    		width: 99%; 
+    		padding-top: 20px;
+    		border-bottom: 3px solid black;
+    	}
+    	.author {
+    		float: left;
+    	}
+    	.last {
+    		padding-top: 10px;
+    	}
+    	.authorreal {
+    		padding-left: 8px;
+    		font-size: 18px;
+    		font-weight: bolder;
+    	}
+    	.nodec {
+    		text-decoration: none;
+    		color: #526663; 
+    	}
+    	.nodec:hover{
+    		text-decoration: underline;
+    	}
+    	.nodecx{
+    		text-decoration: none;
+    		color: white; 
+    	}
+    	.reviewhead2 {
+    		text-align: center;
+    		font-size: 50px;
+    		font-family: Rolling;
+    		padding: 1em 1em 0 1em;
+    	}
+    	@font-face{
+    		font-family: Rolling;
+    		src:url("../rolling.ttf") format("opentype");
+    	}
+    	.reviewhead3{
+    		text-align: center;
+    		font-size: 50px;
+    		padding: 1em 1em 0 1em;
+    		font-family: "Empire";
+    	}
+    	@font-face{
+    		font-family: Empire;
+    		src:url("../Empire.ttf") format("opentype");
+    	}
+    	.siterate {
+    		display: flex;
+    	}
+    	.rate{
+    		float: left;
+    		padding-left: 1em;
+    		width: 20%;
+    		text-align: center;
+    		font-family: "Audiowide", sans-serif;
+    		font-size: 25px;
+    		font-weight: bolder;
+    	}
+    	.overall {
+    		text-align: center;
+    		font-family: "Audiowide", sans-serif;
+    		font-size: 25px;
+    		font-weight: bolder;
+    		position: relative;
+    	}
+    	.overall-circle{
+    		font-family: "Audiowide", sans-serif;
+    		font-weight: bolder;
+    		height: 100px;
+    		width: 100px;
+    		border-radius: 50%;
+    		background-color: #31f705;
+    		font-size: 28px;
+    		color: white;
+    	}
+    	.fa-question-circle-o{
+    		cursor: pointer;
+    	}
+    	.rateimg{
+    		height: 100px;
+    		width: 100px;
+    		border-radius: 20%;
+    	}
+    	.rateimg:hover {
+    		opacity: 80%;
+    	}
+    	.ratex{
+    		color: black;
+    	}
+    	.metacritiq{
+    		height: 100px;
+    		width: 100px;
+    		border-radius: 20%;
+    		background-color: #31f705;
+    		font-size: 28px;
+    		text-decoration: none;
+    		color: white;
+    	}
+    	.metacritiq:hover{
+    		opacity: 0.8;
+    	}
+    	.circle{
+    		border-radius: 50%;
+    	}
+    	.small{
+    		font-size: 15px;
+    		color: #526663;    		
+    	}
+    	.small:hover {
+    		color: black;
+    	}
+    	.black:hover{
+    		text-decoration-color: black;
+    	}
+    	.review_me {
+    		text-align: center;
+    		font-size: 24px;
+    		font-family: "Montserrat";
+    		margin: 0 3em 0 3em;
+    		background-color: #fffec2;
+    		padding: 10px 20px 10px 20px;
+    	}
+    	.watchnow {
+    		float: left;
+    		width: 14%;
+    		color: white;
+    		padding-left: 2em;
+    		padding-right: 2em;
+    		height: 220px;
+    	}
+    	.white {
+    		color: white;
+    	}
+    	.channels {
+    		height: 100px;
+    		width: 150px;
+    		border-radius: 20px;
+    	}
+    	.channels:hover{
+    		border: solid yellow;
+    		opacity: 0.9;
+    	}
+    	.watchdesc {
+    		text-align: center;
+    	}
+    	.hover:hover {
+    		color: white;
+    	}
+    	.leftinfo {
+    		text-align: center;
+    		float: left;
+    		width: 24%;
+    		padding-left: 1em;
+    	}
+    	.que {
+    		font-size: 20px;
+    		color: #626663;
+    		font-weight: bolder;
+    	}
+    	.ans {
+    		color: #626663;
+    	}
+    	footer{
+    		font-size: 20px;
+    		background-color: black;
+    		color: white;
+    		text-align: center;
+    		font-weight: bold;
+    	}
+    	.bye {
+    		font-size: 25px;
+    		color: white;
+    		text-decoration: none;
+    	}
+    	.sign{
+    		float: right;
+    		padding:1em;
+    		background-color: black;
+    		color: white;
+    		font-size: 10px;
+    		font-weight: bold;
+    		font-family: "Montserrat";
+    		cursor: pointer;
+    		border-radius: 20px;
+    	}
+    	.sign:hover {
+    		background-color: white;
+    		color: black;
+    		box-shadow:0px 0px 0px 2px black inset;
+    		font-weight: bold;
+    	}
+    	.synopsis{
+    		margin-left: 3em;
+    		margin-right: 3em;
+    		padding-left: 3em;
+    		padding-right: 3em;
+    		border-left:3px solid #0066ff;
+    		border-right:3px solid #ff3300;
+    		font-size: 21px;
+    	}
+    	@media screen and (-webkit-min-device-pixel-ratio:0) {
+	    input[type='range'] {
+	      overflow: hidden;
+	      width: 100px;
+	      -webkit-appearance: none;
+	      background-color: #fff;
+	    }
+	    
+	    input[type='range']::-webkit-slider-runnable-track {
+	      height: 10px;
+	      -webkit-appearance: none;
+	      color: #fff;
+	    }
+	    
+	    input[type='range']::-webkit-slider-thumb {
+	      width: 0px;
+	      -webkit-appearance: none;
+	      height: 10px;
+	      background: #000;
+	      box-shadow: -80px 0 0 80px #43e533;
+	    }
+    }   	
+	</style>
+	<script>
+        function search(string)
+        {
+        window.find(string);
+        }
+    </script>
+</head>
+<body class="body">
+	<div class="TopRow">
+		<span>
+			<a class="blizz" href="../index.html">BLIZZ</a> 
+			<img src="../blizz.png" class="logo">
+		</span>
+		<span style="float: right; margin-right: 2em;">
+			<input type="text" placeholder="Search.." id="search">
+			<input type="button" value="Go" onclick="search(document.getElementById('search').value)">
+		</span>
+		<hr class="top">
+		<br>
+	<div class="heading">
+		AWESOME, INTERESTING, ELEGANT CINEMA.
+		<a href="../signin.html"><button class="sign">SIGN IN</button></a>
+	</div><br>
+	<div class="mainImage" ><br>
+		<div style="line-height: 8px;">
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		<i class="fa fa-star" aria-hidden="true"></i>&nbsp;6.4<span class="ratingBG">/10</span>
+		<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="font-size: 15px; color: #626663;"> 194,184 Ratings</span><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+	   </div>
+	   <span class="ExtraLarge">&nbsp;THE NUMBER 23</span><br><br>
+	   <div class="smallheight">
+	   <span class="direct">&nbsp;Directed By <strong>Joel Schumacher</strong></span><br>
+	   <span class="direct">&nbsp;United States, 2007</span>
+	   </div><br>
+	   <div class="largeheight">
+	   <div class="genre">&nbsp;Mystery/Thriller</div>&nbsp;
+	   <i class="fa fa-clock-o" aria-hidden="true"></i><span class="genre">&nbsp;98'</span>
+	   <div>
+	   		&nbsp;&nbsp;<a href="https://www.youtube.com/watch?v=OOZcBTz4q-w" target="_blank"><i class="fa fa-play-circle-o" aria-hidden="true"></i></a>&nbsp;<span class="youtube"><a class="youtube" href="https://www.youtube.com/watch?v=OOZcBTz4q-w" target="_blank">Watch trailer on YouTube</a></span>
+	   </div>
+	   </div>
+	</div>
+	<div><br><br>&nbsp;
+		<span class="subhead">SYNOPSIS</span><br><br>
+		<div class="synopsis">Walter becomes obsessed with the details of a book titled 'The Number 23'. He soon starts connecting events in his life to the chapters in the book.</div><br><br><br>
+	</div>
+	<div style="background-color:#e6e6e6;">
+		<div class="Awards"><br><br><br>&nbsp;
+			<span class="subhead">AWARDS AND FESTIVALS</span>
+			<span class="showall"><a class="nodec" href="awards7.html">Show all (5)</a></span><br><br><br>
+			<div class="row">
+				<div class="column"><span style="font-weight: bolder;">Razzie Awards</span><br>
+				<span class="award-desc">2008 | Nominee: Worst Actor</span>
+				</div>
+				<div class="column"><span style="font-weight: bolder;">Teen Choice Awards</span><br>
+				<span class="award-desc">2007 | Nominee: Choice Movie: Horror/Thriller</span>
+				</div>
+				<div class="column"><span style="font-weight: bolder;">World Soundtrack Awards</span><br>
+				<span class="award-desc">2007 | Nominee: Soundtrack Composer of the Year</span>
+				</div>
+				<div class="column"><span style="font-weight: bolder;">World Stunt Awards</span><br>
+				<span class="award-desc">2008 | Nominee: Best High Work </span>
+				</div>
+			</div>
+		</div><br><br><br>
+		<div class="Cast">&nbsp;
+			<span class="subhead">CAST AND CREW</span>
+			<span class="showall"><a href="cast7.html" class="nodec">Show all(16)</a></span><br><br><br>
+			<ul>
+					<li>
+						<div class="castimage">
+						<img src="https://i.guim.co.uk/img/media/357e1d2ece469daf66d12f5995b0365c8fcc9a54/137_506_2457_1474/master/2457.jpg?width=1200&height=1200&quality=85&auto=format&fit=crop&s=e8e4e4a0a97355c9a8207499fbf3cdb1" alt="Joel Schumacher" onerror="this.onerror=null;this.src='../noimage.png';" title="Joel Schumacher">
+				        </div>   <div class="name">
+					<span class="castName">JOEL</span><br><span class="castName"> SCHUMACHER</span> </div>
+						<div class="crewrole">DIRECTOR</div> 
+					</li>
+
+					<li>
+						<div class="castimage">
+						<img src="https://cdn.britannica.com/s:250x250,c:crop/84/200584-050-7EC3F3F6/Jim-Carrey-2012.jpg" alt="Jim Carrey" onerror="this.onerror=null;this.src='../noimage.png';" title="Jim Carrey">
+				        </div>
+				<span class="castName">JIM CARREY</span>
+						<div class="crewrole">WALTER SPARROW</div>
+					</li>
+
+					<li>
+						<div class="castimage">
+						<img src="https://knownetworth.com/uploads/thumb/virginia-madsen-net-worth-415-415.gif" alt="Virginia Madsen" onerror="this.onerror=null;this.src='../noimage.png';" title="Virginia Madsen">
+				        </div>
+				<span class="castName">VIRGINIA MADSEN</span>
+						<div class="crewrole">AGATHA SPARROW</div>
+					</li>
+
+					<li>
+						<div class="castimage">
+						<img src="https://i.pinimg.com/originals/14/60/d3/1460d3db25cbf56cfe117620cf2833ae.jpg" alt="Logan Lerman" onerror="this.onerror=null;this.src='../noimage.png';" title="Logan Lerman">
+				        </div>
+				<span class="castName">LOGAN LERMAN</span>
+						<div class="crewrole">ROBIN SPARROW</div>
+					</li>
+
+					<li>
+						<div class="castimage">
+						<img src="https://pbs.twimg.com/profile_images/1078194731681804291/eWQBF0tW_400x400.jpg" alt="Danny Huston" onerror="this.onerror=null;this.src='../noimage.png';" title="Danny Huston">
+				        </div>
+				<span class="castName">DANNY HUSTON</span>
+						<div class="crewrole">ISAAC FRENCH</div>
+					</li>
+
+					<li>
+						<div class="castimage">
+						<img src="https://www.themoviedb.org/t/p/w235_and_h235_face/9d5tRBYBgJUb0LKWiPPLNcIx44m.jpg" alt="Matthew Libatique" onerror="this.onerror=null;this.src='../noimage.png';" title="Matthew Libatique">
+				        </div>
+				<span class="castName">MATTHEW</span><br><span class="castName"> LIBATIQUE</span>
+						<div class="crewrole">CINEMATOGRAPHY</div>
+					</li>
+
+					<li>
+						<div class="castimage">
+						<img src="https://cdn.theorg.com/fbcd54d6-78a3-42d6-8eef-0f37b67f111a_small.png" alt="Richard Brener" onerror="this.onerror=null;this.src='../noimage.png';" title="Richard Brener">
+				        </div>
+				<span class="castName">RICHARD BRENER</span>
+						<div class="crewrole">PRODUCER</div>
+					</li>
+
+					<li>
+						<div class="castimage">
+						<img src="https://in.bmscdn.com/iedb/artist/images/website/poster/large/mike-drake-iein078361-15-01-2020-13-13-42.jpg" alt="Mike Drake" onerror="this.onerror=null;this.src='../noimage.png';" title="Mike Drake">
+				        </div>
+				<span class="castName">MIKE DRAKE</span>
+						<div class="crewrole">PRODUCER</div>
+					</li>
+			</ul>
+		</div>
+	</div>
+	<div class="Reviews"><br><br>
+		<span class="subhead">&nbsp;CRITICS REVIEWS&nbsp;&nbsp;&nbsp;<i id="star" class="fa fa-star" aria-hidden="true"></i>&nbsp;<i id="star" class="fa fa-star" aria-hidden="true"></i>&nbsp;<i id="nostar" class="fa fa-star" aria-hidden="true"></i>&nbsp;<i id="nostar" class="fa fa-star" aria-hidden="true"></i>&nbsp;<i id="nostar" class="fa fa-star" aria-hidden="true"></i></span>
+			<span class="showall"><a class="nodec" href="critic7.html">Show all(24)</a></span>
+		<br><br><br>
+		<div style="display: flex;">
+			<div class="review1">
+				<div class="reviewhead">NEW YORK TIMES</div><br><br>
+				<div class="reviewdesc">“The Number 23” is an accidental comedy starring a deadly serious Jim Carrey.<br><br></div>
+				<div class="last">
+					<div class="author"><span class="authorreal">MANOHLA DARGIS</span><br><span class="crewrole">February 23, 2007</span></div>
+					<div class="showall1"><a class="nodec" href="https://www.nytimes.com/2007/02/23/movies/23numb.html" target="_blank">Read Full Article</a></div>
+				</div>
+			</div>
+			<div class="review1">
+				<div class="reviewhead3">EMPIRE</div><br><br>
+				<div class="reviewdesc">Genuinely intriguing in places and romps along at a satisfying pace for a conspiracy thriller.<br><br></div>
+				<div class="last">
+					<div class="author"><span class="authorreal">SIMON CROOK</span><br><span class="crewrole">February 09, 2007</span></div>
+                    <div class="showall1"><a class="nodec" href="https://www.empireonline.com/movies/reviews/number-23-review/" target="_blank">Read Full Article</a></div>
+				</div></div>
+			<div class="review1">
+				<div class="reviewhead">AUSTIN CHRONICLE</div><br><br>
+				<div class="reviewdesc">Schumacher is as much to blame for this mess as Carrey is. Over and over again, he mistakes looming shadows and manic outbursts for tension, and his ponderous, ham-fisted directorial style creates more questions than it answers.<br><br></div>
+				<div class="last">
+					<div class="author"><span class="authorreal">JOSH ROSENBLATT</span><br><span class="crewrole">March 10, 2007</span></div>
+                    <div class="showall1"><a class="nodec" href="http://www.austinchronicle.com/gyrobase/Calendar/Film?Film=oid%3a448428" target="_blank">Read Full Article</a></div>
+				</div>
+			</div>
+		</div><br>
+	</div>
+	<div style="background-color:#e6e6e6;"><br><br>
+		<span class="subhead">&nbsp;RATINGS</span><br><br><br>
+		<div class="siterate">
+			<div class="rate">
+				<a class="" href="https://www.imdb.com/title/tt0481369/" target="_blank"><img class="rateimg" src="../imdb.png"></a><br>
+				<span class="ratex">IMDB</span><br><br>
+				<input type="range" value="6.4" min="0" max="10" id="myRange"><br>
+				<a class="nodec black" href="https://www.imdb.com/title/tt0481369/" target="_blank"><span class="ratex">6.4/0</span></a><br>
+				<a class="nodec" href="https://www.imdb.com/title/tt0481369/" target="_blank"><span class="ratex small">194,184 Ratings</span></a>
+			</div>
+			<div class="rate">
+				<a class="" href="https://www.rottentomatoes.com/m/the_number_23" target="_blank"><img style="width: 120px;" class="rateimg" src="../fresh.png"></a><br>
+				<span class="ratex">TOMATOMETER</span><br><br>
+				<input type="range" value="8" min="0" max="100" id="myRange"><br>
+				<a class="nodec black" href="https://www.rottentomatoes.com/m/the_number_23" target="_blank"><span class="ratex">8%</span></a><br>
+				<a class="nodec" href="https://www.rottentomatoes.com/m/the_number_23" target="_blank"><span class="ratex small">190 Reviews</span></a>
+			</div>
+			<div class="rate">
+				<a class="" href="https://www.rottentomatoes.com/m/the_number_23" target="_blank"><img class="rateimg" src="../toaud.png"></a><br>
+				<span class="ratex">AUDIENCE SCORE</span><br><br>
+				<input type="range" value="56" min="0" max="100" id="myRange"><br>
+				<a class="nodec black" href="https://www.rottentomatoes.com/m/the_number_23" target="_blank"><span class="ratex">56%</span></a><br>
+				<a class="nodec" href="https://www.rottentomatoes.com/m/the_number_23" target="_blank"><span class="ratex small">250,000+ Ratings</span></a>
+			</div>
+			<div class="rate">
+				<img class="rateimg" src="../googleco.png"><br>
+				<span class="ratex">GOOGLE AUDIENCE</span><br><br>
+				<input type="range" value="82" min="0" max="100" id="myRange"><br>
+				<span class="ratex">82%</span><br>
+			</div>
+			<div class="rate">
+				<a class="nodecx" href="https://www.metacritic.com/movie/the-number-23" target="_blank">
+					<div style="padding-left: 2.5em;">
+						<div class="metacritiq circle">
+						<br>6.2
+						</div>
+					</div>
+				</a>
+				<span class="ratex">META-USER SCORE</span><br>
+				<input type="range" value="62" min="0" max="100" id="myRange"><br>
+				<span class="ratex small">Based on</span><br>
+				<a class="nodec" href="https://www.metacritic.com/movie/the-number-23" target="_blank"><span class="ratex small">83 Ratings</span></a>
+			</div>
+		</div><br><br><br><br>
+		<div class="overall">
+				OVERALL RATINGS&nbsp;<i class="fa fa-question-circle-o" aria-hidden="true" title="Average of the above ratings (out of 10)"></i><br><br>
+				<div style="margin-left: 46.6%;">
+				<div class="overall-circle">
+					<br>5.4
+				</div>
+			    </div><br>
+		</div>
+	</div>
+	<div class="Reviews"><br><br>
+		&nbsp;<span class="subhead">MY TAKE</span>&nbsp;&nbsp;<i class="fa fa-user-secret fa-2x" aria-hidden="true"></i><br><br>
+		<div class="review_me">When I read some analyses for this movie, I thought about not seeing it. But there was a time when i was bored and chose to watch it. I liked it. Different People have different taste! Maybe the reason I liked it is because of an external factor<br><br>I saw an identical movie in my native language (Malayalam) when i was young. But it was so awfully made that it demolished it's otherwise fascinating story. So I was relieved to see the same story that was nicely made.<br><br>Maybe that would be the reason that I love this film. Either way, I like it. Before watching this, I always used to fit Jim Carrey in funny comedic roles But this flick altered my entire impression. Its nicely inscribed and has incredible cinematography and editing. It will fiddle with your sanity even after completing the movie. This movie is seriously underrated.
+		</div><br><br>
+	</div>
+	<div class="watch" style="background-color:#000;"><br><br>
+		&nbsp;<span class="subhead white">WHERE TO WATCH</span><br><br><br><br>
+		<div style="display: flex;">
+		<div class="watchnow">
+			<a href="https://www.amazon.com/Number-23-Jim-Carrey/dp/B000YHIJUC" target="_blank"><img src="../amazon.jpg" class="channels"></a>
+			<div class="overall white"><br>
+			<a href="https://www.amazon.com/Number-23-Jim-Carrey/dp/B000YHIJUC" class="nodec white" target="_blank">AMAZON</a><br><span class="overall small hover">From &#8377;230</span>
+			</div>
+		</div>
+		<div class="watchnow">
+			<a href="https://www.microsoft.com/en-us/p/the-number-23/8d6kgwzl5g5q?ct=movie&ranMID=24542&ranEAID=TnL5HPStwNw&ranSiteID=TnL5HPStwNw-POtQt1H7IoO_5OC6sFPXAg&epi=TnL5HPStwNw-POtQt1H7IoO_5OC6sFPXAg&irgwc=1&OCID=AID2000142_aff_7593_1243925&tduid=(ir__jg9s1leldckfqj03kk0sohzz2n2xpahuz6rvyrxz00)(7593)(1243925)(TnL5HPStwNw-POtQt1H7IoO_5OC6sFPXAg)()&irclickid=_jg9s1leldckfqj03kk0sohzz2n2xpahuz6rvyrxz00&activetab=pivot%3aoverviewtab" target="_blank"><img src="../microsoft.jpg" class="channels"></a>
+			<div class="overall white"><br>
+			<a href="https://www.microsoft.com/en-us/p/the-number-23/8d6kgwzl5g5q?ct=movie&ranMID=24542&ranEAID=TnL5HPStwNw&ranSiteID=TnL5HPStwNw-POtQt1H7IoO_5OC6sFPXAg&epi=TnL5HPStwNw-POtQt1H7IoO_5OC6sFPXAg&irgwc=1&OCID=AID2000142_aff_7593_1243925&tduid=(ir__jg9s1leldckfqj03kk0sohzz2n2xpahuz6rvyrxz00)(7593)(1243925)(TnL5HPStwNw-POtQt1H7IoO_5OC6sFPXAg)()&irclickid=_jg9s1leldckfqj03kk0sohzz2n2xpahuz6rvyrxz00&activetab=pivot%3aoverviewtab" class="nodec white" target="_blank">MICROSOFT</a><br><span class="overall small hover">From &#8377;230</span>
+			</div>
+		</div>
+		<div class="watchnow">
+			<a href="https://www.vudu.com/content/movies/details/title/128595" target="_blank"><img src="../vudu.jpg" class="channels"></a>
+			<div class="overall white"><br>
+			<a href="https://www.vudu.com/content/movies/details/title/128595" target="_blank" class="nodec white">VUDU</a><br><span class="overall small hover">From &#8377;300</span>
+			</div>
+		</div>
+		<div class="watchnow">
+			<a href="https://play.google.com/store/movies/details?id=c5XDzbArnH0" target="_blank"><img src="../gplay.png" class="channels"></a>
+			<div class="overall white"><br>
+			<a href="https://play.google.com/store/movies/details?id=c5XDzbArnH0" target="_blank" class="nodec white">PLAY
+			</a><br><span class="overall small hover">From &#8377;230</span>
+			</div>
+		</div>
+		<div class="watchnow">
+			<a href="https://itunes.apple.com/WebObjects/MZStore.woa/wa/search?at=11lDJ&ct=1604007X8ef3d863cc96b6d41cfb49d904b108d3&term=The%20Number%2023&app=itunes&mt=6" target="_blank"><img src="../itune.jpg" class="channels"></a>
+			<div class="overall white"><br>
+			<a href="https://itunes.apple.com/WebObjects/MZStore.woa/wa/search?at=11lDJ&ct=1604007X8ef3d863cc96b6d41cfb49d904b108d3&term=The%20Number%2023&app=itunes&mt=6" target="_blank" class="nodec white">APPLE</a><br><span class="overall small hover">From &#8377;300</span>
+			</div>
+		</div>
+		<div class="watchnow">
+			<a href="https://tubitv.com/movies/484837/the-number-23" target="_blank"><img src="../tubi.png" class="channels"></a>
+			<div class="overall white"><br>
+			<a href="https://tubitv.com/movies/484837/the-number-23" target="_blank" class="nodec white">TUBI TV</a><br><span class="overall small hover">Free W/Ads</span>
+			</div>
+		</div>
+		<div class="watchnow">
+			<a href="https://www9.0123movies.com/movies-the-number-23-2007-0123movies.html" target="_blank"><img src="../123.jpg" class="channels"></a>
+			<div class="overall white"><br>
+			<a href="https://www9.0123movies.com/movies-the-number-23-2007-0123movies.html" target="_blank" class="nodec white">123</a><br><span class="overall small hover">Free W/Ads</span>
+			</div>
+		</div>
+		</div>
+	</div>
+	<div class="info" style="background-color:#e6e6e6;"><br><br>
+		&nbsp;<span class="subhead">MORE INFO</span><br><br><br><br>
+		<div style="display: flex;">
+		<div class="leftinfo">
+			<div class="que">Production companies :</div>
+			<div class="ans">Contra Films<br>Firm Films</div>
+			<br>
+			<div class="que">Budget :</div>
+			<div class="ans">&#36;30 Million<br>(&#8377;226 Crore)</div>
+		</div>
+		<div class="leftinfo">
+			<div class="que">Distribution :</div>
+			<div class="ans">New Line Cinema</div>
+			<br>
+			<div class="que">Language :</div>
+			<div class="ans">English</div>
+		</div>
+		<div class="leftinfo">
+			<div class="que">Release Date :</div>
+			<div class="ans">February 13, 2007</div>
+            <br>
+            <div class="que">Box Office :</div>
+            <div class="ans">&#36;77.6 Million<br>(&#8377;585 Crore)</div>
+		</div>
+		<div class="leftinfo">
+			<div class="que">Running Time :</div>
+			<div class="ans">98 Minutes</div>
+			<br>
+			<div class="que">Country :</div>
+			<div class="ans">United States<br>France</div>
+		</div>
+	    </div><br><br>
+	</div>
+	<footer><br><br><br>
+           <a href="../index.html" class="bye"><i class="fa fa-home" aria-hidden="true"></i>&nbsp;BACK TO HOME</a><br>
+           <br>
+         &copy;BLIZZ
+        </footer>
+</body>
+</html>

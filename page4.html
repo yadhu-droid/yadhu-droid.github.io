@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Best 75 Movies (4) | BLIZZ</title>
+	<link rel="icon" type="image/x-icon" href="blizz.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0;">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat|Ubuntu" rel="stylesheet">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
+	<script src="https://kit.fontawesome.com/1230b940db.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="pages.css">
+    <link rel="stylesheet" media="only screen and (max-device-width: 480px)" href="pages.css">
+    <style>
+        body{
+            font-family: "Montserrat";
+         }
+         ::selection {
+            color: white;
+            background: red;
+        }
+        *{
+            margin: 0;
+        }
+    </style>
+    <script>
+        function search(string)
+        {
+        window.find(string);
+        }
+    </script>
+</head>
+<body>
+	<div class="TopRow" id="navbar">
+	<br>
+		<span class = "blizz" id="0">
+			BLIZZ 
+		</span>
+		<span style="float: right; margin-right: 2em;">
+			<input type="text" placeholder="Search.." id="search">
+			<input type="button" value="Go" onclick="search(document.getElementById('search').value)">
+		</span>
+		<select class="jump" onchange="location = this.value;">
+	  	<option class="options" value="#0"> Jump To... </option>
+	  	<option class="options" value="#1"> 61-64 </option>
+	  	<option class="options" value="#2"> 65-68</option>
+	  	<option class="options" value="#3"> 79-72</option>
+	  	<option class="options" value="#4"> 73-76</option>
+	  	<option class="options" value="#5"> 77-80</option>
+	  	</select>
+	  	<br><br></div>
+<script>
+window.onscroll = function() {myFunction()};
+
+var navbar = document.getElementById("navbar");
+var sticky = navbar.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+</script>
+<br>
+<div class="heading">
+		<span class="test">AWESOME, INTERESTING, ELEGANT CINEMA.</span>
+        <a href="signin.html"><button class="sign">SIGN IN</button></a>
+	</div><br><br>
+	<div class="pages">
+	 	<button class="page1" title="page 1" onclick="location.href='index.html'" type="button">1</button>
+	 	<button class="page1" title="page 2" onclick="location.href='page2.html'" type="button">2</button>
+	 	<button class="page1" title="page 3" onclick="location.href='page3.html'" type="button">3</button>
+        <button class="page1" title="page 4">4</button>
+	 </div>
+	 <hr class="break"><br>
+	 <div class="movielist">
+	 	<div class="Row" >
+			<div class="leftmovie" style="background-image: url(https://www.indiewire.com/wp-content/uploads/2021/01/donnie-darko.png), url(nopic.png);">
+				<br>
+				<span class="star">
+					<a class="imdbstar" href="https://www.imdb.com/title/tt0246578/" target="_blank">				
+					<i class="fa fa-star fa-2x" aria-hidden="true"></i></a>&nbsp;&nbsp;
+					<span class="bigfont">
+						<a class="imdblink" href="https://www.imdb.com/title/tt0246578/" target="_blank">8.0</a></span><span class="brightsmallfont">/10</span> &nbsp;
+					<br><span class="brightsmallfont">740,448 Ratings&nbsp;</span>
+				</span><div class="brr"><br><br><br><br><br><br><br><br><br><br><br></div>
+				<div class="number">
+					61 |
+				</div>
+				<div class="moviename">
+					<span class="bigfont"><mark class="moviemark">&nbsp;DONNIE DARKO&nbsp;</mark></span><br><br><span class="smallfont"><mark class="moviemark">&nbsp;RICHARD KELLY | 2001&nbsp;</mark></span><br>
+					<span class="smallfont"><mark class="countrymark">&nbsp;US | Sci-Fi/Fantasy&nbsp;</mark></span>
+				</div>
+			</div>
+			
+
+			<div class="rightmovie" style="background-image: url(https://images2.minutemediacdn.com/image/fetch/w_2000,h_2000,c_fit/https%3A%2F%2Fartofgears.com%2Fwp-content%2Fuploads%2Fgetty-images%2F2017%2F04%2F170306888-need-for-speed-star-aaron-paul-with-his-ford-mustang-hero-car.jpg.jpg),url(nopic.png);">
+				<br>
+				<span class="star">
+					<a class="imdbstar" href="https://www.imdb.com/title/tt2369135/" target="_blank">				
+					<i class="fa fa-star fa-2x" aria-hidden="true"></i></a>&nbsp;&nbsp;
+					<span class="bigfont">
+						<a class="imdblink" href="https://www.imdb.com/title/tt2369135/" target="_blank">6.4</a></span><span class="brightsmallfont">/10</span> &nbsp;
+					<br><span class="brightsmallfont">182,851 Ratings&nbsp;</span>
+				</span><div class="brr"><br><br><br><br><br><br><br><br><br><br><br></div>
+				<div class="number">
+					62 |
+				</div>
+				<div class="moviename">
+					<span class="bigfont"><mark class="moviemark">&nbsp;NEED FOR SPEED&nbsp;</mark></span><br><br><span class="smallfont"><mark class="moviemark">&nbsp;SCOTT WAUGH | 2014&nbsp;</mark></span><br>
+					<span class="smallfont"><mark class="countrymark">&nbsp;US | Action/Drama&nbsp;</mark></span>
+				</div>
+			</div>
+
+		   </div>
+
+
+		<hr class="break">
+
+        <div class="Row" >
+            <div class="leftmovie" style="background-image: url(https://venturebeat.com/wp-content/uploads/2019/04/wwz.jpg?w=1200&strip=all), url(nopic.png);">
+                <br>
+                <span class="star">
+                    <a class="imdbstar" href="https://www.imdb.com/title/tt0816711/" target="_blank">               
+                    <i class="fa fa-star fa-2x" aria-hidden="true"></i></a>&nbsp;&nbsp;
+                    <span class="bigfont">
+                        <a class="imdblink" href="https://www.imdb.com/title/tt0816711/" target="_blank">7.0</a></span><span class="brightsmallfont">/10</span> &nbsp;
+                    <br><span class="brightsmallfont">602,091 Ratings&nbsp;</span>
+                </span><div class="brr"><br><br><br><br><br><br><br><br><br><br><br></div>
+                <div class="number">
+                    63 |
+                </div>
+                <div class="moviename">
+                    <span class="bigfont"><mark class="moviemark">&nbsp;WORLD WAR Z&nbsp;</mark></span><br><br><span class="smallfont"><mark class="moviemark">&nbsp;MARK FORSTER | 2013&nbsp;</mark></span><br>
+                    <span class="smallfont"><mark class="countrymark">&nbsp;US | Horror/Action&nbsp;</mark></span>
+                </div>
+            </div>
+            
+
+            <div class="rightmovie" style="background-image: url(https://media1.popsugar-assets.com/files/thumbor/pznldpXJb8tBh6pAJL54L2VBeRg/fit-in/2048xorig/filters:format_auto-!!-:strip_icc-!!-/2020/03/17/929/n/1922283/tmp_qJCACP_abdf2361bfb5bb85_MCDABTI_EC013.jpg),url(nopic.png);">
+                <br>
+                <span class="star">
+                    <a class="imdbstar" href="https://www.imdb.com/title/tt2194499/" target="_blank">               
+                    <i class="fa fa-star fa-2x" aria-hidden="true"></i></a>&nbsp;&nbsp;
+                    <span class="bigfont">
+                        <a class="imdblink" href="https://www.imdb.com/title/tt2194499/" target="_blank">7.8</a></span><span class="brightsmallfont">/10</span> &nbsp;
+                    <br><span class="brightsmallfont">303,390 Ratings&nbsp;</span>
+                </span><div class="brr"><br><br><br><br><br><br><br><br><br><br><br></div>
+                <div class="number">
+                    64 |
+                </div>
+                <div class="moviename">
+                    <span class="bigfont"><mark class="moviemark">&nbsp;ABOUT TIME&nbsp;</mark></span><br><br><span class="smallfont"><mark class="moviemark">&nbsp;RICHARD CURTIS | 2013&nbsp;</mark></span><br>
+                    <span class="smallfont"><mark class="countrymark">&nbsp;BRITAIN | Romance/Fantasy&nbsp;</mark></span>
+                </div>
+            </div>
+
+           </div>
+
+
+        <hr class="break">
+
+        <div class="Row" >
+            <div class="leftmovie" style="background-image: url(https://images-na.ssl-images-amazon.com/images/G/01/digital/video/hero/Movies/1996/B0032KLAKE_PrimalFear_UXPA1._V391273729_SX1080_.jpg), url(nopic.png);">
+                <br>
+                <span class="star">
+                    <a class="imdbstar" href="https://www.imdb.com/title/tt00117381/" target="_blank">               
+                    <i class="fa fa-star fa-2x" aria-hidden="true"></i></a>&nbsp;&nbsp;
+                    <span class="bigfont">
+                        <a class="imdblink" href="https://www.imdb.com/title/tt00117381/" target="_blank">7.7</a></span><span class="brightsmallfont">/10</span> &nbsp;
+                    <br><span class="brightsmallfont">190,326 Ratings&nbsp;</span>
+                </span><div class="brr"><br><br><br><br><br><br><br><br><br><br><br></div>
+                <div class="number">
+                    65 |
+                </div>
+                <div class="moviename">
+                    <span class="bigfont"><mark class="moviemark">&nbsp;PRIMAL FEAR&nbsp;</mark></span><br><br><span class="smallfont"><mark class="moviemark">&nbsp;GREGORY HOBLIT | 1996&nbsp;</mark></span><br>
+                    <span class="smallfont"><mark class="countrymark">&nbsp;US | Thriller/Crime&nbsp;</mark></span>
+                </div>
+            </div>
+            
+
+            <div class="rightmovie" style="background-image: url(https://images-na.ssl-images-amazon.com/images/S/sgp-catalog-images/region_US/wb-047194-Full-Image_GalleryBackground-en-US-1483993558755._RI_.jpg),url(nopic.png);">
+                <br>
+                <span class="star">
+                    <a class="imdbstar" href="https://www.imdb.com/title/tt00416449/" target="_blank">               
+                    <i class="fa fa-star fa-2x" aria-hidden="true"></i></a>&nbsp;&nbsp;
+                    <span class="bigfont">
+                        <a class="imdblink" href="https://www.imdb.com/title/tt00416449/" target="_blank">7.6</a></span><span class="brightsmallfont">/10</span> &nbsp;
+                    <br><span class="brightsmallfont">736,528 Ratings&nbsp;</span>
+                </span><div class="brr"><br><br><br><br><br><br><br><br><br><br><br></div>
+                <div class="number">
+                    66 |
+                </div>
+                <div class="moviename">
+                    <span class="bigfont"><mark class="moviemark">&nbsp;300&nbsp;</mark></span><br><br><span class="smallfont"><mark class="moviemark">&nbsp;ZACK SNYDER | 2006&nbsp;</mark></span><br>
+                    <span class="smallfont"><mark class="countrymark">&nbsp;US | Action/War&nbsp;</mark></span>
+                </div>
+            </div>
+
+           </div>
+
+
+        <hr class="break">
+
+        <div class="Row" >
+            <div class="leftmovie" style="background-image: url(https://filmschoolrejects.com/wp-content/uploads/2020/02/american-beauty.jpg), url(nopic.png);">
+                <br>
+                <span class="star">
+                    <a class="imdbstar" href="https://www.imdb.com/title/tt0000000000169547/" target="_blank">               
+                    <i class="fa fa-star fa-2x" aria-hidden="true"></i></a>&nbsp;&nbsp;
+                    <span class="bigfont">
+                        <a class="imdblink" href="https://www.imdb.com/title/tt0000000000169547/" target="_blank">8.3</a></span><span class="brightsmallfont">/10</span> &nbsp;
+                    <br><span class="brightsmallfont">1,077,569 Ratings&nbsp;</span>
+                </span><div class="brr"><br><br><br><br><br><br><br><br><br><br><br></div>
+                <div class="number">
+                    67 |
+                </div>
+                <div class="moviename">
+                    <span class="bigfont"><mark class="moviemark">&nbsp;AMERICAN BEAUTY&nbsp;</mark></span><br><br><span class="smallfont"><mark class="moviemark">&nbsp;SAM MENDES | 1999&nbsp;</mark></span><br>
+                    <span class="smallfont"><mark class="countrymark">&nbsp;US | Romance/Drama&nbsp;</mark></span>
+                </div>
+            </div>
+            
+
+            <div class="rightmovie" style="background-image: url(https://media.npr.org/assets/img/2011/05/10/2400_d045_00688_0685r_comp_wide-7e867eafcec1fb1be21ecf8b476061d83d18738e.jpg),url(nopic.png);">
+                <br>
+                <span class="star">
+                    <a class="imdbstar" href="https://www.imdb.com/title/tt1478338/" target="_blank">               
+                    <i class="fa fa-star fa-2x" aria-hidden="true"></i></a>&nbsp;&nbsp;
+                    <span class="bigfont">
+                        <a class="imdblink" href="https://www.imdb.com/title/tt1478338/" target="_blank">6.8</a></span><span class="brightsmallfont">/10</span> &nbsp;
+                    <br><span class="brightsmallfont">274,000 Ratings&nbsp;</span>
+                </span><div class="brr"><br><br><br><br><br><br><br><br><br><br><br></div>
+                <div class="number">
+                    68 |
+                </div>
+                <div class="moviename">
+                    <span class="bigfont"><mark class="moviemark">&nbsp;BRIDESMAIDS&nbsp;</mark></span><br><br><span class="smallfont"><mark class="moviemark">&nbsp;PAUL FEIG | 2011&nbsp;</mark></span><br>
+                    <span class="smallfont"><mark class="countrymark">&nbsp;US | Comedy/Romance&nbsp;</mark></span>
+                </div>
+            </div>
+
+           </div>
+           <hr class="break">
+
+           <div class="Row" >
+            <div class="leftmovie" style="background-image: url(https://media.vanityfair.com/photos/55761382320a56cf4240bc3e/master/pass/t-clueless-amy-heckerling-young-and-clueless.jpg), url(nopic.png);">
+                <br>
+                <span class="star">
+                    <a class="imdbstar" href="https://www.imdb.com/title/tt0112697/" target="_blank">               
+                    <i class="fa fa-star fa-2x" aria-hidden="true"></i></a>&nbsp;&nbsp;
+                    <span class="bigfont">
+                        <a class="imdblink" href="https://www.imdb.com/title/tt0112697/" target="_blank">6.8</a></span><span class="brightsmallfont">/10</span> &nbsp;
+                    <br><span class="brightsmallfont">189,598 Ratings&nbsp;</span>
+                </span><div class="brr"><br><br><br><br><br><br><br><br><br><br><br></div>
+                <div class="number">
+                    69 |
+                </div>
+                <div class="moviename">
+                    <span class="bigfont"><mark class="moviemark">&nbsp;CLUELESS&nbsp;</mark></span><br><br><span class="smallfont"><mark class="moviemark">&nbsp;AMY HECKERLING | 1995&nbsp;</mark></span><br>
+                    <span class="smallfont"><mark class="countrymark">&nbsp;US | Comedy/Romance&nbsp;</mark></span>
+                </div>
+            </div>
+            
+
+            <div class="rightmovie" style="background-image: url(https://www.syfy.com/sites/syfy/files/styles/1200x680/public/2020/12/edward-scissorhands.jpg),url(nopic.png);">
+                <br>
+                <span class="star">
+                    <a class="imdbstar" href="https://www.imdb.com/title/tt0099487/" target="_blank">               
+                    <i class="fa fa-star fa-2x" aria-hidden="true"></i></a>&nbsp;&nbsp;
+                    <span class="bigfont">
+                        <a class="imdblink" href="https://www.imdb.com/title/tt0099487/" target="_blank">7.9</a></span><span class="smallfont">/10</span> &nbsp;
+                    <br><span class="smallfont">453,496 Ratings&nbsp;</span>
+                </span><div class="brr"><br><br><br><br><br><br><br><br><br><br><br></div>
+                <div class="number">
+                    70 |
+                </div>
+                <div class="moviename">
+                    <span class="bigfont shaw"><mark class="moviemark">&nbsp;EDWARD SCISSORHANDS&nbsp;</mark></span><br><br><span class="smallfont"><mark class="moviemark">&nbsp;TIM BURTON | 1990&nbsp;</mark></span><br>
+                    <span class="smallfont"><mark class="countrymark">&nbsp;US | Fantasy/Romance&nbsp;</mark></span>
+                </div>
+            </div>
+
+           </div>
+           <hr class="break">
+            <div class="Row" >
+            <div class="leftmovie" style="background-image: url(https://www.tvovermind.com/wp-content/uploads/2018/12/lb1_1-750x452.jpg), url(nopic.png);">
+                <br>
+                <span class="star">
+                    <a class="imdbstar" href="https://www.imdb.com/title/tt4925292/" target="_blank">               
+                    <i class="fa fa-star fa-2x" aria-hidden="true"></i></a>&nbsp;&nbsp;
+                    <span class="bigfont">
+                        <a class="imdblink" href="https://www.imdb.com/title/tt4925292/" target="_blank">7.4</a></span><span class="brightsmallfont">/10</span> &nbsp;
+                    <br><span class="brightsmallfont">251,817 Ratings&nbsp;</span>
+                </span><div class="brr"><br><br><br><br><br><br><br><br><br><br><br></div>
+                <div class="number">
+                    71 |
+                </div>
+                <div class="moviename">
+                    <span class="bigfont"><mark class="moviemark">&nbsp;LADY BIRD&nbsp;</mark></span><br><br><span class="smallfont"><mark class="moviemark">&nbsp;GRETA GERWIG | 2017&nbsp;</mark></span><br>
+                    <span class="smallfont"><mark class="countrymark">&nbsp;US | Drama/Comedy&nbsp;</mark></span>
+                </div>
+            </div>
+            
+
+            <div class="rightmovie" style="background-image: url(https://www.setdecorators.org/sites/setdecorators/articles/MG_2_where.jpg),url(nopic.png);">
+                <br>
+                <span class="star">
+                    <a class="imdbstar" href="https://www.imdb.com/title/tt4209788/" target="_blank">               
+                    <i class="fa fa-star fa-2x" aria-hidden="true"></i></a>&nbsp;&nbsp;
+                    <span class="bigfont">
+                        <a class="imdblink" href="https://www.imdb.com/title/tt4209788/" target="_blank">7.4</a></span><span class="smallfont">/10</span> &nbsp;
+                    <br><span class="smallfont">151,218 Ratings&nbsp;</span>
+                </span><div class="brr"><br><br><br><br><br><br><br><br><br><br><br></div>
+                <div class="number">
+                    72 |
+                </div>
+                <div class="moviename">
+                    <span class="bigfont"><mark class="moviemark">&nbsp;MOLLY'S GAME&nbsp;</mark></span><br><br><span class="smallfont"><mark class="moviemark">&nbsp;AARON SORKIN | 2017&nbsp;</mark></span><br>
+                    <span class="smallfont"><mark class="countrymark">&nbsp;US | Crime/Drama&nbsp;</mark></span>
+                </div>
+            </div>
+
+           </div>
+           <hr class="break">
+
+           <div class="Row" >
+            <div class="leftmovie" style="background-image: url(https://www.sbs.com.au/movies/sites/sbs.com.au.film/files/styles/full/public/images/s/i/site_28_rand_1468182600_hot_fuzz_627.gif?itok=yLA9MUOP), url(nopic.png);">
+                <br>
+                <span class="star">
+                    <a class="imdbstar" href="https://www.imdb.com/title/tt0425112/" target="_blank">               
+                    <i class="fa fa-star fa-2x" aria-hidden="true"></i></a>&nbsp;&nbsp;
+                    <span class="bigfont">
+                        <a class="imdblink" href="https://www.imdb.com/title/tt0425112/" target="_blank">7.8</a></span><span class="brightsmallfont">/10</span> &nbsp;
+                    <br><span class="brightsmallfont">473,367 Ratings&nbsp;</span>
+                </span><div class="brr"><br><br><br><br><br><br><br><br><br><br><br></div>
+                <div class="number">
+                    73 |
+                </div>
+                <div class="moviename">
+                    <span class="bigfont"><mark class="moviemark">&nbsp;HOT FUZZ&nbsp;</mark></span><br><br><span class="smallfont"><mark class="moviemark">&nbsp;EDGAR WRIGHT | 2007&nbsp;</mark></span><br>
+                    <span class="smallfont"><mark class="countrymark">&nbsp;US | Comedy/Action&nbsp;</mark></span>
+                </div>
+            </div>
+            
+
+            <div class="rightmovie" style="background-image: url(https://www.cubecinema.com/media/diary/texture_background_stains_surface_paper_50448_1920x1080.jpg),url(nopic.png);">
+                <br>
+                <span class="star">
+                    <a class="imdbstar" href="https://www.imdb.com/title/tt7914416/" target="_blank">               
+                    <i class="fa fa-star fa-2x" aria-hidden="true"></i></a>&nbsp;&nbsp;
+                    <span class="bigfont">
+                        <a class="imdblink" href="https://www.imdb.com/title/tt7914416/" target="_blank">7.7</a></span><span class="smallfont">/10</span> &nbsp;
+                    <br><span class="smallfont">19,125 Ratings&nbsp;</span>
+                </span><div class="brr"><br><br><br><br><br><br><br><br><br><br><br></div>
+                <div class="number">
+                    74 |
+                </div>
+                <div class="moviename">
+                    <span class="bigfont"><mark class="moviemark">&nbsp;ONE CUT OF THE DEAD&nbsp;</mark></span><br><br><span class="smallfont"><mark class="moviemark">&nbsp;SHINICHARO UEDA | 2017&nbsp;</mark></span><br>
+                    <span class="smallfont"><mark class="countrymark">&nbsp;Japan | Horror/Comedy&nbsp;</mark></span>
+                </div>
+            </div>
+
+           </div>
+           <hr class="break">
+
+           <div class="Row" >
+            <div class="leftmovie" style="background-image: url(http://basementrejects.com/wp-content/uploads/2015/02/rain-man-tom-cruise-dustin-hoffman-raymond-charlie-babbitt-review-best-picture.jpg), url(nopic.png);">
+                <br>
+                <span class="star">
+                    <a class="imdbstar" href="https://www.imdb.com/title/tt0095953/" target="_blank">               
+                    <i class="fa fa-star fa-2x" aria-hidden="true"></i></a>&nbsp;&nbsp;
+                    <span class="bigfont">
+                        <a class="imdblink" href="https://www.imdb.com/title/tt0095953/" target="_blank">8.0</a></span><span class="brightsmallfont">/10</span> &nbsp;
+                    <br><span class="brightsmallfont">481,494 Ratings&nbsp;</span>
+                </span><div class="brr"><br><br><br><br><br><br><br><br><br><br><br></div>
+                <div class="number">
+                    75 |
+                </div>
+                <div class="moviename">
+                    <span class="bigfont"><mark class="moviemark">&nbsp;RAIN MAN&nbsp;</mark></span><br><br><span class="smallfont"><mark class="moviemark">&nbsp;BARRY LEVINSON | 1988&nbsp;</mark></span><br>
+                    <span class="smallfont"><mark class="countrymark">&nbsp;US | Drama/Melodrama&nbsp;</mark></span>
+                </div>
+            </div>
+            
+
+            <div class="rightmovie" style="background-image: url(https://www.indiewire.com/wp-content/uploads/2017/07/the-big-lebowski-e1520362797168.jpg),url(nopic.png);">
+                <br>
+                <span class="star">
+                    <a class="imdbstar" href="https://www.imdb.com/title/tt0824662/" target="_blank">               
+                    <i class="fa fa-star fa-2x" aria-hidden="true"></i></a>&nbsp;&nbsp;
+                    <span class="bigfont">
+                        <a class="imdblink" href="https://www.imdb.com/title/tt0824662/" target="_blank">8.1</a></span><span class="smallfont">/10</span> &nbsp;
+                    <br><span class="smallfont">747,853 Ratings&nbsp;</span>
+                </span><div class="brr"><br><br><br><br><br><br><br><br><br><br><br></div>
+                <div class="number">
+                    76 |
+                </div>
+                <div class="moviename">
+                    <span class="bigfont"><mark class="moviemark">&nbsp;THE BIG LEBOWSKY&nbsp;</mark></span><br><br><span class="smallfont"><mark class="moviemark">&nbsp;ETHAN COEN | 1998&nbsp;</mark></span><br>
+                    <span class="smallfont"><mark class="countrymark">&nbsp;US | Comedy/Crime&nbsp;</mark></span>
+                </div>
+            </div>
+
+           </div>
+           <hr class="break">
+
+           <div class="Row" >
+            <div class="leftmovie" style="background-image: url(https://images.squarespace-cdn.com/content/v1/5c75dfa97d0c9166551f52b1/1554481709701-N4SLKL178HO5IM4NOJK5/ke17ZwdGBToddI8pDm48kDFgITcRoterXoQdllT5ciUUqsxRUqqbr1mOJYKfIPR7LoDQ9mXPOjoJoqy81S2I8N_N4V1vUb5AoIIIbLZhVYxCRW4BPu10St3TBAUQYVKcV7ZyRJyI8bwZiMJRrgPaAKqUaXS0tb9q_dTyNVba_kClt3J5x-w6oTQbPni4jzRa/image-asset.jpeg?format=1500w), url(nopic.png);">
+                <br>
+                <span class="star">
+                    <a class="imdbstar" href="https://www.imdb.com/title/tt1454029/" target="_blank">               
+                    <i class="fa fa-star fa-2x" aria-hidden="true"></i></a>&nbsp;&nbsp;
+                    <span class="bigfont">
+                        <a class="imdblink" href="https://www.imdb.com/title/tt1454029/" target="_blank">8.0</a></span><span class="brightsmallfont">/10</span> &nbsp;
+                    <br><span class="brightsmallfont">434,767 Ratings&nbsp;</span>
+                </span><div class="brr"><br><br><br><br><br><br><br><br><br><br><br></div>
+                <div class="number">
+                    77 |
+                </div>
+                <div class="moviename">
+                    <span class="bigfont"><mark class="moviemark">&nbsp;THE HELP&nbsp;</mark></span><br><br><span class="smallfont"><mark class="moviemark">&nbsp;TATE TAYLOR | 2011&nbsp;</mark></span><br>
+                    <span class="smallfont"><mark class="countrymark">&nbsp;US | Drama/Romance&nbsp;</mark></span>
+                </div>
+            </div>
+            
+
+            <div class="rightmovie" style="background-image: url(https://www.teahub.io/photos/full/3-30377_matrix-movie.jpg),url(nopic.png);">
+                <br>
+                <span class="star">
+                    <a class="imdbstar" href="https://www.imdb.com/title/tt0133093/mediaviewer/rm525547776/" target="_blank">               
+                    <i class="fa fa-star fa-2x" aria-hidden="true"></i></a>&nbsp;&nbsp;
+                    <span class="bigfont">
+                        <a class="imdblink" href="https://www.imdb.com/title/tt0133093/mediaviewer/rm525547776/" target="_blank">8.7</a></span><span class="smallfont">/10</span> &nbsp;
+                    <br><span class="smallfont">1,715,836 Ratings&nbsp;</span>
+                </span><div class="brr"><br><br><br><br><br><br><br><br><br><br><br></div>
+                <div class="number">
+                    78 |
+                </div>
+                <div class="moviename">
+                    <span class="bigfont"><mark class="moviemark">&nbsp;THE MATRIX&nbsp;</mark></span><br><br><span class="smallfont"><mark class="moviemark">&nbsp;LANA WACHOWSKY | 1999&nbsp;</mark></span><br>
+                    <span class="smallfont"><mark class="countrymark">&nbsp;US | Sci-Fi/Action&nbsp;</mark></span>
+                </div>
+            </div>
+
+           </div>
+           <hr class="break">
+
+           <div class="Row" >
+            <div class="leftmovie" style="background-image: url(https://upl.roob.la/2019/09/The-Talented-Mr-Ripley-1999.jpg), url(nopic.png);">
+                <br>
+                <span class="star">
+                    <a class="imdbstar" href="https://www.imdb.com/title/tt0000134119/" target="_blank">               
+                    <i class="fa fa-star fa-2x" aria-hidden="true"></i></a>&nbsp;&nbsp;
+                    <span class="bigfont">
+                        <a class="imdblink" href="https://www.imdb.com/title/tt0000134119/" target="_blank">7.4</a></span><span class="brightsmallfont">/10</span> &nbsp;
+                    <br><span class="brightsmallfont">185,828 Ratings&nbsp;</span>
+                </span><div class="brr"><br><br><br><br><br><br><br><br><br><br><br></div>
+                <div class="number">
+                    79 |
+                </div>
+                <div class="moviename">
+                    <span class="bigfont shaw"><mark class="moviemark">&nbsp;THE TALENTED MR RIPLEY&nbsp;</mark></span><br><br><span class="smallfont"><mark class="moviemark">&nbsp;ANTHONY MINGHELLA | 1999&nbsp;</mark></span><br>
+                    <span class="smallfont"><mark class="countrymark">&nbsp;US | Thriller/Crime&nbsp;</mark></span>
+                </div>
+            </div>
+            
+
+            <div class="rightmovie" style="background-image: url(https://www.indiewire.com/wp-content/uploads/2017/07/the-big-lebowski-e1520362797168.jpg),url(nopic.png);">
+                <br>
+                <span class="star">
+                    <a class="imdbstar" href="https://www.imdb.com/title/tt0133093/mediaviewer/rm525547776/" target="_blank">               
+                    <i class="fa fa-star fa-2x" aria-hidden="true"></i></a>&nbsp;&nbsp;
+                    <span class="bigfont">
+                        <a class="imdblink" href="https://www.imdb.com/title/tt0133093/mediaviewer/rm525547776/" target="_blank">8.7</a></span><span class="smallfont">/10</span> &nbsp;
+                    <br><span class="smallfont">1,715,836 Ratings&nbsp;</span>
+                </span><div class="brr"><br><br><br><br><br><br><br><br><br><br><br></div>
+                <div class="number">
+                    78 |
+                </div>
+                <div class="moviename">
+                    <span class="bigfont"><mark class="moviemark">&nbsp;THE MATRIX&nbsp;</mark></span><br><br><span class="smallfont"><mark class="moviemark">&nbsp;LANA WACHOWSKY | 1999&nbsp;</mark></span><br>
+                    <span class="smallfont"><mark class="countrymark">&nbsp;US | Sci-Fi/Action&nbsp;</mark></span>
+                </div>
+            </div>
+
+           </div>
+           <hr class="break">
+
+
+
+     </div>
+     <br><div class="tempdesc" style="color: red; text-align: center; font-style: italic;">More movies will be added soon!</div>
+     <br><br>
+     <div class="pages">
+        <button class="page1" title="page 1" onclick="location.href='index.html'" type="button">1</button>
+        <button class="page1" title="page 2" onclick="location.href='page2.html'" type="button">2</button>
+        <button class="page1" title="page 3" onclick="location.href='page3.html'" type="button">3</button>
+        <button class="page1" title="page 4">4</button>
+     </div><br><br>
+     <footer><br><br><br>
+            If you guys think i missed any movie, feel free to suggest them <a href="mailto:yadhuc700@gmail.com" class="footera">right here</a><br><br>
+            <span class="contact">CONTACT ME @<br><br></span>
+        <div class="social">&nbsp;&nbsp;
+        <a class="soc" href="https://instagram.com/y.adhu_?utm_medium=copy_link" target="_blank"><i class="fa fa-instagram fa-3x" aria-hidden="true"></i></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <a class ="soc" href="https://www.facebook.com/profile.php?id=100008938141960" target="_blank"><i class="fa fa-facebook fa-3x" aria-hidden="true"></i></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+         <a class = "soc" href="https://twitter.com/Yadhu31493782" target="_blank"><i class="fa fa-twitter fa-3x" aria-hidden="true"></i></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+         </div><br>
+         &copy;<span class="endbliss">BLIZZ</span>
+        </footer>
+</body>
+</html>

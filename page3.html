@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Best 75 Movies (3) | BLIZZ</title>
+	<link rel="icon" type="image/x-icon" href="blizz.png">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0;">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat|Ubuntu" rel="stylesheet">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
+	<script src="https://kit.fontawesome.com/1230b940db.js" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="pages.css">
+	<link rel="stylesheet" media="only screen and (max-device-width: 480px)" href="pages.css">
+	<style>
+		body{
+            font-family: "Montserrat";
+         }
+         ::selection {
+  			color: white;
+  			background: red;
+		}
+		*{
+			margin: 0;
+		}
+	</style>
+	<script>
+		function search(string)
+		{
+        window.find(string);
+        }
+	</script>
+</head>
+<body>
+	<div class="TopRow" id="navbar">
+	<br>
+		<span class = "blizz" id="0">
+			BLIZZ 
+		</span>
+		<span style="float: right; margin-right: 2em;">
+			<input type="text" placeholder="Search.." id="search">
+			<input type="button" value="Go" onclick="search(document.getElementById('search').value)">
+		</span>
+		<select class="jump" onchange="location = this.value;">
+	  	<option class="options" value="#0"> Jump To... </option>
+	  	<option class="options" value="#1"> 41-44 </option>
+	  	<option class="options" value="#2"> 45-48</option>
+	  	<option class="options" value="#3"> 49-52</option>
+	  	<option class="options" value="#4"> 53-56</option>
+	  	<option class="options" value="#5"> 57-60</option>
+	  	</select>
+	  	<br><br></div>
+<script>
+window.onscroll = function() {myFunction()};
+
+var navbar = document.getElementById("navbar");
+var sticky = navbar.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+</script>
+<br>
+<div class="heading">
+		<span class="test">AWESOME, INTERESTING, ELEGANT CINEMA.</span>
+		<a href="signin.html"><button class="sign">SIGN IN</button></a>
+	</div><br><br>
+	<div class="pages">
+	 	<button class="page1" title="page 1" onclick="location.href='index.html'" type="button">1</button>
+	 	<button class="page1" title="page 2" onclick="location.href='page2.html'" type="button">2</button>
+	 	<button class="page1" title="page 3" id="1">3</button>
+	 	<button class="page1" title="page 4" onclick="location.href='page4.html'" type="button">4</button>
+	 </div>
+	 <hr class="break"><br>
+	 <div class="movielist">
+	 	<div class="Row" >
+			<div class="leftmovie" style="background-image: url(https://images-na.ssl-images-amazon.com/images/S/sgp-catalog-images/region_US/wb-11053-Full-Image_GalleryBackground-en-US-1484000561520._SX1080_.jpg), url(nopic.png);">
+				<br>
+				<span class="star">
+					<a class="imdbstar" href="https://www.imdb.com/title/tt0073486/" target="_blank">				
+					<i class="fa fa-star fa-2x" aria-hidden="true"></i></a>&nbsp;&nbsp;
+					<span class="bigfont">
+						<a class="imdblink" href="https://www.imdb.com/title/tt0073486/" target="_blank">8.6</a></span><span class="smallfont">/10</span> &nbsp;
+					<br><span class="smallfont">917,733 Ratings&nbsp;</span>
+				</span><div class="brr"><br><br><br><br><br><br><br><br><br><br><br></div>
+				<div class="number">
+					41 |
+				</div>
+				<div class="moviename">
+					<span class="bigfont shaw"><mark class="moviemark">&nbsp;<span class="cuckoos">ONE FLEW OVER THE CUCKOO'S NEST</span>&nbsp;</mark></span><br><br><span class="smallfont"><mark class="moviemark">&nbsp;MILOS FORMAN | 1975&nbsp;</mark></span><br>
+					<span class="smallfont"><mark class="countrymark">&nbsp;US | Drama/Comedy-Drama&nbsp;</mark></span>
+				</div>
+			</div>
+			
+
+			<div class="rightmovie" style="background-image: url(https://cdn.vox-cdn.com/thumbor/TBurdseALgfH3TbTJq5jnTpwILY=/0x0:1920x1005/fit-in/1200x630/cdn.vox-cdn.com/uploads/chorus_asset/file/20007566/GHI_HowlsMovingCastle_Select1.jpg),url(nopic.png);">
+				<br>
+				<span class="star">
+					<a class="imdbstar" href="https://www.imdb.com/title/tt0347149/" target="_blank">				
+					<i class="fa fa-star fa-2x" aria-hidden="true"></i></a>&nbsp;&nbsp;
+					<span class="bigfont">
+						<a class="imdblink" href="https://www.imdb.com/title/tt0347149/" target="_blank">8.2</a></span><span class="brightsmallfont">/10</span> &nbsp;
+					<br><span class="brightsmallfont">333,679 Ratings&nbsp;</span>
+				</span><div class="brr"><br><br><br><br><br><br><br><br><br><br><br></div>
+				<div class="number">
+					42 |
+				</div>
+				<div class="moviename">
+					<span class="bigfont shaw"><mark class="moviemark">&nbsp;HOWL'S MOVING CASTLE&nbsp;</mark></span><br><br><span class="smallfont"><mark class="moviemark">&nbsp;HAYAO MIYAZAKI | 2004&nbsp;</mark></span><br>
+					<span class="smallfont"><mark class="countrymark">&nbsp;JAPAN | Family/Adventure&nbsp;</mark></span>
+				</div>
+			</div>
+
+		   </div>
+
+
+		<hr class="break">
+
+		<div class="Row" >
+			<div class="leftmovie" style="background-image: url(https://cms.qz.com/wp-content/uploads/2018/07/mad-max-fury-road-e1532441923113.jpg?quality=75&strip=all&w=1200&h=900&crop=1), url(nopic.png);">
+				<br>
+				<span class="star">
+					<a class="imdbstar" href="https://www.imdb.com/title/tt1392190/" target="_blank">				
+					<i class="fa fa-star fa-2x" aria-hidden="true"></i></a>&nbsp;&nbsp;
+					<span class="bigfont">
+						<a class="imdblink" href="https://www.imdb.com/title/tt1392190/" target="_blank">8.1</a></span><span class="brightsmallfont">/10</span> &nbsp;
+					<br><span class="brightsmallfont">881,933 Ratings&nbsp;</span>
+				</span><div class="brr"><br><br><br><br><br><br><br><br><br><br><br></div>
+				<div class="number">
+					43 |
+				</div>
+				<div class="moviename">
+					<span class="bigfont"><mark class="moviemark">&nbsp;MAD MAX FURY ROAD&nbsp;</mark></span><br><br><span class="smallfont"><mark class="moviemark">&nbsp;GEORGE MILLER | 2015&nbsp;</mark></span><br>
+					<span class="smallfont"><mark class="countrymark">&nbsp;AUSTRALIA | Action/Adventure&nbsp;</mark></span>
+				</div>
+			</div>
+			
+
+			<div class="rightmovie" style="background-image: url(https://www.gbhbl.com/wp-content/uploads/2018/02/Rec-Pic-1.jpg),url(nopic.png);">
+				<br>
+				<span class="star">
+					<a class="imdbstar" href="https://www.imdb.com/title/tt1038988/" target="_blank">				
+					<i class="fa fa-star fa-2x" aria-hidden="true"></i></a>&nbsp;&nbsp;
+					<span class="bigfont">
+						<a class="imdblink" href="https://www.imdb.com/title/tt1038988/" target="_blank">7.4</a></span><span class="brightsmallfont">/10</span> &nbsp;
+					<br><span class="brightsmallfont">165,535 Ratings&nbsp;</span>
+				</span><div class="brr"><br><br><br><br><br><br><br><br><br><br><br></div>
+				<div class="number">
+					44 |
+				</div>
+				<div class="moviename">
+					<span class="bigfont"><mark class="moviemark">&nbsp;REC&nbsp;</mark></span><br><br><span class="smallfont"><mark class="moviemark">&nbsp;JAUME BELAGUERO | 2007&nbsp;</mark></span><br>
+					<span class="smallfont" id="2"><mark class="countrymark">&nbsp;SPAIN | Horror/Thriller&nbsp;</mark></span>
+				</div>
+			</div>
+
+		 </div>
+
+
+		<hr class="break">
+
+		<div class="Row" >
+			<div class="leftmovie" style="background-image: url(https://www.indiewire.com/wp-content/uploads/2020/05/tenet-2.png), url(nopic.png);">
+				<br>
+				<span class="star">
+					<a class="imdbstar" href="https://www.imdb.com/title/tt6723592/" target="_blank">				
+					<i class="fa fa-star fa-2x" aria-hidden="true"></i></a>&nbsp;&nbsp;
+					<span class="bigfont">
+						<a class="imdblink" href="https://www.imdb.com/title/tt6723592/" target="_blank">7.5</a></span><span class="brightsmallfont">/10</span> &nbsp;
+					<br><span class="brightsmallfont">281,062 Ratings&nbsp;</span>
+				</span><div class="brr"><br><br><br><br><br><br><br><br><br><br><br></div>
+				<div class="number">
+					45 |
+				</div>
+				<div class="moviename">
+					<span class="bigfont"><mark class="moviemark">&nbsp;TENET&nbsp;</mark></span><br><br><span class="smallfont"><mark class="moviemark">&nbsp;CHRISTOPHER NOLAN | 2020&nbsp;</mark></span><br>
+					<span class="smallfont"><mark class="countrymark">&nbsp;US | Action/Sci-Fi&nbsp;</mark></span>
+				</div>
+			</div>
+			
+
+			<div class="rightmovie" style="background-image: url(https://images-na.ssl-images-amazon.com/images/S/sgp-catalog-images/region_US/wb-883316186657-Full-Image_GalleryBackground-en-US-1483993559264._SX1080_.jpg),url(nopic.png);">
+				<br>
+				<span class="star">
+					<a class="imdbstar" href="https://www.imdb.com/title/tt1119646/" target="_blank">				
+					<i class="fa fa-star fa-2x" aria-hidden="true"></i></a>&nbsp;&nbsp;
+					<span class="bigfont">
+						<a class="imdblink" href="https://www.imdb.com/title/tt1119646/" target="_blank">7.7</a></span><span class="smallfont">/10</span> &nbsp;
+					<br><span class="smallfont">717,395 Ratings&nbsp;</span>
+				</span><div class="brr"><br><br><br><br><br><br><br><br><br><br><br></div>
+				<div class="number">
+					46 |
+				</div>
+				<div class="moviename">
+					<span class="bigfont"><mark class="moviemark">&nbsp;THE HANGOVER&nbsp;</mark></span><br><br><span class="smallfont"><mark class="moviemark">&nbsp;TODD PHILIPS | 2009&nbsp;</mark></span><br>
+					<span class="smallfont"><mark class="countrymark">&nbsp;US | Comedy&nbsp;</mark></span>
+				</div>
+			</div>
+
+		 </div>
+
+
+		<hr class="break">
+
+		<div class="Row" >
+			<div class="leftmovie" style="background-image: url(https://m.media-amazon.com/images/M/MV5BODY0ODE2M2UtNzg3NS00MjFlLTg5MDItZjAyNDEyYmY4MzkxXkEyXkFqcGdeQXVyNjkwOTg4MTA@._V1_.jpg), url(nopic.png);">
+				<br>
+				<span class="star">
+					<a class="imdbstar" href="https://www.imdb.com/title/tt2203308/" target="_blank">				
+					<i class="fa fa-star fa-2x" aria-hidden="true"></i></a>&nbsp;&nbsp;
+					<span class="bigfont">
+						<a class="imdblink" href="https://www.imdb.com/title/tt2203308/" target="_blank">7.0</a></span><span class="brightsmallfont">/10</span> &nbsp;
+					<br><span class="brightsmallfont">26,654 Ratings&nbsp;</span>
+				</span><div class="brr"><br><br><br><br><br><br><br><br><br><br><br></div>
+				<div class="number">
+					47 |
+				</div>
+				<div class="moviename">
+					<span class="bigfont"><mark class="moviemark">&nbsp;AASHIQUI 2&nbsp;</mark></span><br><br><span class="smallfont"><mark class="moviemark">&nbsp;MOHIT SURI | 2013&nbsp;</mark></span><br>
+					<span class="smallfont"><mark class="countrymark">&nbsp;INDIA | Romance/Musical&nbsp;</mark></span>
+				</div>
+			</div>
+			
+
+			<div class="rightmovie" style="background-image: url(https://static.toiimg.com/photo/msid-71582877/71582877.jpg?386411),url(nopic.png);">
+				<br>
+				<span class="star">
+					<a class="imdbstar" href="https://www.imdb.com/title/tt11322920/" target="_blank">				
+					<i class="fa fa-star fa-2x" aria-hidden="true"></i></a>&nbsp;&nbsp;
+					<span class="bigfont">
+						<a class="imdblink" href="https://www.imdb.com/title/tt11322920/" target="_blank">7.9</a></span><span class="brightsmallfont">/10</span> &nbsp;
+					<br><span class="brightsmallfont">4,003 Ratings&nbsp;</span>
+				</span><div class="brr"><br><br><br><br><br><br><br><br><br><br><br></div>
+				<div class="number">
+					48 |
+				</div>
+				<div class="moviename">
+					<span class="bigfont shaw"><mark class="moviemark">&nbsp;AYYAPPANUM KOSHIYUM&nbsp;</mark></span><br><br><span class="smallfont"><mark class="moviemark">&nbsp;SACHI | 2020&nbsp;</mark></span><br>
+					<span class="smallfont" id="3"><mark class="countrymark">&nbsp;INDIA | Thriller/Drama&nbsp;</mark></span>
+				</div>
+			</div>
+
+		 </div>
+
+
+		<hr class="break">
+
+		<div class="Row" >
+			<div class="leftmovie" style="background-image: url(https://amblin.com/wp-content/uploads/2020/04/eurotrip_2004_hero.jpg), url(nopic.png);">
+				<br>
+				<span class="star">
+					<a class="imdbstar" href="https://www.imdb.com/title/tt0356150/" target="_blank">				
+					<i class="fa fa-star fa-2x" aria-hidden="true"></i></a>&nbsp;&nbsp;
+					<span class="bigfont">
+						<a class="imdblink" href="https://www.imdb.com/title/tt0356150/" target="_blank">6.6</a></span><span class="brightsmallfont">/10</span> &nbsp;
+					<br><span class="brightsmallfont">195,168 Ratings&nbsp;</span>
+				</span><div class="brr"><br><br><br><br><br><br><br><br><br><br><br></div>
+				<div class="number">
+					49 |
+				</div>
+				<div class="moviename">
+					<span class="bigfont"><mark class="moviemark">&nbsp;EUROTRIP&nbsp;</mark></span><br><br><span class="smallfont"><mark class="moviemark">&nbsp;ALEC BERGER | 2004&nbsp;</mark></span><br>
+					<span class="smallfont"><mark class="countrymark">&nbsp;US | Comedy&nbsp;</mark></span>
+				</div>
+			</div>
+			
+
+			<div class="rightmovie" style="background-image: url(https://api.time.com/wp-content/uploads/2014/10/gone-girl-df-05063_05054_comp5_rgb.jpg),url(nopic.png);">
+				<br>
+				<span class="star">
+					<a class="imdbstar" href="https://www.imdb.com/title/tt2267998/" target="_blank">				
+					<i class="fa fa-star fa-2x" aria-hidden="true"></i></a>&nbsp;&nbsp;
+					<span class="bigfont">
+						<a class="imdblink" href="https://www.imdb.com/title/tt2267998/" target="_blank">8.1</a></span><span class="smallfont">/10</span> &nbsp;
+					<br><span class="smallfont">859,271 Ratings&nbsp;</span>
+				</span><div class="brr"><br><br><br><br><br><br><br><br><br><br><br></div>
+				<div class="number">
+					50 |
+				</div>
+				<div class="moviename">
+					<span class="bigfont"><mark class="moviemark">&nbsp;GONE GIRL&nbsp;</mark></span><br><br><span class="smallfont"><mark class="moviemark">&nbsp;DAVID FINCHER | 2014&nbsp;</mark></span><br>
+					<span class="smallfont"><mark class="countrymark">&nbsp;US | Thriller/Mystery&nbsp;</mark></span>
+				</div>
+			</div>
+
+		 </div>
+
+
+		<hr class="break">
+
+		<div class="Row" >
+			<div class="leftmovie" style="background-image: url(http://wpvip.ted.com/wp-content/uploads/sites/2/2014/07/i-origins-still-2.jpg), url(nopic.png);">
+				<br>
+				<span class="star">
+					<a class="imdbstar" href="https://www.imdb.com/title/tt2884206/" target="_blank">				
+					<i class="fa fa-star fa-2x" aria-hidden="true"></i></a>&nbsp;&nbsp;
+					<span class="bigfont">
+						<a class="imdblink" href="https://www.imdb.com/title/tt2884206/" target="_blank">7.4</a></span><span class="brightsmallfont">/10</span> &nbsp;
+					<br><span class="brightsmallfont">115,570 Ratings&nbsp;</span>
+				</span><div class="brr"><br><br><br><br><br><br><br><br><br><br><br></div>
+				<div class="number">
+					51 |
+				</div>
+				<div class="moviename">
+					<span class="bigfont"><mark class="moviemark">&nbsp;I ORIGINS&nbsp;</mark></span><br><br><span class="smallfont"><mark class="moviemark">&nbsp;MIKE CAHILL | 2014&nbsp;</mark></span><br>
+					<span class="smallfont" id="4"><mark class="countrymark">&nbsp;US | Sci-Fi/Romance&nbsp;</mark></span>
+				</div>
+			</div>
+			
+
+			<div class="rightmovie" style="background-image: url(https://wallpapercave.com/wp/wp1867309.jpg),url(nopic.png);">
+				<br>
+				<span class="star">
+					<a class="imdbstar" href="https://www.imdb.com/title/tt2911666/" target="_blank">				
+					<i class="fa fa-star fa-2x" aria-hidden="true"></i></a>&nbsp;&nbsp;
+					<span class="bigfont">
+						<a class="imdblink" href="https://www.imdb.com/title/tt2911666/" target="_blank">7.4</a></span><span class="brightsmallfont">/10</span> &nbsp;
+					<br><span class="brightsmallfont">538,552 Ratings&nbsp;</span>
+				</span><div class="brr"><br><br><br><br><br><br><br><br><br><br><br></div>
+				<div class="number">
+					52 |
+				</div>
+				<div class="moviename">
+					<span class="bigfont"><mark class="moviemark">&nbsp;JOHN WICK&nbsp;</mark></span><br><br><span class="smallfont"><mark class="moviemark">&nbsp;CHAD STAHELSKI | 2014&nbsp;</mark></span><br>
+					<span class="smallfont"><mark class="countrymark">&nbsp;US | Action/Thriller&nbsp;</mark></span>
+				</div>
+			</div>
+
+		 </div>
+
+
+		<hr class="break">
+
+		<div class="Row" >
+			<div class="leftmovie" style="background-image: url(https://content.internetvideoarchive.com/content/hdphotos/6974/006974/006974_939x528_212460_034.jpg), url(nopic.png);">
+				<br>
+				<span class="star">
+					<a class="imdbstar" href="https://www.imdb.com/title/tt1488555/" target="_blank">				
+					<i class="fa fa-star fa-2x" aria-hidden="true"></i></a>&nbsp;&nbsp;
+					<span class="bigfont">
+						<a class="imdblink" href="https://www.imdb.com/title/tt1488555/" target="_blank">6.3</a></span><span class="brightsmallfont">/10</span> &nbsp;
+					<br><span class="brightsmallfont">167,518 Ratings&nbsp;</span>
+				</span><div class="brr"><br><br><br><br><br><br><br><br><br><br><br></div>
+				<div class="number">
+					53 |
+				</div>
+				<div class="moviename">
+					<span class="bigfont"><mark class="moviemark">&nbsp;THE CHANGE UP&nbsp;</mark></span><br><br><span class="smallfont"><mark class="moviemark">&nbsp;DAVID DOBKIN | 2011&nbsp;</mark></span><br>
+					<span class="smallfont"><mark class="countrymark">&nbsp;US | Comedy/Fantasy&nbsp;</mark></span>
+				</div>
+			</div>
+			
+
+			<div class="rightmovie" style="background-image: url(https://kpbs.media.clients.ellingtoncms.com/img/croppedphotos/2014/12/24/ig2_0.jpg),url(nopic.png);">
+				<br>
+				<span class="star">
+					<a class="imdbstar" href="https://www.imdb.com/title/tt2084970/" target="_blank">				
+					<i class="fa fa-star fa-2x" aria-hidden="true"></i></a>&nbsp;&nbsp;
+					<span class="bigfont">
+						<a class="imdblink" href="https://www.imdb.com/title/tt2084970/" target="_blank">8.0</a></span><span class="smallfont">/10</span> &nbsp;
+					<br><span class="smallfont">684,900 Ratings&nbsp;</span>
+				</span><div class="brr"><br><br><br><br><br><br><br><br><br><br><br></div>
+				<div class="number">
+					54 |
+				</div>
+				<div class="moviename">
+					<span class="bigfont"><mark class="moviemark">&nbsp;THE IMITATION GAME&nbsp;</mark></span><br><br><span class="smallfont"><mark class="moviemark">&nbsp;MORTEN TYLDUM | 2014&nbsp;</mark></span><br>
+					<span class="smallfont"><mark class="countrymark">&nbsp;US | War/Drama&nbsp;</mark></span>
+				</div>
+			</div>
+
+		 </div>
+
+
+		<hr class="break">
+
+		<div class="Row" >
+			<div class="leftmovie" style="background-image: url(https://media.vanityfair.com/photos/5b16a04623f287081510eaa8/master/pass/the-truman-show-anniversary-lede.jpg), url(nopic.png);">
+				<br>
+				<span class="star">
+					<a class="imdbstar" href="https://www.imdb.com/title/tt0120382/" target="_blank">				
+					<i class="fa fa-star fa-2x" aria-hidden="true"></i></a>&nbsp;&nbsp;
+					<span class="bigfont">
+						<a class="imdblink" href="https://www.imdb.com/title/tt0120382/" target="_blank">8.1</a></span><span class="brightsmallfont">/10</span> &nbsp;
+					<br><span class="brightsmallfont">939,180 Ratings&nbsp;</span>
+				</span><div class="brr"><br><br><br><br><br><br><br><br><br><br><br></div>
+				<div class="number">
+					55 |
+				</div>
+				<div class="moviename">
+					<span class="bigfont"><mark class="moviemark">&nbsp;THE TRUMAN SHOW&nbsp;</mark></span><br><br><span class="smallfont"><mark class="moviemark">&nbsp;PETER WEIR | 1998&nbsp;</mark></span><br>
+					<span class="smallfont"><mark class="countrymark">&nbsp;US | Drama/Sci-Fi&nbsp;</mark></span>
+				</div>
+			</div>
+			
+
+			<div class="rightmovie" style="background-image: url(https://variety.com/wp-content/uploads/2019/08/the-sixth-sense.jpg),url(nopic.png);">
+				<br>
+				<span class="star">
+					<a class="imdbstar" href="https://www.imdb.com/title/tt0167404/" target="_blank">				
+					<i class="fa fa-star fa-2x" aria-hidden="true"></i></a>&nbsp;&nbsp;
+					<span class="bigfont">
+						<a class="imdblink" href="https://www.imdb.com/title/tt0167404/" target="_blank">8.1</a></span><span class="smallfont">/10</span> &nbsp;
+					<br><span class="smallfont">911,345 Ratings&nbsp;</span>
+				</span><div class="brr"><br><br><br><br><br><br><br><br><br><br><br></div>
+				<div class="number">
+					56 |
+				</div>
+				<div class="moviename">
+					<span class="bigfont"><mark class="moviemark">&nbsp;THE SIXTH SENSE&nbsp;</mark></span><br><br><span class="smallfont"><mark class="moviemark">&nbsp;NIGHT SHYAMALAN | 1999&nbsp;</mark></span><br>
+					<span class="smallfont" id="5"><mark class="countrymark">&nbsp;US | Drama/Sci-Fi&nbsp;</mark></span>
+				</div>
+			</div>
+
+		 </div>
+
+
+		<hr class="break">
+
+		<div class="Row" >
+			<div class="leftmovie" style="background-image: url(https://images-na.ssl-images-amazon.com/images/G/01/digital/video/hero/Movies/Top250/B000I186FW_vforvendetta_UXWB1._SX1080_.jpg), url(nopic.png);">
+				<br>
+				<span class="star">
+					<a class="imdbstar" href="https://www.imdb.com/title/tt0434409/" target="_blank">				
+					<i class="fa fa-star fa-2x" aria-hidden="true"></i></a>&nbsp;&nbsp;
+					<span class="bigfont">
+						<a class="imdblink" href="https://www.imdb.com/title/tt0434409/" target="_blank">8.2</a></span><span class="brightsmallfont">/10</span> &nbsp;
+					<br><span class="brightsmallfont">1,032,450 Ratings&nbsp;</span>
+				</span><div class="brr"><br><br><br><br><br><br><br><br><br><br><br></div>
+				<div class="number">
+					57 |
+				</div>
+				<div class="moviename">
+					<span class="bigfont"><mark class="moviemark">&nbsp;V FOR VENDATTA&nbsp;</mark></span><br><br><span class="smallfont"><mark class="moviemark">&nbsp;JAMES MCTIEGUE | 2005&nbsp;</mark></span><br>
+					<span class="smallfont"><mark class="countrymark">&nbsp;UK | Action/Thriller&nbsp;</mark></span>
+				</div>
+			</div>
+			
+
+			<div class="rightmovie" style="background-image: url(https://www.inquirer.com/resizer/tSp__W8O9fJ7mVZwejpECUHLdhQ=/1400x932/smart/arc-anglerfish-arc2-prod-pmn.s3.amazonaws.com/public/YLE3IDTRRFEAVJVV4VGNJOTNHQ.jpg),url(nopic.png);">
+				<br>
+				<span class="star">
+					<a class="imdbstar" href="https://www.imdb.com/title/tt2975578/" target="_blank">				
+					<i class="fa fa-star fa-2x" aria-hidden="true"></i></a>&nbsp;&nbsp;
+					<span class="bigfont">
+						<a class="imdblink" href="https://www.imdb.com/title/tt2975578/" target="_blank">6.4</a></span><span class="brightsmallfont">/10</span> &nbsp;
+					<br><span class="brightsmallfont">138,417 Ratings&nbsp;</span>
+				</span><div class="brr"><br><br><br><br><br><br><br><br><br><br><br></div>
+				<div class="number">
+					58 |
+				</div>
+				<div class="moviename">
+					<span class="bigfont"><mark class="moviemark">&nbsp;THE PURGE:ANARCHY&nbsp;</mark></span><br><br><span class="smallfont"><mark class="moviemark">&nbsp;JAMES DEMONACO | 2014&nbsp;</mark></span><br>
+					<span class="smallfont"><mark class="countrymark">&nbsp;US | Action/Horror&nbsp;</mark></span>
+				</div>
+			</div>
+
+		 </div>
+
+
+		<hr class="break">
+
+		<div class="Row" >
+			<div class="leftmovie" style="background-image: url(https://i0.wp.com/bloody-disgusting.com/wp-content/uploads/2016/01/Synchronicity.jpg?resize=1000%2C600&ssl=1), url(nopic.png);">
+				<br>
+				<span class="star">
+					<a class="imdbstar" href="https://www.imdb.com/title/tt2049543/" target="_blank">				
+					<i class="fa fa-star fa-2x" aria-hidden="true"></i></a>&nbsp;&nbsp;
+					<span class="bigfont">
+						<a class="imdblink" href="https://www.imdb.com/title/tt2049543/" target="_blank">5.5</a></span><span class="brightsmallfont">/10</span> &nbsp;
+					<br><span class="brightsmallfont">10,209 Ratings&nbsp;</span>
+				</span><div class="brr"><br><br><br><br><br><br><br><br><br><br><br></div>
+				<div class="number">
+					59 |
+				</div>
+				<div class="moviename">
+					<span class="bigfont"><mark class="moviemark">&nbsp;SYNCHRONICITY&nbsp;</mark></span><br><br><span class="smallfont"><mark class="moviemark">&nbsp;JACOB JENTRY | 2015&nbsp;</mark></span><br>
+					<span class="smallfont"><mark class="countrymark">&nbsp;US | Sci-Fi/Thriller&nbsp;</mark></span>
+				</div>
+			</div>
+			
+
+			<div class="rightmovie" style="background-image: url(https://www.denverpost.com/wp-content/uploads/2017/05/news-service-s3-amazonaws-com-film-wimpykid-review-ad-c-11e7-8854-21f359183e8c.jpg),url(nopic.png);">
+				<br>
+				<span class="star">
+					<a class="imdbstar" href="https://www.imdb.com/title/tt1196141/" target="_blank">				
+					<i class="fa fa-star fa-2x" aria-hidden="true"></i></a>&nbsp;&nbsp;
+					<span class="bigfont">
+						<a class="imdblink" href="https://www.imdb.com/title/tt1196141/" target="_blank">6.2</a></span><span class="brightsmallfont">/10</span> &nbsp;
+					<br><span class="brightsmallfont">42,860 Ratings&nbsp;</span>
+				</span><div class="brr"><br><br><br><br><br><br><br><br><br><br><br></div>
+				<div class="number">
+					60 |
+				</div>
+				<div class="moviename">
+					<span class="bigfont"><mark class="moviemark">&nbsp;DIARY OF A WIMPY KID&nbsp;</mark></span><br><br><span class="smallfont"><mark class="moviemark">&nbsp;THOR FREUDENTHAL | 2010&nbsp;</mark></span><br>
+					<span class="smallfont"><mark class="countrymark">&nbsp;US | Family/Comedy&nbsp;</mark></span>
+				</div>
+			</div>
+
+		 </div>
+
+
+		<hr class="break">
+
+		
+	 </div>
+	 <br>
+	 <div class="pages">
+	 	<button class="page1" title="page 1" onclick="location.href='index.html'" type="button">1</button>
+	 	<button class="page1" title="page 2" onclick="location.href='page2.html'" type="button">2</button>
+	 	<button class="page1" title="page 3">3</button>
+	 	<button class="page1" title="page 4" onclick="location.href='page4.html'" type="button">4</button>
+	 </div><br><br>
+	 <footer><br><br><br>
+			If you guys think i missed any movie, feel free to suggest them <a href="mailto:yadhuc700@gmail.com" class="footera">right here</a><br><br>
+			<span class="contact">CONTACT ME @<br><br></span>
+		<div class="social">&nbsp;&nbsp;
+		<a class="soc" href="https://instagram.com/y.adhu_?utm_medium=copy_link" target="_blank"><i class="fa fa-instagram fa-3x" aria-hidden="true"></i></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		<a class ="soc" href="https://www.facebook.com/profile.php?id=100008938141960" target="_blank"><i class="fa fa-facebook fa-3x" aria-hidden="true"></i></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+   		 <a class = "soc" href="https://twitter.com/Yadhu31493782" target="_blank"><i class="fa fa-twitter fa-3x" aria-hidden="true"></i></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+   		 </div><br>
+   		 &copy;<span class="endbliss">BLIZZ</span>
+		</footer>
+</body>
+</html>

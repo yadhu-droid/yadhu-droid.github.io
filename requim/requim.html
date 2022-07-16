@@ -1,0 +1,776 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>
+		Requiem For A Dream (2000) | BLIZZ
+	</title>
+	<link rel="icon" type="image/x-icon" href="../blizz.png">
+	<meta name="viewport" content="width=device-width, initial-scale=0.5">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat|Ubuntu" rel="stylesheet">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
+	<script src="https://kit.fontawesome.com/1230b940db.js" crossorigin="anonymous"></script>
+	<style>
+		body {font-family: Segoe UI; margin: 0;}
+		.blizz {
+			font-weight: bold;
+			font-size: 22px;
+			padding-top: 2em;
+			text-decoration: none;
+			cursor: pointer;
+			color: black;
+		}
+		::selection {
+  			color: white;
+  			background: red;
+		}
+		.TopRow {
+			padding-bottom: 0.2em;
+		}
+		img.logo {
+	            object-fit: cover;
+  				border-radius: 50%;
+    			height: 16px;
+    			width: 20px;
+		}
+		.TopRow input[type=text] {
+    			font-size: 20px;
+    			border: none;
+    			padding-left: 1em;
+    			border-left: solid;
+    			border-radius: 15px;
+    	}
+    	.TopRow input[type=text]:hover {
+    		background-color: #fafcb1;
+    	}
+    	.TopRow input[type=button] {
+    		padding-top: 5px;
+    		padding-left: 8px;
+    		padding-right: 8px;
+    		padding-bottom: 3px;
+    		border: none;
+    		border-radius: 10px;
+    	}
+    	.TopRow input[type=button]:hover {
+    		background-color: #0cf;
+    		cursor: pointer;
+    	}
+    	hr.top {
+    		border-top: 1px solid;
+    		border-color: #e0e0de;
+    	}
+    	div.heading {
+    		text-align: center; 
+    		color:  #626663; 
+    		font-size: 25px; 
+    		font-weight: bold;
+    	}
+    	.heading:hover {
+    		color: black;
+    	}
+    	.mainImage{
+    		height: 540px; 
+    		width: 100%; 
+    		background-color: black;
+    		background-image: url(main9.jpg); 
+    		background-repeat: no-repeat;
+            background-size: 65% 100%;
+    		background-position: 70% 50%;
+    		color: white;
+    		font-size: 25px;
+    		font-weight: bold;
+    	}
+    	.youtube {
+    		font-size: 15px;
+    		text-decoration: none;
+    		color: #626663; 
+    	}
+    	.youtube:hover{
+    		text-decoration: underline;
+    		color: white;
+    	}
+    	.fa-play-circle-o{ 
+    		size: 15px;
+    		text-decoration: none;
+    		color: #626663; 
+    	}
+    	.fa-play-circle-o:hover{
+    		color: white;
+    	}
+    	.fa-star{
+    		color: white;
+    	}
+    	.ratingBG {
+    		color: #626663; 
+    		font-size: 20px;
+    	}
+    	.direct {
+    		font-weight: normal;
+    	    font-size: 18px;
+    	}
+    	.genre {
+    		font-weight: normal;
+    		font-size: 18px;
+    		color: #626663; 
+    	}
+    	.fa-clock-o {
+    		color: #626663; 
+    	}
+    	.column {
+    		float: left;
+    		width: 25%;
+    		text-align: center;
+    		font-size: 15px;
+    		color: #626663;
+    	}
+    	.row:after {
+    		content: "";
+    		display: table;
+    		clear: both;
+    	}
+    	.award-desc {
+    		font-weight: normal;
+    		color: #626663;
+    	}
+    	ul {
+    		list-style-type: none;
+    	}
+    	li {
+    		float: left;
+    		padding-left: 12px;
+    	}
+    	img {
+    		max-height: 100%;
+    		max-width: 100%;
+    		border-radius: 40px 0 40px 0;
+    	}
+    	.castimage {
+    		height: 170px;
+    		width: 163px;
+    	}
+    	.castimage:hover {
+    		opacity: 0.9;
+    	}
+    	div.name:hover {
+    		text-decoration: underline;
+    		color: #626663;
+    	}
+    	.castName {
+    		color: #626663;
+    		font-size: 18px;
+    		font-weight: bolder;
+    		padding-left: 8px;
+    	}
+    	.crewrole {
+    		color: #999999;
+    		padding-left: 8px;
+    		font-size: 15px;
+    		font-weight: bold;
+    	}
+    	.ExtraLarge {
+    		font-size: 30px;
+    	}
+    	.Reviews{
+    		clear: both;
+    		background-color: #faf0f9;
+    	}
+    	.smallheight {
+    		line-height: 16px;
+    	}
+    	.largeheight {
+    		line-height: 30px;
+    	}
+    	.subhead {
+    		color:#626663; 
+    		font-weight: bold;
+    		font-size: 20px;
+    	}
+    	.showall {
+    		float: right; 
+    		font-size: 15px;
+    	    color:#626663; 
+    		font-weight: bold;
+    	}
+    	.showall1{
+    		float: right; 
+    		font-size: 15px;
+    	    color:#626663; 
+    		font-weight: bold;
+    		padding-right: 1em;
+    	}
+    	#star{
+    		color: black;
+    	}
+    	#nostar{
+    		color: #bababa;
+    	}
+    	.review1 {
+    		float: left;
+    		width: 33%;
+    	}
+    	.reviewhead {
+    		text-align: center;
+    		font-size: 50px;
+    		font-family: Newyork;
+    		padding: 1em 1em 0 1em;
+    	}
+    	@font-face{
+    		font-family: Newyork;
+    		src:url("../chomsky.otf") format("opentype");
+    	}
+    	.reviewdesc {
+    		padding:0 10px 0 10px;
+    		font-size: 20px;
+    		font-family: "Montserrat";
+    	}
+    	.reviewdesc:after{
+    		content: "";  
+    		display: block;
+   			margin: 0 auto; 
+    		width: 99%; 
+    		padding-top: 20px;
+    		border-bottom: 3px solid black;
+    	}
+    	.author {
+    		float: left;
+    	}
+    	.last {
+    		padding-top: 10px;
+    	}
+    	.authorreal {
+    		padding-left: 8px;
+    		font-size: 18px;
+    		font-weight: bolder;
+    	}
+    	.nodec {
+    		text-decoration: none;
+    		color: #526663; 
+    	}
+    	.nodec:hover{
+    		text-decoration: underline;
+    	}
+    	.nodecx{
+    		text-decoration: none;
+    		color: white; 
+    	}
+    	.reviewhead2 {
+    		text-align: center;
+    		font-size: 50px;
+    		font-family: Rolling;
+    		padding: 1em 1em 0 1em;
+    	}
+    	@font-face{
+    		font-family: Rolling;
+    		src:url("../rolling.ttf") format("opentype");
+    	}
+    	.reviewhead3{
+    		text-align: center;
+    		font-size: 50px;
+    		padding: 1em 1em 0 1em;
+    		font-family: "Empire";
+    	}
+    	@font-face{
+    		font-family: Empire;
+    		src:url("../Empire.ttf") format("opentype");
+    	}
+    	.siterate {
+    		display: flex;
+    	}
+    	.rate{
+    		float: left;
+    		padding-left: 1em;
+    		width: 15%;
+    		text-align: center;
+    		font-family: "Audiowide", sans-serif;
+    		font-size: 25px;
+    		font-weight: bolder;
+    	}
+    	.overall {
+    		text-align: center;
+    		font-family: "Audiowide", sans-serif;
+    		font-size: 25px;
+    		font-weight: bolder;
+    		position: relative;
+    	}
+    	.overall-circle{
+    		font-family: "Audiowide", sans-serif;
+    		font-weight: bolder;
+    		height: 100px;
+    		width: 100px;
+    		border-radius: 50%;
+    		background-color: #31f705;
+    		font-size: 28px;
+    		color: white;
+    	}
+    	.fa-question-circle-o{
+    		cursor: pointer;
+    	}
+    	.rateimg{
+    		height: 100px;
+    		width: 100px;
+    		border-radius: 20%;
+    	}
+    	.rateimg:hover {
+    		opacity: 80%;
+    	}
+    	.ratex{
+    		color: black;
+    	}
+    	.metacritiq{
+    		height: 100px;
+    		width: 100px;
+    		border-radius: 20%;
+    		background-color: #31f705;
+    		font-size: 28px;
+    		text-decoration: none;
+    		color: white;
+    	}
+    	.metacritiq:hover{
+    		opacity: 0.8;
+    	}
+    	.circle{
+    		border-radius: 50%;
+    	}
+    	.small{
+    		font-size: 15px;
+    		color: #526663;    		
+    	}
+    	.small:hover {
+    		color: black;
+    	}
+    	.black:hover{
+    		text-decoration-color: black;
+    	}
+    	.review_me {
+    		text-align: center;
+    		font-size: 24px;
+    		font-family: "Montserrat";
+    		margin: 0 3em 0 3em;
+    		background-color: #fffec2;
+    		padding: 10px 20px 10px 20px;
+    	}
+    	.watchnow {
+    		float: left;
+    		width: 14%;
+    		color: white;
+    		padding-left: 2em;
+    		padding-right: 2em;
+    		height: 220px;
+    	}
+    	.white {
+    		color: white;
+    	}
+    	.channels {
+    		height: 100px;
+    		width: 150px;
+    		border-radius: 20px;
+    	}
+    	.channels:hover{
+    		border: solid yellow;
+    		opacity: 0.9;
+    	}
+    	.watchdesc {
+    		text-align: center;
+    	}
+    	.hover:hover {
+    		color: white;
+    	}
+    	.leftinfo {
+    		text-align: center;
+    		float: left;
+    		width: 24%;
+    		padding-left: 1em;
+    	}
+    	.que {
+    		font-size: 20px;
+    		color: #626663;
+    		font-weight: bolder;
+    	}
+    	.ans {
+    		color: #626663;
+    	}
+    	footer{
+    		font-size: 20px;
+    		background-color: black;
+    		color: white;
+    		text-align: center;
+    		font-weight: bold;
+    	}
+    	.bye {
+    		font-size: 25px;
+    		color: white;
+    		text-decoration: none;
+    	}
+    	.sign{
+    		float: right;
+    		padding:1em;
+    		background-color: black;
+    		color: white;
+    		font-size: 10px;
+    		font-weight: bold;
+    		font-family: "Montserrat";
+    		cursor: pointer;
+    		border-radius: 20px;
+    	}
+    	.sign:hover {
+    		background-color: white;
+    		color: black;
+    		box-shadow:0px 0px 0px 2px black inset;
+    		font-weight: bold;
+    	}
+    	.synopsis{
+    		margin-left: 3em;
+    		margin-right: 3em;
+    		padding-left: 3em;
+    		padding-right: 3em;
+    		border-left:3px solid #0066ff;
+    		border-right:3px solid #ff3300;
+    		font-size: 21px;
+    	}
+    	@media screen and (-webkit-min-device-pixel-ratio:0) {
+	    input[type='range'] {
+	      overflow: hidden;
+	      width: 100px;
+	      -webkit-appearance: none;
+	      background-color: #fff;
+	    }
+	    
+	    input[type='range']::-webkit-slider-runnable-track {
+	      height: 10px;
+	      -webkit-appearance: none;
+	      color: #fff;
+	    }
+	    
+	    input[type='range']::-webkit-slider-thumb {
+	      width: 0px;
+	      -webkit-appearance: none;
+	      height: 10px;
+	      background: #000;
+	      box-shadow: -80px 0 0 80px #43e533;
+	    }
+    }   	
+	</style>
+	<script>
+        function search(string)
+        {
+        window.find(string);
+        }
+    </script>
+</head>
+<body class="body">
+	<div class="TopRow">
+		<span>
+			<a class="blizz" href="../index.html">BLIZZ</a> 
+			<img src="../blizz.png" class="logo">
+		</span>
+		<span style="float: right; margin-right: 2em;">
+			<input type="text" placeholder="Search.." id="search">
+			<input type="button" value="Go" onclick="search(document.getElementById('search').value)">
+		</span>
+		<hr class="top">
+		<br>
+	<div class="heading">
+		AWESOME, INTERESTING, ELEGANT CINEMA.
+		<a href="../signin.html"><button class="sign">SIGN IN</button></a>
+	</div><br>
+	<div class="mainImage" ><br>
+		<div style="line-height: 8px;">
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		<i class="fa fa-star" aria-hidden="true"></i>&nbsp;8.3<span class="ratingBG">/10</span>
+		<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="font-size: 15px; color: #626663;"> 777,749 Ratings</span><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+	   </div>
+	   <span class="ExtraLarge">&nbsp;REQUIEM FOR A DREAM</span><br><br>
+	   <div class="smallheight">
+	   <span class="direct">&nbsp;Directed By <strong>Darren Aronofsky</strong></span><br>
+	   <span class="direct">&nbsp;United States, 2000</span>
+	   </div><br>
+	   <div class="largeheight">
+	   <div class="genre">&nbsp;Drama/Psychological Thriller</div>&nbsp;
+	   <i class="fa fa-clock-o" aria-hidden="true"></i><span class="genre">&nbsp;110'</span>
+	   <div>
+	   		&nbsp;&nbsp;<a href="https://www.youtube.com/watch?v=QBwzN4v1vA0" target="_blank"><i class="fa fa-play-circle-o" aria-hidden="true"></i></a>&nbsp;<span class="youtube"><a class="youtube" href="https://www.youtube.com/watch?v=QBwzN4v1vA0" target="_blank">Watch trailer on YouTube</a></span>
+	   </div>
+	   </div>
+	</div>
+	<div><br><br>&nbsp;
+		<span class="subhead">SYNOPSIS</span><br><br>
+		<div class="synopsis">Imaginatively evoking the inner landscape of human beings longing to connect, to love and feel loved, the film is a parable of happiness gloriously found and tragically lost. "Requiem for a Dream" tells parallel stories that are linked by the relationship between the lonely, widowed Sara Goldfarb and her sweet but aimless son, Harry. The plump Sara, galvanized by the prospect of appearing on a TV game show, has started on a dangerous diet regimen to beautify herself for a national audience.</div><br><br><br>
+	</div>
+	<div style="background-color:#e6e6e6;">
+		<div class="Awards"><br><br><br>&nbsp;
+			<span class="subhead">AWARDS AND FESTIVALS</span>
+			<span class="showall"><a class="nodec" href="awards9.html">Show all (109)</a></span><br><br><br>
+			<div class="row">
+				<div class="column"><span style="font-weight: bolder;">Cannes Film Festival</span><br>
+				<span class="award-desc">2000</span>
+				</div>
+				<div class="column"><span style="font-weight: bolder;">Academy Awards</span><br>
+				<span class="award-desc">2001 | Nominee: Best Actress in a Leading Role</span>
+				</div>
+				<div class="column"><span style="font-weight: bolder;">Independent Spirit Awards</span><br>
+				<span class="award-desc">2001 | 2 wins including: Best Female Lead</span><br>
+                <span class="award-desc">2001 | 3 nominations including: Best Feature</span>
+				</div>
+				<div class="column"><span style="font-weight: bolder;">Toronto International Film Festival</span><br>
+				<span class="award-desc">2000</span><br>
+                <span class="award-desc">2020</span>
+				</div>
+			</div>
+		</div><br><br><br>
+		<div class="Cast">&nbsp;
+			<span class="subhead">CAST AND CREW</span>
+			<span class="showall"><a href="cast4.html" class="nodec">Show all(20)</a></span><br><br><br>
+			<ul>
+					<li>
+						<div class="castimage">
+						<img src="https://pyxis.nymag.com/v1/imgs/faf/77d/1353ed5dc8e06c036f6e6fffa78fe6961e-21-darren-aronofsky-new.rsquare.w1200.jpg" alt="Darren Aronofsky" onerror="this.onerror=null;this.src='../noimage.png';" title="Darren Aronofsky">
+				        </div>   <div class="name">
+					<span class="castName">DARREN<br>&nbsp;ARONOFSKY</span> </div>
+						<div class="crewrole">DIRECTOR</div> 
+					</li>
+
+					<li>
+						<div class="castimage">
+						<img src="https://us.toluna.com/dpolls_images/2016/02/10/67fac22b-f037-42fc-a1e1-1f65867934ff_x300.jpg" alt="jared Leto" onerror="this.onerror=null;this.src='../noimage.png';" title="Jared Leto">
+				        </div>
+				<span class="castName">JARED LETO</span>
+						<div class="crewrole">HARRY GOLDFARB</div>
+					</li>
+
+					<li>
+						<div class="castimage">
+						<img src="https://www.thehandbook.com/cdn-cgi/image/width=300,height=300,fit=cover,q=85/https://files.thehandbook.com/uploads/2014/10/3303640-jennifer_connelly3.jpg" alt="Jennifer Connelly" onerror="this.onerror=null;this.src='../noimage.png';" title="Jennifer Connelly">
+				        </div>
+				<span class="castName">JENNIFER CONNELLY</span>
+						<div class="crewrole">MARION SILVER</div>
+					</li>
+
+					<li>
+						<div class="castimage">
+						<img src="https://www.biography.com/.image/t_share/MTIwNjA4NjM0MDQ5MTAzMzcy/ellen-burstyn-9542388-1-402.jpg" alt="Ellen Burstyn" onerror="this.onerror=null;this.src='../noimage.png';" title="Ellen Burstyn">
+				        </div>
+				<span class="castName">ELLEN BURSTYN</span>
+						<div class="crewrole">SARA GOLDFERB</div>
+					</li>
+
+					<li>
+						<div class="castimage">
+						<img src="https://www.biography.com/.image/ar_1:1%2Cc_fill%2Ccs_srgb%2Cfl_progressive%2Cq_auto:good%2Cw_1200/MTE1ODA0OTcxOTI1ODAwNDYx/marlon-wayans-17191548-1-402.jpg" alt="Marlon Wayans" onerror="this.onerror=null;this.src='../noimage.png';" title="Marlon Wayans">
+				        </div>
+				<span class="castName">MARLON WAYANS</span>
+						<div class="crewrole">TYRONE C.LOVE</div>
+					</li>
+
+					<li>
+						<div class="castimage">
+						<img src="https://www.irishtimes.com/polopoly_fs/1.1925340.1410431232!/image/image.jpg_gen/derivatives/ratio_1x1_w1200/image.jpg" alt="Clint Mancell" onerror="this.onerror=null;this.src='../noimage.png';" title="Clint
+                        Mancell">
+				        </div>
+				<span class="castName">CLINT MANCELL</span>
+						<div class="crewrole">MUSIC</div>
+					</li>
+
+					<li>
+						<div class="castimage">
+						<img src="https://static.wikia.nocookie.net/dccu/images/4/4e/Beau_Flynn.jpg/revision/latest/top-crop/width/360/height/360?cb=20191122084141" alt="Beau_Flynn" onerror="this.onerror=null;this.src='../noimage.png';" title="Beau_Flynn">
+				        </div>
+				<span class="castName">BEAU FLYNN</span>
+						<div class="crewrole">EXE. PRODUCER</div>
+					</li>
+
+					<li>
+						<div class="castimage">
+						<img src="https://in.bmscdn.com/iedb/artist/images/website/poster/large/scott-franklin-1081598-09-08-2017-15-29-17.jpg" alt="Scott Franklin" onerror="this.onerror=null;this.src='../noimage.png';" title="Scott Franklin">
+				        </div>
+				<span class="castName">SCOTT FRANKLIN</span>
+						<div class="crewrole">CO PRODUCER</div>
+					</li>
+			</ul>
+		</div>
+	</div>
+	<div class="Reviews"><br><br>
+		<span class="subhead">&nbsp;CRITICS REVIEWS&nbsp;&nbsp;&nbsp;<i id="star" class="fa fa-star" aria-hidden="true"></i>&nbsp;<i id="star" class="fa fa-star" aria-hidden="true"></i>&nbsp;<i id="star" class="fa fa-star" aria-hidden="true"></i>&nbsp;<i id="star" class="fa fa-star" aria-hidden="true"></i>&nbsp;<i id="nostar" class="fa fa-star" aria-hidden="true"></i></span>
+			<span class="showall"><a class="nodec" href="critic4.html">Show all(24)</a></span>
+		<br><br><br>
+		<div style="display: flex;">
+			<div class="review1">
+				<div class="reviewhead">NEW YORK TIMES</div><br><br>
+				<div class="reviewdesc">Mr. Aronofsky draws astonishing performances from his actors.<br><br></div>
+				<div class="last">
+					<div class="author"><span class="authorreal">ELVIS MITCHELL</span><br><span class="crewrole">January 1, 2000</span></div>
+				</div>
+			</div>
+			<div class="review1">
+				<div class="reviewhead2">ROLLING STONE</div><br><br>
+				<div class="reviewdesc">[It] may be a bummer to some audiences, so harsh is its view of the drug culture. But no one interested in the power and magic of movies should miss it.<br><br></div>
+				<div class="last">
+					<div class="author"><span class="authorreal">PETER TRAVERS</span><br><span class="crewrole">May 8, 2001</span></div>
+				</div></div>
+			<div class="review1">
+				<div class="reviewhead">AUSTIN CHRONICLE</div><br><br>
+				<div class="reviewdesc">Requiem for a Dream is like a late-night ghost story that can only be told with all the lights out, and which haunts the memory long after you've left the theatre.<br><br></div>
+				<div class="last">
+					<div class="author"><span class="authorreal">MICHAEL WILMINGTON</span><br><span class="crewrole">January 1, 2000</span></div>
+				</div>
+			</div>
+		</div><br>
+	</div>
+	<div style="background-color:#e6e6e6;"><br><br>
+		<span class="subhead">&nbsp;RATINGS</span><br><br><br>
+		<div class="siterate">
+			<div class="rate">
+				<a class="" href="https://www.imdb.com/title/tt0180093/" target="_blank"><img class="rateimg" src="../imdb.png"></a><br>
+				<span class="ratex">IMDB</span><br><br><br>
+				<input type="range" value="8.3" min="0" max="10" id="myRange"><br>
+				<a class="nodec black" href="https://www.imdb.com/title/tt0180093/" target="_blank"><span class="ratex">8.3/10</span></a><br>
+				<a class="nodec" href="https://www.imdb.com/title/tt0180093/" target="_blank"><span class="ratex small">777,749 Ratings</span></a>
+			</div>
+			<div class="rate">
+				<a class="" href="https://www.rottentomatoes.com/m/requiem_for_a_dream" target="_blank"><img style="width: 120px;" class="rateimg" src="../fresh.png"></a><br>
+				<span class="ratex">TOMATOMETER</span><br><br><br>
+				<input type="range" value="79" min="0" max="100" id="myRange"><br>
+				<a class="nodec black" href="https://www.rottentomatoes.com/m/requiem_for_a_dream" target="_blank"><span class="ratex">79%</span></a><br>
+				<a class="nodec" href="https://www.rottentomatoes.com/m/requiem_for_a_dream" target="_blank"><span class="ratex small">138 Reviews</span></a>
+			</div>
+			<div class="rate">
+				<a class="" href="https://www.rottentomatoes.com/m/requiem_for_a_dream" target="_blank"><img class="rateimg" src="../toaud.png"></a><br>
+				<span class="ratex">AUDIENCE SCORE</span><br><br>
+				<input type="range" value="93" min="0" max="100" id="myRange"><br>
+				<a class="nodec black" href="https://www.rottentomatoes.com/m/requiem_for_a_dream" target="_blank"><span class="ratex">93%</span></a><br>
+				<a class="nodec" href="https://www.rottentomatoes.com/m/requiem_for_a_dream" target="_blank"><span class="ratex small">250,000+ Ratings</span></a>
+			</div>
+			<div class="rate">
+				<img class="rateimg" src="../googleco.png"><br>
+				<span class="ratex">GOOGLE AUDIENCE</span><br><br>
+				<input type="range" value="91" min="0" max="100" id="myRange"><br>
+				<span class="ratex">91%</span><br>
+			</div>
+			<div class="rate">
+				<a class="nodecx" href="https://www.metacritic.com/movie/requiem-for-a-dream" target="_blank">
+					<div style="padding-left: 2.5em;">
+						<div class="metacritiq">
+						<br>68
+						</div>
+					</div>
+				</a>
+				<span class="ratex">METASCORE</span><br><br><br>
+				<input type="range" value="68" min="0" max="100" id="myRange"><br>
+				<span class="ratex small">Based on</span><br>
+				<a class="nodec" href="https://www.metacritic.com/movie/requiem-for-a-dream" target="_blank"><span class="ratex small">32 Critic Reviews</span></a>
+			</div>
+			<div class="rate">
+				<a class="nodecx" href="https://www.metacritic.com/movie/requiem-for-a-dream" target="_blank">
+					<div style="padding-left: 2.5em;">
+						<div class="metacritiq circle">
+						<br>8.8
+						</div>
+					</div>
+				</a>
+				<span class="ratex">META-USER SCORE</span><br><br>
+				<input type="range" value="88" min="0" max="100" id="myRange"><br>
+				<span class="ratex small">Based on</span><br>
+				<a class="nodec" href="https://www.metacritic.com/movie/requiem-for-a-dream" target="_blank"><span class="ratex small">805 Ratings</span></a>
+			</div>
+		</div><br><br><br><br>
+		<div class="overall">
+				OVERALL RATINGS&nbsp;<i class="fa fa-question-circle-o" aria-hidden="true" title="Average of the above ratings (out of 10)"></i><br><br>
+				<div style="margin-left: 46.6%;">
+				<div class="overall-circle">
+					<br>8.3
+				</div>
+			    </div><br>
+		</div>
+	</div>
+	<div class="Reviews"><br><br>
+		&nbsp;<span class="subhead">MY TAKE</span>&nbsp;&nbsp;<i class="fa fa-user-secret fa-2x" aria-hidden="true"></i><br><br>
+		<div class="review_me">This movie is a masterpiece by David Lynch. I couldnt even understand the fundamental plot after watching it. It began like any typical thriller movie and advanced to something that needs to be re-watched to comprehend. <br><br>After comleting, I went for "Explanation" Videos in YouTube and other medias. And then, it struck me like lightning. It made sense now. That was the strength of this movie. It commenses as a detective movie and then takes a u-turn.<br><br>Kudos to Naomi Watts for her terrific acting. Even if the movie does'nt make sense at first, the psychodrama, mystery, surreal horror, black humour, and unexpected romance should keep you latched on to your seats. David Lynch said that this movie is open to interpretations. So, instead of pursuing the mass, you could make your own interpreted version of Mulholland Drive. Last but not least, Direction and Screenplay was over-the-top. Thereon watching you may wonder David Lynch was born to create such films.
+		</div><br><br>
+	</div>
+	<div class="watch" style="background-color:#000;"><br><br>
+		&nbsp;<span class="subhead white">WHERE TO WATCH</span><br><br><br><br>
+		<div style="display: flex;">
+		<div class="watchnow">
+			<a href="https://www.microsoft.com/en-us/p/requiem-for-a-dream/8d6kgwzl6128?ct=movie&ranMID=24542&ranEAID=TnL5HPStwNw&ranSiteID=TnL5HPStwNw-qU0Be3jVIotymZdseVpM0g&epi=TnL5HPStwNw-qU0Be3jVIotymZdseVpM0g&irgwc=1&OCID=AID2000142_aff_7593_1243925&tduid=%28ir__jg9s1leldckfqj03kk0sohzz2n2xu1boy6rvyrwq00%29%287593%29%281243925%29%28TnL5HPStwNw-qU0Be3jVIotymZdseVpM0g%29%28%29&irclickid=_jg9s1leldckfqj03kk0sohzz2n2xu1boy6rvyrwq00" target="_blank"><img src="../microsoft.jpg" class="channels"></a>
+			<div class="overall white"><br>
+			<a href="https://www.microsoft.com/en-us/p/requiem-for-a-dream/8d6kgwzl6128?ct=movie&ranMID=24542&ranEAID=TnL5HPStwNw&ranSiteID=TnL5HPStwNw-qU0Be3jVIotymZdseVpM0g&epi=TnL5HPStwNw-qU0Be3jVIotymZdseVpM0g&irgwc=1&OCID=AID2000142_aff_7593_1243925&tduid=%28ir__jg9s1leldckfqj03kk0sohzz2n2xu1boy6rvyrwq00%29%287593%29%281243925%29%28TnL5HPStwNw-qU0Be3jVIotymZdseVpM0g%29%28%29&irclickid=_jg9s1leldckfqj03kk0sohzz2n2xu1boy6rvyrwq00" class="nodec white" target="_blank">MICROSOFT</a><br><span class="overall small hover">From &#8377;290</span>
+			</div>
+		</div>
+		<div class="watchnow">
+			<a href="https://www.amazon.com/gp/product/B004P8A7J2?tag=deciderrg-20" target="_blank"><img src="../amazon.jpg" class="channels"></a>
+			<div class="overall white"><br>
+			<a href="https://www.amazon.com/gp/product/B004P8A7J2?tag=deciderrg-20" class="nodec white" target="_blank">AMAZON</a><br><span class="overall small hover">Subscription</span>
+			</div>
+		</div>
+		<div class="watchnow">
+			<a href="https://www.vudu.com/content/movies/details/title/7120?cj=--100033829--5370367-_-vudu.com&cjevent=7b9f81beacec11eb83227c780a18050d&cjid=cj_14506175_100033829_93051X1604007Xa23a3498c91bbac26de7b374f8d09238&cjdata=MXxOfDB8WXww" target="_blank"><img src="../vudu.jpg" class="channels"></a>
+			<div class="overall white"><br>
+			<a href="https://www.vudu.com/content/movies/details/title/7120?cj=--100033829--5370367-_-vudu.com&cjevent=7b9f81beacec11eb83227c780a18050d&cjid=cj_14506175_100033829_93051X1604007Xa23a3498c91bbac26de7b374f8d09238&cjdata=MXxOfDB8WXww" target="_blank" class="nodec white">VUDU</a><br><span class="overall small hover">From &#8377;290</span>
+			</div>
+		</div>
+		<div class="watchnow">
+			<a href="https://www.hulu.com/movie/requiem-for-a-dream-cf0e744a-8262-4b42-a7fc-9b21260878ef" target="_blank"><img src="../hulu.png" class="channels"></a>
+			<div class="overall white"><br>
+			<a href="https://www.hulu.com/movie/requiem-for-a-dream-cf0e744a-8262-4b42-a7fc-9b21260878ef" target="_blank" class="nodec white">AMC
+			</a><br><span class="overall small hover">Subscription</span>
+			</div>
+		</div>
+		<div class="watchnow">
+			<a href="https://itunes.apple.com/us/movie/id281307971" target="_blank"><img src="../itune.jpg" class="channels"></a>
+			<div class="overall white"><br>
+			<a href="https://itunes.apple.com/us/movie/id281307971" target="_blank" class="nodec white">APPLE</a><br><span class="overall small hover">From &#8377;290</span>
+			</div>
+		</div>
+		<div class="watchnow">
+			<a href="https://play.google.com/store/movies/details?id=9FqvNfW64eQ" target="_blank"><img src="../gplay.png" class="channels"></a>
+			<div class="overall white"><br>
+			<a href="https://play.google.com/store/movies/details?id=9FqvNfW64eQ" target="_blank" class="nodec white">PLAY</a><br><span class="overall small hover">From &#8377;290</span>
+			</div>
+		</div>
+		<div class="watchnow">
+			<a href="https://www.airtelxstream.in/movies/requiem-for-a-dream/LIONSGATEPLAY_MOVIE_REQUIEMFORADREAMY2000M" target="_blank"><img src="../airtel.png" class="channels"></a>
+			<div class="overall white"><br>
+			<a href="https://www.airtelxstream.in/movies/requiem-for-a-dream/LIONSGATEPLAY_MOVIE_REQUIEMFORADREAMY2000M" target="_blank" class="nodec white">XSTREAM</a><br>
+			</div>
+		</div>
+		</div>
+	</div>
+	<div class="info" style="background-color:#e6e6e6;"><br><br>
+		&nbsp;<span class="subhead">MORE INFO</span><br><br><br><br>
+		<div style="display: flex;">
+		<div class="leftinfo">
+			<div class="que">Production companies :</div>
+			<div class="ans">Thousand Words<br>Protozoa Pictures</div>
+			<br>
+			<div class="que">Budget :</div>
+			<div class="ans">&#36;4.5 Million<br>(&#8377;33 Crores)</div>
+		</div>
+		<div class="leftinfo">
+			<div class="que">Distribution :</div>
+			<div class="ans">Artisan Entertainments</div>
+			<br>
+			<div class="que">Language :</div>
+			<div class="ans">English</div>
+		</div>
+		<div class="leftinfo">
+			<div class="que">Release Date :</div>
+			<div class="ans">May 14, 2000<br>(Cannes)<br>October 06, 2000<br>(United States)<br>November 03, 2000<br>(Canada)</div>
+		</div>
+		<div class="leftinfo">
+			<div class="que">Running Time :</div>
+			<div class="ans">110 Minutes</div>
+			<br>
+			<div class="que">Country :</div>
+			<div class="ans">United States</div>
+			<br>
+			<div class="que">Box Office :</div>
+			<div class="ans">&#36;7.4 Million<br>(&#8377;54 Crores)</div>
+		</div>
+	    </div><br><br>
+	</div>
+	<footer><br><br><br>
+           <a href="../index.html" class="bye"><i class="fa fa-home" aria-hidden="true"></i>&nbsp;BACK TO HOME</a><br>
+           <br>
+         &copy;BLIZZ
+        </footer>
+</body>
+</html>

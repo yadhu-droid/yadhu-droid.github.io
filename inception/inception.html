@@ -1,0 +1,776 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>
+		Inception (2010) | BLIZZ
+	</title>
+	<link rel="icon" type="image/x-icon" href="../blizz.png">
+	<meta name="viewport" content="width=device-width, initial-scale=0.5">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat|Ubuntu" rel="stylesheet">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
+	<script src="https://kit.fontawesome.com/1230b940db.js" crossorigin="anonymous"></script>
+	<style>
+		body {font-family: Segoe UI; margin: 0;}
+		.blizz {
+			font-weight: bold;
+			font-size: 22px;
+			padding-top: 2em;
+			text-decoration: none;
+			cursor: pointer;
+			color: black;
+		}
+		::selection {
+  			color: white;
+  			background: red;
+		}
+		.TopRow {
+			padding-bottom: 0.2em;
+		}
+		img.logo {
+	            object-fit: cover;
+  				border-radius: 50%;
+    			height: 16px;
+    			width: 20px;
+		}
+		.TopRow input[type=text] {
+    			font-size: 20px;
+    			border: none;
+    			padding-left: 1em;
+    			border-left: solid;
+    			border-radius: 15px;
+    	}
+    	.TopRow input[type=text]:hover {
+    		background-color: #fafcb1;
+    	}
+    	.TopRow input[type=button] {
+    		padding-top: 5px;
+    		padding-left: 8px;
+    		padding-right: 8px;
+    		padding-bottom: 3px;
+    		border: none;
+    		border-radius: 10px;
+    	}
+    	.TopRow input[type=button]:hover {
+    		background-color: #0cf;
+    		cursor: pointer;
+    	}
+    	hr.top {
+    		border-top: 1px solid;
+    		border-color: #e0e0de;
+    	}
+    	div.heading {
+    		text-align: center; 
+    		color:  #626663; 
+    		font-size: 25px; 
+    		font-weight: bold;
+    	}
+    	.heading:hover {
+    		color: black;
+    	}
+    	.mainImage{
+    		height: 540px; 
+    		width: 100%; 
+    		background-color: black;
+    		background-image: url(main3.jpg); 
+    		background-repeat: no-repeat;
+    		background-position: 60% 50%;
+            background-size: 68% 100%;
+    		color: white;
+    		font-size: 25px;
+    		font-weight: bold;
+    	}
+    	.youtube {
+    		font-size: 15px;
+    		text-decoration: none;
+    		color: #626663; 
+    	}
+    	.youtube:hover{
+    		text-decoration: underline;
+    		color: white;
+    	}
+    	.fa-play-circle-o{ 
+    		size: 15px;
+    		text-decoration: none;
+    		color: #626663; 
+    	}
+    	.fa-play-circle-o:hover{
+    		color: white;
+    	}
+    	.fa-star{
+    		color: white;
+    	}
+    	.ratingBG {
+    		color: #626663; 
+    		font-size: 20px;
+    	}
+    	.direct {
+    		font-weight: normal;
+    	    font-size: 18px;
+    	}
+    	.genre {
+    		font-weight: normal;
+    		font-size: 18px;
+    		color: #626663; 
+    	}
+    	.fa-clock-o {
+    		color: #626663; 
+    	}
+    	.column {
+    		float: left;
+    		width: 25%;
+    		text-align: center;
+    		font-size: 15px;
+    		color: #626663;
+    	}
+    	.row:after {
+    		content: "";
+    		display: table;
+    		clear: both;
+    	}
+    	.award-desc {
+    		font-weight: normal;
+    		color: #626663;
+    	}
+    	ul {
+    		list-style-type: none;
+    	}
+    	li {
+    		float: left;
+    		padding-left: 12px;
+    	}
+    	img {
+    		max-height: 100%;
+    		max-width: 100%;
+    		border-radius: 40px 0 40px 0;
+    	}
+    	.castimage {
+    		height: 170px;
+    		width: 163px;
+    	}
+    	.castimage:hover {
+    		opacity: 0.9;
+    	}
+    	div.name:hover {
+    		text-decoration: underline;
+    		color: #626663;
+    	}
+    	.castName {
+    		color: #626663;
+    		font-size: 18px;
+    		font-weight: bolder;
+    		padding-left: 8px;
+    	}
+    	.crewrole {
+    		color: #999999;
+    		padding-left: 8px;
+    		font-size: 15px;
+    		font-weight: bold;
+    	}
+    	.ExtraLarge {
+    		font-size: 30px;
+    	}
+    	.Reviews{
+    		clear: both;
+    		background-color: #faf0f9;
+    	}
+    	.smallheight {
+    		line-height: 16px;
+    	}
+    	.largeheight {
+    		line-height: 30px;
+    	}
+    	.subhead {
+    		color:#626663; 
+    		font-weight: bold;
+    		font-size: 20px;
+    	}
+    	.showall {
+    		float: right; 
+    		font-size: 15px;
+    	    color:#626663; 
+    		font-weight: bold;
+    	}
+    	.showall1{
+    		float: right; 
+    		font-size: 15px;
+    	    color:#626663; 
+    		font-weight: bold;
+    		padding-right: 1em;
+    	}
+    	#star{
+    		color: black;
+    	}
+    	#nostar{
+    		color: #bababa;
+    	}
+    	.review1 {
+    		float: left;
+    		width: 33%;
+    	}
+    	.reviewhead {
+    		text-align: center;
+    		font-size: 50px;
+    		font-family: Newyork;
+    		padding: 1em 1em 0 1em;
+    	}
+    	@font-face{
+    		font-family: Newyork;
+    		src:url("../chomsky.otf") format("opentype");
+    	}
+    	.reviewdesc {
+    		padding:0 10px 0 10px;
+    		font-size: 20px;
+    		font-family: "Montserrat";
+    	}
+    	.reviewdesc:after{
+    		content: "";  
+    		display: block;
+   			margin: 0 auto; 
+    		width: 99%; 
+    		padding-top: 20px;
+    		border-bottom: 3px solid black;
+    	}
+    	.author {
+    		float: left;
+    	}
+    	.last {
+    		padding-top: 10px;
+    	}
+    	.authorreal {
+    		padding-left: 8px;
+    		font-size: 18px;
+    		font-weight: bolder;
+    	}
+    	.nodec {
+    		text-decoration: none;
+    		color: #526663; 
+    	}
+    	.nodec:hover{
+    		text-decoration: underline;
+    	}
+    	.nodecx{
+    		text-decoration: none;
+    		color: white; 
+    	}
+    	.reviewhead2 {
+    		text-align: center;
+    		font-size: 50px;
+    		font-family: Rolling;
+    		padding: 1em 1em 0 1em;
+    	}
+    	@font-face{
+    		font-family: Rolling;
+    		src:url("../rolling.ttf") format("opentype");
+    	}
+    	.reviewhead3{
+    		text-align: center;
+    		font-size: 50px;
+    		padding: 1em 1em 0 1em;
+    		font-family: "Empire";
+    	}
+    	@font-face{
+    		font-family: Empire;
+    		src:url("../Empire.ttf") format("opentype");
+    	}
+    	.siterate {
+    		display: flex;
+    	}
+    	.rate{
+    		float: left;
+    		padding-left: 1em;
+    		width: 15%;
+    		text-align: center;
+    		font-family: "Audiowide", sans-serif;
+    		font-size: 25px;
+    		font-weight: bolder;
+    	}
+    	.overall {
+    		text-align: center;
+    		font-family: "Audiowide", sans-serif;
+    		font-size: 25px;
+    		font-weight: bolder;
+    		position: relative;
+    	}
+    	.overall-circle{
+    		font-family: "Audiowide", sans-serif;
+    		font-weight: bolder;
+    		height: 100px;
+    		width: 100px;
+    		border-radius: 50%;
+    		background-color: #31f705;
+    		font-size: 28px;
+    		color: white;
+    	}
+    	.fa-question-circle-o{
+    		cursor: pointer;
+    	}
+    	.rateimg{
+    		height: 100px;
+    		width: 100px;
+    		border-radius: 20%;
+    	}
+    	.rateimg:hover {
+    		opacity: 80%;
+    	}
+    	.ratex{
+    		color: black;
+    	}
+    	.metacritiq{
+    		height: 100px;
+    		width: 100px;
+    		border-radius: 20%;
+    		background-color: #31f705;
+    		font-size: 28px;
+    		text-decoration: none;
+    		color: white;
+    	}
+    	.metacritiq:hover{
+    		opacity: 0.8;
+    	}
+    	.circle{
+    		border-radius: 50%;
+    	}
+    	.small{
+    		font-size: 15px;
+    		color: #526663;    		
+    	}
+    	.small:hover {
+    		color: black;
+    	}
+    	.black:hover{
+    		text-decoration-color: black;
+    	}
+    	.review_me {
+    		text-align: center;
+    		font-size: 24px;
+    		font-family: "Montserrat";
+    		margin: 0 3em 0 3em;
+    		background-color: #fffec2;
+    		padding: 10px 20px 10px 20px;
+    	}
+    	.watchnow {
+    		float: left;
+    		width: 14%;
+    		color: white;
+    		padding-left: 2em;
+    		padding-right: 2em;
+    		height: 220px;
+    	}
+    	.white {
+    		color: white;
+    	}
+    	.channels {
+    		height: 100px;
+    		width: 150px;
+    		border-radius: 20px;
+    	}
+    	.channels:hover{
+    		border: solid yellow;
+    		opacity: 0.9;
+    	}
+    	.watchdesc {
+    		text-align: center;
+    	}
+    	.hover:hover {
+    		color: white;
+    	}
+    	.leftinfo {
+    		text-align: center;
+    		float: left;
+    		width: 24%;
+    		padding-left: 1em;
+    	}
+    	.que {
+    		font-size: 20px;
+    		color: #626663;
+    		font-weight: bolder;
+    	}
+    	.ans {
+    		color: #626663;
+    	}
+    	footer{
+    		font-size: 20px;
+    		background-color: black;
+    		color: white;
+    		text-align: center;
+    		font-weight: bold;
+    	}
+    	.bye {
+    		font-size: 25px;
+    		color: white;
+    		text-decoration: none;
+    	}
+    	.sign{
+    		float: right;
+    		padding:1em;
+    		background-color: black;
+    		color: white;
+    		font-size: 10px;
+    		font-weight: bold;
+    		font-family: "Montserrat";
+    		cursor: pointer;
+    		border-radius: 20px;
+    	}
+    	.sign:hover {
+    		background-color: white;
+    		color: black;
+    		box-shadow:0px 0px 0px 2px black inset;
+    		font-weight: bold;
+    	}
+        .synopsis{
+            margin-left: 3em;
+            margin-right: 3em;
+            padding-left: 3em;
+            padding-right: 3em;
+            border-left:3px solid #0066ff;
+            border-right:3px solid #ff3300;
+            font-size: 21px;
+        }
+    	@media screen and (-webkit-min-device-pixel-ratio:0) {
+	    input[type='range'] {
+	      overflow: hidden;
+	      width: 100px;
+	      -webkit-appearance: none;
+	      background-color: #fff;
+	    }
+	    
+	    input[type='range']::-webkit-slider-runnable-track {
+	      height: 10px;
+	      -webkit-appearance: none;
+	      color: #fff;
+	    }
+	    
+	    input[type='range']::-webkit-slider-thumb {
+	      width: 0px;
+	      -webkit-appearance: none;
+	      height: 10px;
+	      background: #000;
+	      box-shadow: -80px 0 0 80px #43e533;
+	    }
+    }   	
+	</style>
+	<script>
+        function search(string)
+        {
+        window.find(string);
+        }
+    </script>
+</head>
+<body class="body">
+	<div class="TopRow">
+		<span>
+			<a class="blizz" href="../index.html">BLIZZ</a> 
+			<img src="../blizz.png" class="logo">
+		</span>
+		<span style="float: right; margin-right: 2em;">
+			<input type="text" placeholder="Search.." id="search">
+			<input type="button" value="Go" onclick="search(document.getElementById('search').value)">
+		</span>
+		<hr class="top">
+		<br>
+	<div class="heading">
+		AWESOME, INTERESTING, ELEGANT CINEMA.
+		<a href="../signin.html"><button class="sign">SIGN IN</button></a>
+	</div><br>
+	<div class="mainImage" ><br>
+		<div style="line-height: 8px;">
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		<i class="fa fa-star" aria-hidden="true"></i>&nbsp;8.8<span class="ratingBG">/10</span>
+		<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="font-size: 15px; color: #626663;"> 2,074,627 Ratings</span><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+	   </div>
+	   <span class="ExtraLarge">&nbsp;INCEPTION</span><br><br>
+	   <div class="smallheight">
+	   <span class="direct">&nbsp;Directed By <strong>Christopher Nolan</strong></span><br>
+	   <span class="direct">&nbsp;United States, 2010</span>
+	   </div><br>
+	   <div class="largeheight">
+	   <div class="genre">&nbsp;Action/Sci-Fi</div>&nbsp;
+	   <i class="fa fa-clock-o" aria-hidden="true"></i><span class="genre">&nbsp;162'</span>
+	   <div>
+	   		&nbsp;&nbsp;<a href="https://www.youtube.com/watch?v=JE9z-gy4De4" target="_blank"><i class="fa fa-play-circle-o" aria-hidden="true"></i></a>&nbsp;<span class="youtube"><a class="youtube" href="https://www.youtube.com/watch?v=JE9z-gy4De4" target="_blank">Watch trailer on YouTube</a></span>
+	   </div>
+	   </div>
+	</div>
+    <div><br><br>&nbsp;
+        <span class="subhead">SYNOPSIS</span><br><br>
+        <div class="synopsis">Cobb steals information from his targets by entering their dreams. Saito offers to wipe clean Cobb's criminal history as payment for performing an inception on his sick competitor's son.</div><br><br><br>
+    </div>
+	<div style="background-color:#e6e6e6;">
+		<div class="Awards"><br><br><br>&nbsp;
+			<span class="subhead">AWARDS AND FESTIVALS</span>
+			<span class="showall"><a class="nodec" href="seeallawards3.html">Show all (359)</a></span><br><br><br>
+			<div class="row">
+				<div class="column"><span style="font-weight: bolder;">Academy Awards</span><br>
+				<span class="award-desc">2011 | 4 wins including: Best Achievement in Cinematography<br>2011 | 4 nominations including: Best Achievement in Art Direction</span>
+				</div>
+				<div class="column"><span style="font-weight: bolder;">Village Voice Film Poll</span><br>
+				<span class="award-desc">2010 | Winner: Worst Film</span>
+				</div>
+				<div class="column"><span style="font-weight: bolder;">American Film Institute Awards</span><br>
+				<span class="award-desc">2011 | Winner: Movie of the Year</span>
+				</div>
+				<div class="column"><span style="font-weight: bolder;">National Board of Review</span><br>
+				<span class="award-desc">2010 | Winner: Top Ten Films</span>
+				</div>
+			</div>
+		</div><br><br><br>
+		<div class="Cast">&nbsp;
+			<span class="subhead">CAST AND CREW</span>
+			<span class="showall"><a href="cast3.html" class="nodec">Show all(21)</a></span><br><br><br>
+			<ul>
+					<li>
+						<div class="castimage">
+						<a href="../cast/christopher.html"><img src="https://www.celebsfacts.com/wp-content/uploads/2019/09/Christopher-Nolan.jpg" alt="Christopher Nolan" onerror="this.onerror=null;this.src='../noimage.png';" title="Christopher Nolan"></a>
+				        </div>   <div class="name">
+					<span class="castName">CHRISTOPHER</span><br><span class="castName">NOLAN</span> </div>
+						<div class="crewrole">DIRECTOR</div> 
+					</li>
+
+					<li>
+						<div class="castimage">
+						<img src="https://cdn.britannica.com/s:250x250,c:crop/05/156805-050-4B632781/Leonardo-DiCaprio-2010.jpg" alt="Leonardo DeCaprio" onerror="this.onerror=null;this.src='../noimage.png';" title="Leonardo DeCaprio">
+				        </div>
+				<span class="castName">LEONARDO</span><br><span class="castName">DECAPRIO</span>
+						<div class="crewrole">COBB</div>
+					</li>
+
+					<li>
+						<div class="castimage">
+						<img src="https://www.irishtimes.com/polopoly_fs/1.2539651.1455801202!/image/image.jpg_gen/derivatives/ratio_1x1_w1200/image.jpg" alt="Ellen Page" onerror="this.onerror=null;this.src='../noimage.png';" title="Ellen Page">
+				        </div>
+				<span class="castName">ELLEN PAGE</span>
+						<div class="crewrole">ARIADNE</div>
+					</li>
+
+					<li>
+						<div class="castimage">
+						<img src="https://media1.popsugar-assets.com/files/thumbor/4SxU_HKFcoAo6HIUgQPK7ujD1y8/fit-in/1024x1024/filters:format_auto-!!-:strip_icc-!!-/2019/03/08/882/n/1922398/d4c3d9aa5c82cc50a2ea03.35033697_/i/Young-Joseph-Gordon-Levitt-Pictures.jpg" alt="Joseph Gordon" onerror="this.onerror=null;this.src='../noimage.png';" title="Joseph Gordon">
+				        </div>
+				<span class="castName">JOSEPH GORDON</span>
+						<div class="crewrole">ARTHUR</div>
+					</li>
+
+					<li>
+						<div class="castimage">
+						<img src="https://www.biography.com/.image/ar_1:1%2Cc_fill%2Ccs_srgb%2Cg_face%2Cq_auto:good%2Cw_300/MTE5NTU2MzE2NjUyOTk2MTA3/9th-annual-ves-awards---red-carpet.jpg" alt="Tom Hardy" onerror="this.onerror=null;this.src='../noimage.png';" title="Tom Hardy">
+				        </div>
+				<span class="castName">TOM HARDY</span>
+						<div class="crewrole">EAMES</div>
+					</li>
+
+					<li>
+						<div class="castimage">
+						<img src="https://static.wikia.nocookie.net/batman/images/a/a7/EmmaThomas.jpg/revision/latest/smart/width/200/height/200?cb=20150823153644" alt="Emma Thomas" onerror="this.onerror=null;this.src='../noimage.png';" title="Emma Thomas">
+				        </div>
+				<span class="castName">EMMA THOMAS</span>
+						<div class="crewrole">PRODUCER</div>
+					</li>
+
+					<li>
+						<div class="castimage">
+						<img src="https://thumbor.forbes.com/thumbor/fit-in/416x416/filters%3Aformat%28jpg%29/https%3A%2F%2Fspecials-images.forbesimg.com%2Fimageserve%2F5c76e2b24bbe6f3ddd7c5dd6%2F0x0.jpg%3Fbackground%3D000000%26cropX1%3D1011%26cropX2%3D3591%26cropY1%3D1226%26cropY2%3D3806" alt="thomas tull" onerror="this.onerror=null;this.src='../noimage.png';" title="thomas tull">
+				        </div>
+				<span class="castName">THOMAS TULL</span>
+						<div class="crewrole">PRODUCER</div>
+					</li>
+
+					<li>
+						<div class="castimage">
+						<img src="https://www.famousbirthdays.com/faces/pfister-wally-image.jpg" alt="Wally Pfister" onerror="this.onerror=null;this.src='../noimage.png';" title="Wally Pfister">
+				        </div>
+				<span class="castName">WALLY PFISTER</span>
+						<div class="crewrole">CINEMATOGRAPHY</div>
+					</li>
+			</ul>
+		</div>
+	</div>
+	<div class="Reviews"><br><br>
+		<span class="subhead">&nbsp;CRITICS REVIEWS&nbsp;&nbsp;&nbsp;<i id="star" class="fa fa-star" aria-hidden="true"></i>&nbsp;<i id="star" class="fa fa-star" aria-hidden="true"></i>&nbsp;<i id="star" class="fa fa-star" aria-hidden="true"></i>&nbsp;<i id="star" class="fa fa-star-half-o" aria-hidden="true"></i><i id="nostar" class="fa fa-star" aria-hidden="true"></i></span>
+			<span class="showall"><a class="nodec" href="critic3.html">Show all(24)</a></span>
+		<br><br><br>
+		<div style="display: flex;">
+			<div class="review1">
+				<div class="reviewhead">NEW YORK TIMES</div><br><br>
+				<div class="reviewdesc">Though there is a lot to see in Inception, there is nothing that counts as genuine vision. Mr. Nolan’s idea of the mind is too literal, too logical, too rule-bound to allow the full measure of madness -- the risk of real confusion, of delirium, of ineffable ambiguity -- that this subject requires.<br><br></div>
+				<div class="last">
+					<div class="author"><span class="authorreal">A.O SCOTT</span><br><span class="crewrole">July 15, 2010</span></div>
+					<div class="showall1"><a class="nodec" href="https://www.nytimes.com/2010/07/16/movies/16inception.html?ref=movies&pagewanted=all" target="_blank">Read Full Article</a></div>
+				</div>
+			</div>
+			<div class="review1">
+				<div class="reviewhead2">ROLLING STONE</div><br><br>
+				<div class="reviewdesc">In this wildly ingen­ious chess game, grandmaster Nolan plants ideas in our heads that disturb and dazzle. The result is a knockout. But be warned: Inception dreams big. How cool is that?<br><br></div>
+				<div class="last">
+					<div class="author"><span class="authorreal">PETER TRAVERS</span><br><span class="crewrole">July 13, 2010</span></div>
+					<div class="showall1"><a class="nodec" href="https://www.rollingstone.com/movies/movie-reviews/inception-248306/" target="_blank">Read Full Article</a></div>
+				</div></div>
+			<div class="review1">
+				<div class="reviewhead">LOS ANGELES TIMES</div><br><br>
+				<div class="reviewdesc">A tremendously exciting science-fiction thriller that's as disturbing as it sounds. This is a popular entertainment with a knockout punch so intense and unnerving it'll have you worrying if it's safe to close your eyes at night.<br><br></div>
+				<div class="last">
+					<div class="author"><span class="authorreal">KENNETH TURAN</span><br><span class="crewrole">July 16, 2010</span></div>
+					<div class="showall1"><a class="nodec" href="https://www.latimes.com/archives/la-xpm-2010-jul-16-la-et-inception-20100716-story.html" target="_blank">Read Full Article</a></div>
+				</div>
+			</div>
+		</div><br>
+	</div>
+	<div style="background-color:#e6e6e6;"><br><br>
+		<span class="subhead">&nbsp;RATINGS</span><br><br><br>
+		<div class="siterate">
+			<div class="rate">
+				<a class="" href="https://www.imdb.com/title/tt01375666/" target="_blank"><img class="rateimg" src="../imdb.png"></a><br>
+				<span class="ratex">IMDB</span><br><br><br>
+				<input type="range" value="8.8" min="0" max="10" id="myRange"><br>
+				<a class="nodec black" href="https://www.imdb.com/title/tt01375666/" target="_blank"><span class="ratex">8.8/10</span></a><br>
+				<a class="nodec" href="https://www.imdb.com/title/tt1375666/ratings?ref_=tt_ov_rt" target="_blank"><span class="ratex small">2,074,627 Ratings</span></a>
+			</div>
+			<div class="rate">
+				<a class="" href="https://www.rottentomatoes.com/m/inception" target="_blank"><img style="width: 120px;" class="rateimg" src="../fresh.png"></a><br>
+				<span class="ratex">TOMATOMETER</span><br><br><br>
+				<input type="range" value="87" min="0" max="100" id="myRange"><br>
+				<a class="nodec black" href="https://www.rottentomatoes.com/m/inception" target="_blank"><span class="ratex">87%</span></a><br>
+				<a class="nodec" href="https://www.rottentomatoes.com/m/inception/reviews?intcmp=rt-scorecard_tomatometer-reviews" target="_blank"><span class="ratex small">359 Reviews</span></a>
+			</div>
+			<div class="rate">
+				<a class="" href="https://www.rottentomatoes.com/m/inception" target="_blank"><img class="rateimg" src="../toaud.png"></a><br>
+				<span class="ratex">AUDIENCE SCORE</span><br><br>
+				<input type="range" value="91" min="0" max="100" id="myRange"><br>
+				<a class="nodec black" href="https://www.rottentomatoes.com/m/inception" target="_blank"><span class="ratex">91%</span></a><br>
+				<a class="nodec" href="https://www.rottentomatoes.com/m/inception/reviews?type=user&intcmp=rt-scorecard_audience-score-reviews" target="_blank"><span class="ratex small">250,000+ Ratings</span></a>
+			</div>
+			<div class="rate">
+				<img class="rateimg" src="../googleco.png"><br>
+				<span class="ratex">GOOGLE AUDIENCE</span><br><br>
+				<input type="range" value="92" min="0" max="100" id="myRange"><br>
+				<span class="ratex">92%</span><br>
+			</div>
+			<div class="rate">
+				<a class="nodecx" href="https://www.metacritic.com/movie/inception" target="_blank">
+					<div style="padding-left: 2.5em;">
+						<div class="metacritiq">
+						<br>74
+						</div>
+					</div>
+				</a>
+				<span class="ratex">METASCORE</span><br><br><br>
+				<input type="range" value="74" min="0" max="100" id="myRange"><br>
+				<span class="ratex small">Based on</span><br>
+				<a class="nodec" href="https://www.metacritic.com/movie/inception/critic-reviews" target="_blank"><span class="ratex small">42 Critic Reviews</span></a>
+			</div>
+			<div class="rate">
+				<a class="nodecx" href="https://www.metacritic.com/movie/inception" target="_blank">
+					<div style="padding-left: 2.5em;">
+						<div class="metacritiq circle">
+						<br>8.8
+						</div>
+					</div>
+				</a>
+				<span class="ratex">META-USER SCORE</span><br><br>
+				<input type="range" value="88" min="0" max="100" id="myRange"><br>
+				<span class="ratex small">Based on</span><br>
+				<a class="nodec" href="https://www.metacritic.com/movie/inception/user-reviews" target="_blank"><span class="ratex small">4471 Ratings</span></a>
+			</div>
+		</div><br><br><br><br>
+		<div class="overall">
+				OVERALL RATINGS&nbsp;<i class="fa fa-question-circle-o" aria-hidden="true" title="Average of the above ratings (out of 10)"></i><br><br>
+				<div style="margin-left: 46.6%;">
+				<div class="overall-circle">
+					<br>8.6
+				</div>
+			    </div><br>
+		</div>
+	</div>
+	<div class="Reviews"><br><br>
+		&nbsp;<span class="subhead">MY TAKE</span>&nbsp;&nbsp;<i class="fa fa-user-secret fa-2x" aria-hidden="true"></i><br><br>
+		<div class="review_me">Of all Christopher Nolan movies, this was the first movie that I saw. Also, I may argue that this is his best work. "Dream inside a Dream" - This concept makes it a fantasy film. But Nolan made it into a Sci-Fi film. I believe that, it the power of Christopher Nolan. There are various delightful twists and unforeseen turns. <br><br>This movie is defenitely rewatchable. Although you know what's coming next, you still feel jumpy about it. The story moves hastily from one scene to another, making the viewers feel like on a roller coaster ride. At times, its hard to keep up, even at second watching. There is a lot of information to recollect and comprehend. In this contemporary age, people are looking for this. <br><br>This film may be the prime example of the endless limits of cinema. It's one of the best films of the decade. The visual Effects, Sound Editing, and Sound Mixing are stunning. If you have'nt watched it, you may be missing out. So watch it right now! 
+		</div><br><br>
+	</div>
+	<div class="watch" style="background-color:#000;"><br><br>
+		&nbsp;<span class="subhead white">WHERE TO WATCH</span><br><br><br><br>
+		<div style="display: flex;">
+		<div class="watchnow">
+			<a href="https://www.netflix.com/in/title/70131314" target="_blank"><img src="../netflix.png" class="channels"></a>
+			<div class="overall white"><br>
+			<a href="https://www.netflix.com/in/title/70131314" class="nodec white" target="_blank">NETFLIX</a><br><span class="overall small hover">Subscription</span>
+			</div>
+		</div>
+		<div class="watchnow">
+			<a href="https://www.primevideo.com/detail/0JTBVK6L41AABWSV8DK605AI0U/ref=atv_dl_rdr" target="_blank"><img src="../amazon.jpg" class="channels"></a>
+			<div class="overall white"><br>
+			<a href="https://www.primevideo.com/detail/0JTBVK6L41AABWSV8DK605AI0U/ref=atv_dl_rdr" class="nodec white" target="_blank">AMAZON</a><br><span class="overall small hover">Subscription</span>
+			</div>
+		</div>
+		<div class="watchnow">
+			<a href="https://www.hungama.com/movie/inception/2009171/" target="_blank"><img src="../hungama.jpg" class="channels"></a>
+			<div class="overall white"><br>
+			<a href="https://www.hungama.com/movie/inception/2009171/" target="_blank" class="nodec white">HUNGAMA</a><br><span class="overall small hover">From &#8377;60</span>
+			</div>
+		</div>
+		<div class="watchnow">
+			<a href="https://watch.tatasky.com/video/inception/345079/CUSTOM-MOVIES-DETAIL?pageType=movies-home" target="_blank"><img src="../tata.jpeg" class="channels"></a>
+			<div class="overall white"><br>
+			<a href="https://watch.tatasky.com/video/inception/345079/CUSTOM-MOVIES-DETAIL?pageType=movies-home" target="_blank" class="nodec white">TATA SKY
+			</a><br><span class="overall small hover">From &#8377;100</span>
+			</div>
+		</div>
+		<div class="watchnow">
+			<a href="https://itunes.apple.com/in/movie/inception/id528188765" target="_blank"><img src="../itune.jpg" class="channels"></a>
+			<div class="overall white"><br>
+			<a href="https://itunes.apple.com/in/movie/inception/id528188765" target="_blank" class="nodec white">APPLE</a><br><span class="overall small hover">From &#8377;120</span>
+			</div>
+		</div>
+		<div class="watchnow">
+			<a href="https://play.google.com/store/movies/details/Inception?gl=IN&hl=en&id=VDVz53M2kJs.P&PAffiliateID=110l4uj" target="_blank"><img src="../gplay.png" class="channels"></a>
+			<div class="overall white"><br>
+			<a href="https://play.google.com/store/movies/details/Inception?gl=IN&hl=en&id=VDVz53M2kJs.P&PAffiliateID=110l4uj" target="_blank" class="nodec white">PLAY</a><br><span class="overall small hover">From &#8377;120</span>
+			</div>
+		</div>
+		<div class="watchnow">
+			<a href="https://www.youtube.com/watch?v=VDVz53M2kJs.P" target="_blank"><img src="../youtube.jpg" class="channels"></a>
+			<div class="overall white"><br>
+			<a href="https://www.youtube.com/watch?v=VDVz53M2kJs.P" target="_blank" class="nodec white">YOUTUBE</a><br><span class="overall small hover">From &#8377;120</span>
+			</div>
+		</div>
+		</div>
+	</div>
+	<div class="info" style="background-color:#e6e6e6;"><br><br>
+		&nbsp;<span class="subhead">MORE INFO</span><br><br><br><br>
+		<div style="display: flex;">
+		<div class="leftinfo">
+			<div class="que">Production companies :</div>
+			<div class="ans">Legendary Pictures<br>Syncopy</div>
+			<br>
+			<div class="que">Budget :</div>
+			<div class="ans">&#36;160 Million<br>(&#8377;1162 Crore)</div>
+		</div>
+		<div class="leftinfo">
+			<div class="que">Distribution :</div>
+			<div class="ans">Warner Bros. Pictures</div>
+			<br>
+			<div class="que">Language :</div>
+			<div class="ans">English</div>
+		</div>
+		<div class="leftinfo">
+			<div class="que">Release Date :</div>
+			<div class="ans">July 08, 2010<br>((Odeon Leicester Square)<br>July 16, 2010<br>(United States<br>United Kingdom)</div>
+		</div>
+		<div class="leftinfo">
+			<div class="que">Running Time :</div>
+			<div class="ans">162 Minutes</div>
+			<br>
+			<div class="que">Country :</div>
+			<div class="ans">United States<br>United Kingdom</div>
+			<br>
+			<div class="que">Box Office :</div>
+			<div class="ans">&#36;836.8 Million<br>(&#8377;6073 Crore)</div>
+		</div>
+	    </div><br><br>
+	</div>
+	<footer><br><br><br>
+           <a href="../index.html" class="bye"><i class="fa fa-home" aria-hidden="true"></i>&nbsp;BACK TO HOME</a><br>
+           <br>
+         &copy;BLIZZ
+        </footer>
+</body>
+</html>

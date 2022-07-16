@@ -1,0 +1,433 @@
+body {font-family: Segoe UI; margin: 0;}
+		.blizz {
+			font-weight: bold;
+			font-size: 22px;
+			padding-top: 2em;
+			text-decoration: none;
+			cursor: pointer;
+			color: black;
+		}
+		::selection {
+  			color: white;
+  			background: red;
+		}
+		.TopRow {
+			padding-bottom: 0.2em;
+		}
+		img.logo {
+	            object-fit: cover;
+  				border-radius: 50%;
+    			height: 16px;
+    			width: 20px;
+		}
+		.TopRow input[type=text] {
+    			font-size: 20px;
+    			border: none;
+    			padding-left: 1em;
+    			border-left: solid;
+    			border-radius: 15px;
+    	}
+    	.TopRow input[type=text]:hover {
+    		background-color: #fafcb1;
+    	}
+    	.TopRow input[type=button] {
+    		padding-top: 5px;
+    		padding-left: 8px;
+    		padding-right: 8px;
+    		padding-bottom: 3px;
+    		border: none;
+    		border-radius: 10px;
+    	}
+    	.TopRow input[type=button]:hover {
+    		background-color: #0cf;
+    		cursor: pointer;
+    	}
+    	hr.top {
+    		border-top: 1px solid;
+    		border-color: #e0e0de;
+    	}
+    	div.heading {
+    		text-align: center; 
+    		color:  #626663; 
+    		font-size: 25px; 
+    		font-weight: bold;
+    	}
+    	.heading:hover {
+    		color: black;
+    	}
+    	.mainImage{
+    		height: 540px; 
+    		width: 100%; 
+    		background-color: black;
+    		background-image: url(main.jpg); 
+    		background-repeat: no-repeat;
+    		background-position: 70% 50%;
+    		color: white;
+    		font-size: 25px;
+    		font-weight: bold;
+    	}
+    	.youtube {
+    		font-size: 15px;
+    		text-decoration: none;
+    		color: #626663; 
+    	}
+    	.youtube:hover{
+    		text-decoration: underline;
+    		color: white;
+    	}
+    	.fa-play-circle-o{ 
+    		size: 15px;
+    		text-decoration: none;
+    		color: #626663; 
+    	}
+    	.fa-play-circle-o:hover{
+    		color: white;
+    	}
+    	.fa-star{
+    		color: white;
+    	}
+    	.ratingBG {
+    		color: #626663; 
+    		font-size: 20px;
+    	}
+    	.direct {
+    		font-weight: normal;
+    	    font-size: 18px;
+    	}
+    	.genre {
+    		font-weight: normal;
+    		font-size: 18px;
+    		color: #626663; 
+    	}
+    	.fa-clock-o {
+    		color: #626663; 
+    	}
+    	.column {
+    		float: left;
+    		width: 25%;
+    		text-align: center;
+    		font-size: 15px;
+    		color: #626663;
+    	}
+    	.row:after {
+    		content: "";
+    		display: table;
+    		clear: both;
+    	}
+    	.award-desc {
+    		font-weight: normal;
+    		color: #626663;
+    	}
+    	ul {
+    		list-style-type: none;
+    	}
+    	li {
+    		float: left;
+    		padding-left: 12px;
+    	}
+    	img {
+    		max-height: 100%;
+    		max-width: 100%;
+    		border-radius: 40px 0 40px 0;
+    	}
+    	.castimage {
+    		height: 170px;
+    		width: 163px;
+    	}
+    	.castimage:hover {
+    		opacity: 0.9;
+    	}
+    	.castName {
+    		color: #626663;
+    		font-size: 18px;
+    		font-weight: bolder;
+    		padding-left: 8px;
+    	}
+    	.crewrole {
+    		color: #999999;
+    		padding-left: 8px;
+    		font-size: 15px;
+    		font-weight: bold;
+    	}
+    	.ExtraLarge {
+    		font-size: 30px;
+    	}
+    	.Reviews{
+    		clear: both;
+    		background-color: #faf0f9;
+    	}
+    	.smallheight {
+    		line-height: 16px;
+    	}
+    	.largeheight {
+    		line-height: 30px;
+    	}
+    	.subhead {
+    		color:#626663; 
+    		font-weight: bold;
+    		font-size: 20px;
+    	}
+    	.showall {
+    		float: right; 
+    		font-size: 15px;
+    	    color:#626663; 
+    		font-weight: bold;
+    	}
+    	.showall1{
+    		float: right; 
+    		font-size: 15px;
+    	    color:#626663; 
+    		font-weight: bold;
+    		padding-right: 1em;
+    	}
+    	#star{
+    		color: black;
+    	}
+    	#nostar{
+    		color: #bababa;
+    	}
+    	.review1 {
+    		float: left;
+    		width: 33%;
+    	}
+    	.reviewhead {
+    		text-align: center;
+    		font-size: 50px;
+    		font-family: Newyork;
+    		padding: 1em 1em 0 1em;
+    	}
+    	@font-face{
+    		font-family: Newyork;
+    		src:url("../chomsky.otf") format("opentype");
+    	}
+    	.reviewdesc {
+    		padding:0 10px 0 10px;
+    		font-size: 20px;
+    		font-family: "Montserrat";
+    	}
+    	.reviewdesc:after{
+    		content: "";  
+    		display: block;
+   			margin: 0 auto; 
+    		width: 99%; 
+    		padding-top: 20px;
+    		border-bottom: 3px solid black;
+    	}
+    	.author {
+    		float: left;
+    	}
+    	.last {
+    		padding-top: 10px;
+    	}
+    	.authorreal {
+    		padding-left: 8px;
+    		font-size: 18px;
+    		font-weight: bolder;
+    	}
+    	.nodec {
+    		text-decoration: none;
+    		color: #526663; 
+    	}
+    	.nodec:hover{
+    		text-decoration: underline;
+    	}
+    	.nodecx{
+    		text-decoration: none;
+    		color: white; 
+    	}
+    	.reviewhead2 {
+    		text-align: center;
+    		font-size: 50px;
+    		font-family: Rolling;
+    		padding: 1em 1em 0 1em;
+    	}
+    	@font-face{
+    		font-family: Rolling;
+    		src:url("../rolling.ttf") format("opentype");
+    	}
+    	.reviewhead3{
+    		text-align: center;
+    		font-size: 50px;
+    		padding: 1em 1em 0 1em;
+    		font-family: "Empire";
+    	}
+    	@font-face{
+    		font-family: Empire;
+    		src:url("../Empire.ttf") format("opentype");
+    	}
+    	.siterate {
+    		display: flex;
+    	}
+    	.rate{
+    		float: left;
+    		padding-left: 1em;
+    		width: 15%;
+    		text-align: center;
+    		font-family: "Audiowide", sans-serif;
+    		font-size: 25px;
+    		font-weight: bolder;
+    	}
+    	.overall {
+    		text-align: center;
+    		font-family: "Audiowide", sans-serif;
+    		font-size: 25px;
+    		font-weight: bolder;
+    		position: relative;
+    	}
+    	.overall-circle{
+    		font-family: "Audiowide", sans-serif;
+    		font-weight: bolder;
+    		height: 100px;
+    		width: 100px;
+    		border-radius: 50%;
+    		background-color: #31f705;
+    		font-size: 28px;
+    		color: white;
+    	}
+    	.fa-question-circle-o{
+    		cursor: pointer;
+    	}
+    	.rateimg{
+    		height: 100px;
+    		width: 100px;
+    		border-radius: 20%;
+    	}
+    	.rateimg:hover {
+    		opacity: 80%;
+    	}
+    	.ratex{
+    		color: black;
+    	}
+    	.metacritiq{
+    		height: 100px;
+    		width: 100px;
+    		border-radius: 20%;
+    		background-color: #31f705;
+    		font-size: 28px;
+    		text-decoration: none;
+    		color: white;
+    	}
+    	.metacritiq:hover{
+    		opacity: 0.8;
+    	}
+    	.circle{
+    		border-radius: 50%;
+    	}
+    	.small{
+    		font-size: 15px;
+    		color: #526663;    		
+    	}
+    	.small:hover {
+    		color: black;
+    	}
+    	.black:hover{
+    		text-decoration-color: black;
+    	}
+    	.review_me {
+    		text-align: center;
+    		font-size: 24px;
+    		font-family: "Montserrat";
+    		margin: 0 3em 0 3em;
+    		background-color: #fffec2;
+    		padding: 10px 20px 10px 20px;
+    	}
+    	.watchnow {
+    		float: left;
+    		width: 14%;
+    		color: white;
+    		padding-left: 2em;
+    		padding-right: 2em;
+    		height: 220px;
+    	}
+    	.white {
+    		color: white;
+    	}
+    	.channels {
+    		height: 100px;
+    		width: 150px;
+    		border-radius: 20px;
+    	}
+    	.channels:hover{
+    		border: solid yellow;
+    		opacity: 0.9;
+    	}
+    	.watchdesc {
+    		text-align: center;
+    	}
+    	.hover:hover {
+    		color: white;
+    	}
+    	.leftinfo {
+    		text-align: center;
+    		float: left;
+    		width: 24%;
+    		padding-left: 1em;
+    	}
+    	.que {
+    		font-size: 20px;
+    		color: #626663;
+    		font-weight: bolder;
+    	}
+    	.ans {
+    		color: #626663;
+    	}
+    	footer{
+    		font-size: 20px;
+    		background-color: black;
+    		color: white;
+    		text-align: center;
+    		font-weight: bold;
+    	}
+    	.bye {
+    		font-size: 25px;
+    		color: white;
+    		text-decoration: none;
+    	}
+    	.sign{
+    		float: right;
+    		padding:1em;
+    		background-color: black;
+    		color: white;
+    		font-size: 10px;
+    		font-weight: bold;
+    		font-family: "Montserrat";
+    		cursor: pointer;
+    		border-radius: 20px;
+    	}
+    	.sign:hover {
+    		background-color: white;
+    		color: black;
+    		box-shadow:0px 0px 0px 2px black inset;
+    		font-weight: bold;
+    	}
+    	.synopsis{
+    		margin-left: 3em;
+    		margin-right: 3em;
+    		padding-left: 3em;
+    		padding-right: 3em;
+    		border-left:3px solid #0066ff;
+    		border-right:3px solid #ff3300;
+    		font-size: 21px;
+    	}
+    	@media screen and (-webkit-min-device-pixel-ratio:0) {
+	    input[type='range'] {
+	      overflow: hidden;
+	      width: 100px;
+	      -webkit-appearance: none;
+	      background-color: #fff;
+	    }
+	    
+	    input[type='range']::-webkit-slider-runnable-track {
+	      height: 10px;
+	      -webkit-appearance: none;
+	      color: #fff;
+	    }
+	    
+	    input[type='range']::-webkit-slider-thumb {
+	      width: 0px;
+	      -webkit-appearance: none;
+	      height: 10px;
+	      background: #000;
+	      box-shadow: -80px 0 0 80px #43e533;
+	    }
+    }   	

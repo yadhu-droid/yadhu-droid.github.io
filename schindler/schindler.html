@@ -1,0 +1,774 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>
+		Schindler's List (1993) | BLIZZ
+	</title>
+	<link rel="icon" type="image/x-icon" href="../blizz.png">
+	<meta name="viewport" content="width=device-width, initial-scale=0.5">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat|Ubuntu" rel="stylesheet">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
+	<script src="https://kit.fontawesome.com/1230b940db.js" crossorigin="anonymous"></script>
+	<style>
+		body {font-family: Segoe UI; margin: 0;}
+		.blizz {
+			font-weight: bold;
+			font-size: 22px;
+			padding-top: 2em;
+			text-decoration: none;
+			cursor: pointer;
+			color: black;
+		}
+		::selection {
+  			color: white;
+  			background: red;
+		}
+		.TopRow {
+			padding-bottom: 0.2em;
+		}
+		img.logo {
+	            object-fit: cover;
+  				border-radius: 50%;
+    			height: 16px;
+    			width: 20px;
+		}
+		.TopRow input[type=text] {
+    			font-size: 20px;
+    			border: none;
+    			padding-left: 1em;
+    			border-left: solid;
+    			border-radius: 15px;
+    	}
+    	.TopRow input[type=text]:hover {
+    		background-color: #fafcb1;
+    	}
+    	.TopRow input[type=button] {
+    		padding-top: 5px;
+    		padding-left: 8px;
+    		padding-right: 8px;
+    		padding-bottom: 3px;
+    		border: none;
+    		border-radius: 10px;
+    	}
+    	.TopRow input[type=button]:hover {
+    		background-color: #0cf;
+    		cursor: pointer;
+    	}
+    	hr.top {
+    		border-top: 1px solid;
+    		border-color: #e0e0de;
+    	}
+    	div.heading {
+    		text-align: center; 
+    		color:  #626663; 
+    		font-size: 25px; 
+    		font-weight: bold;
+    	}
+    	.heading:hover {
+    		color: black;
+    	}
+    	.mainImage{
+    		height: 540px; 
+    		width: 100%; 
+    		background-color: black;
+    		background-image: url(main5.jpg); 
+    		background-repeat: no-repeat;
+    		background-position: 70% 50%;
+            background-size: 1000px 550px;
+    		color: white;
+    		font-size: 25px;
+    		font-weight: bold;
+    	}
+    	.youtube {
+    		font-size: 15px;
+    		text-decoration: none;
+    		color: #626663; 
+    	}
+    	.youtube:hover{
+    		text-decoration: underline;
+    		color: white;
+    	}
+    	.fa-play-circle-o{ 
+    		size: 15px;
+    		text-decoration: none;
+    		color: #626663; 
+    	}
+    	.fa-play-circle-o:hover{
+    		color: white;
+    	}
+    	.fa-star{
+    		color: white;
+    	}
+    	.ratingBG {
+    		color: #626663; 
+    		font-size: 20px;
+    	}
+    	.direct {
+    		font-weight: normal;
+    	    font-size: 18px;
+    	}
+    	.genre {
+    		font-weight: normal;
+    		font-size: 18px;
+    		color: #626663; 
+    	}
+    	.fa-clock-o {
+    		color: #626663; 
+    	}
+    	.column {
+    		float: left;
+    		width: 25%;
+    		text-align: center;
+    		font-size: 15px;
+    		color: #626663;
+    	}
+    	.row:after {
+    		content: "";
+    		display: table;
+    		clear: both;
+    	}
+    	.award-desc {
+    		font-weight: normal;
+    		color: #626663;
+    	}
+    	ul {
+    		list-style-type: none;
+    	}
+    	li {
+    		float: left;
+    		padding-left: 12px;
+    	}
+    	img {
+    		max-height: 100%;
+    		max-width: 100%;
+    		border-radius: 40px 0 40px 0;
+    	}
+    	.castimage {
+    		height: 170px;
+    		width: 163px;
+    	}
+    	.castimage:hover {
+    		opacity: 0.9;
+    	}
+    	div.name:hover {
+    		text-decoration: underline;
+    		color: #626663;
+    	}
+    	.castName {
+    		color: #626663;
+    		font-size: 18px;
+    		font-weight: bolder;
+    		padding-left: 8px;
+    	}
+    	.crewrole {
+    		color: #999999;
+    		padding-left: 8px;
+    		font-size: 15px;
+    		font-weight: bold;
+    	}
+    	.ExtraLarge {
+    		font-size: 30px;
+    	}
+    	.Reviews{
+    		clear: both;
+    		background-color: #faf0f9;
+    	}
+    	.smallheight {
+    		line-height: 16px;
+    	}
+    	.largeheight {
+    		line-height: 30px;
+    	}
+    	.subhead {
+    		color:#626663; 
+    		font-weight: bold;
+    		font-size: 20px;
+    	}
+    	.showall {
+    		float: right; 
+    		font-size: 15px;
+    	    color:#626663; 
+    		font-weight: bold;
+    	}
+    	.showall1{
+    		float: right; 
+    		font-size: 15px;
+    	    color:#626663; 
+    		font-weight: bold;
+    		padding-right: 1em;
+    	}
+    	#star{
+    		color: black;
+    	}
+    	#nostar{
+    		color: #bababa;
+    	}
+    	.review1 {
+    		float: left;
+    		width: 33%;
+    	}
+    	.reviewhead {
+    		text-align: center;
+    		font-size: 50px;
+    		font-family: Newyork;
+    		padding: 1em 1em 0 1em;
+    	}
+    	@font-face{
+    		font-family: Newyork;
+    		src:url("../chomsky.otf") format("opentype");
+    	}
+    	.reviewdesc {
+    		padding:0 10px 0 10px;
+    		font-size: 20px;
+    		font-family: "Montserrat";
+    	}
+    	.reviewdesc:after{
+    		content: "";  
+    		display: block;
+   			margin: 0 auto; 
+    		width: 99%; 
+    		padding-top: 20px;
+    		border-bottom: 3px solid black;
+    	}
+    	.author {
+    		float: left;
+    	}
+    	.last {
+    		padding-top: 10px;
+    	}
+    	.authorreal {
+    		padding-left: 8px;
+    		font-size: 18px;
+    		font-weight: bolder;
+    	}
+    	.nodec {
+    		text-decoration: none;
+    		color: #526663; 
+    	}
+    	.nodec:hover{
+    		text-decoration: underline;
+    	}
+    	.nodecx{
+    		text-decoration: none;
+    		color: white; 
+    	}
+    	.reviewhead2 {
+    		text-align: center;
+    		font-size: 50px;
+    		font-family: Rolling;
+    		padding: 1em 1em 0 1em;
+    	}
+    	@font-face{
+    		font-family: Rolling;
+    		src:url("../rolling.ttf") format("opentype");
+    	}
+    	.reviewhead3{
+    		text-align: center;
+    		font-size: 50px;
+    		padding: 1em 1em 0 1em;
+    		font-family: "Empire";
+    	}
+    	@font-face{
+    		font-family: Empire;
+    		src:url("../Empire.ttf") format("opentype");
+    	}
+    	.siterate {
+    		display: flex;
+    	}
+    	.rate{
+    		float: left;
+    		padding-left: 1em;
+    		width: 15%;
+    		text-align: center;
+    		font-family: "Audiowide", sans-serif;
+    		font-size: 25px;
+    		font-weight: bolder;
+    	}
+    	.overall {
+    		text-align: center;
+    		font-family: "Audiowide", sans-serif;
+    		font-size: 25px;
+    		font-weight: bolder;
+    		position: relative;
+    	}
+    	.overall-circle{
+    		font-family: "Audiowide", sans-serif;
+    		font-weight: bolder;
+    		height: 100px;
+    		width: 100px;
+    		border-radius: 50%;
+    		background-color: #31f705;
+    		font-size: 28px;
+    		color: white;
+    	}
+    	.fa-question-circle-o{
+    		cursor: pointer;
+    	}
+    	.rateimg{
+    		height: 100px;
+    		width: 100px;
+    		border-radius: 20%;
+    	}
+    	.rateimg:hover {
+    		opacity: 80%;
+    	}
+    	.ratex{
+    		color: black;
+    	}
+    	.metacritiq{
+    		height: 100px;
+    		width: 100px;
+    		border-radius: 20%;
+    		background-color: #31f705;
+    		font-size: 28px;
+    		text-decoration: none;
+    		color: white;
+    	}
+    	.metacritiq:hover{
+    		opacity: 0.8;
+    	}
+    	.circle{
+    		border-radius: 50%;
+    	}
+    	.small{
+    		font-size: 15px;
+    		color: #526663;    		
+    	}
+    	.small:hover {
+    		color: black;
+    	}
+    	.black:hover{
+    		text-decoration-color: black;
+    	}
+    	.review_me {
+    		text-align: center;
+    		font-size: 24px;
+    		font-family: "Montserrat";
+    		margin: 0 3em 0 3em;
+    		background-color: #fffec2;
+    		padding: 10px 20px 10px 20px;
+    	}
+    	.watchnow {
+    		float: left;
+    		width: 14%;
+    		color: white;
+    		padding-left: 2em;
+    		padding-right: 2em;
+    		height: 220px;
+    	}
+    	.white {
+    		color: white;
+    	}
+    	.channels {
+    		height: 100px;
+    		width: 150px;
+    		border-radius: 20px;
+    	}
+    	.channels:hover{
+    		border: solid yellow;
+    		opacity: 0.9;
+    	}
+    	.watchdesc {
+    		text-align: center;
+    	}
+    	.hover:hover {
+    		color: white;
+    	}
+    	.leftinfo {
+    		text-align: center;
+    		float: left;
+    		width: 24%;
+    		padding-left: 1em;
+    	}
+    	.que {
+    		font-size: 20px;
+    		color: #626663;
+    		font-weight: bolder;
+    	}
+    	.ans {
+    		color: #626663;
+    	}
+    	footer{
+    		font-size: 20px;
+    		background-color: black;
+    		color: white;
+    		text-align: center;
+    		font-weight: bold;
+    	}
+    	.bye {
+    		font-size: 25px;
+    		color: white;
+    		text-decoration: none;
+    	}
+    	.sign{
+    		float: right;
+    		padding:1em;
+    		background-color: black;
+    		color: white;
+    		font-size: 10px;
+    		font-weight: bold;
+    		font-family: "Montserrat";
+    		cursor: pointer;
+    		border-radius: 20px;
+    	}
+    	.sign:hover {
+    		background-color: white;
+    		color: black;
+    		box-shadow:0px 0px 0px 2px black inset;
+    		font-weight: bold;
+    	}
+    	.synopsis{
+    		margin-left: 3em;
+    		margin-right: 3em;
+    		padding-left: 3em;
+    		padding-right: 3em;
+    		border-left:3px solid #0066ff;
+    		border-right:3px solid #ff3300;
+    		font-size: 21px;
+    	}
+    	@media screen and (-webkit-min-device-pixel-ratio:0) {
+	    input[type='range'] {
+	      overflow: hidden;
+	      width: 100px;
+	      -webkit-appearance: none;
+	      background-color: #fff;
+	    }
+	    
+	    input[type='range']::-webkit-slider-runnable-track {
+	      height: 10px;
+	      -webkit-appearance: none;
+	      color: #fff;
+	    }
+	    
+	    input[type='range']::-webkit-slider-thumb {
+	      width: 0px;
+	      -webkit-appearance: none;
+	      height: 10px;
+	      background: #000;
+	      box-shadow: -80px 0 0 80px #43e533;
+	    }
+    }   	
+	</style>
+	<script>
+        function search(string)
+        {
+        window.find(string);
+        }
+    </script>
+</head>
+<body class="body">
+	<div class="TopRow">
+		<span>
+			<a class="blizz" href="../index.html">BLIZZ</a> 
+			<img src="../blizz.png" class="logo">
+		</span>
+		<span style="float: right; margin-right: 2em;">
+			<input type="text" placeholder="Search.." id="search">
+			<input type="button" value="Go" onclick="search(document.getElementById('search').value)">
+		</span>
+		<hr class="top">
+		<br>
+	<div class="heading">
+		AWESOME, INTERESTING, ELEGANT CINEMA.
+		<a href="../signin.html"><button class="sign">SIGN IN</button></a>
+	</div><br>
+	<div class="mainImage" ><br>
+		<div style="line-height: 8px;">
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		<i class="fa fa-star" aria-hidden="true"></i>&nbsp;8.9<span class="ratingBG">/10</span>
+		<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="font-size: 15px; color: #626663;"> 1,223,187 Ratings</span><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+	   </div>
+	   <span class="ExtraLarge">&nbsp;SCHINDLER'S LIST</span><br><br>
+	   <div class="smallheight">
+	   <span class="direct">&nbsp;Directed By <strong>Steven Speilberg</strong></span><br>
+	   <span class="direct">&nbsp;United States, 1993</span>
+	   </div><br>
+	   <div class="largeheight">
+	   <div class="genre">&nbsp;War/Drama</div>&nbsp;
+	   <i class="fa fa-clock-o" aria-hidden="true"></i><span class="genre">&nbsp;197'</span>
+	   <div>
+	   		&nbsp;&nbsp;<a href="https://www.youtube.com/watch?v=mxphAlJID9U" target="_blank"><i class="fa fa-play-circle-o" aria-hidden="true"></i></a>&nbsp;<span class="youtube"><a class="youtube" href="https://www.youtube.com/watch?v=mxphAlJID9U" target="_blank">Watch trailer on YouTube</a></span>
+	   </div>
+	   </div>
+	</div>
+	<div><br><br>&nbsp;
+		<span class="subhead">SYNOPSIS</span><br><br>
+		<div class="synopsis">Oskar Schindler, a German industrialist and member of the Nazi party, tries to save his Jewish employees after witnessing the persecution of Jews in Poland.</div><br><br><br>
+	</div>
+	<div style="background-color:#e6e6e6;">
+		<div class="Awards"><br><br><br>&nbsp;
+			<span class="subhead">AWARDS AND FESTIVALS</span>
+			<span class="showall"><a class="nodec" href="award5.html">Show all (138)</a></span><br><br><br>
+			<div class="row">
+				<div class="column"><span style="font-weight: bolder;">Academy Awards</span><br>
+				<span class="award-desc">1994 | 7 wins including: Best Picture<br>1994 | 5 nominations including: Best Actor in a Leading Role</span>
+				</div>
+				<div class="column"><span style="font-weight: bolder;">National Board of Review</span><br>
+				<span class="award-desc">1993 | 2 wins including: Best Film</span>
+				</div>
+				<div class="column"><span style="font-weight: bolder;">BAFTA AWARDS</span><br>
+				<span class="award-desc">1994 | 6 wins including: Best Film<br>1994 | 6 nominations including: Best Actor</span>
+				</div>
+				<div class="column"><span style="font-weight: bolder;">Directors Guild of America</span><br>
+				<span class="award-desc">1994 | Winner: Outstanding Directorial Achievement in Motion Pictures</span>
+				</div>
+			</div>
+		</div><br><br><br>
+		<div class="Cast">&nbsp;
+			<span class="subhead">CAST AND CREW</span>
+			<span class="showall"><a href="cast5.html" class="nodec">Show all(16)</a></span><br><br><br>
+			<ul>
+					<li>
+						<div class="castimage">
+						<img src="https://www.biography.com/.image/t_share/MTE5NTU2MzE2Mzc0MDA5MzU1/steven-spielberg-9490621-1-402.jpg" alt="Steven Speilberg" onerror="this.onerror=null;this.src='../noimage.png';" title="Steven Speilberg">
+				        </div>   <div class="name">
+					<span class="castName">STEVEN</span><br><span class="castName">SPEILBERG</span> </div>
+						<div class="crewrole">DIRECTOR</div> 
+					</li>
+
+					<li>
+						<div class="castimage">
+						<img src="https://pyxis.nymag.com/v1/imgs/766/67a/81991a28f5e1ede3be83d28d42dd27b0e8-04-liam-neeson.rsquare.w1200.jpg" alt="Liam Neeson" onerror="this.onerror=null;this.src='../noimage.png';" title="Liam Neeson">
+				        </div>
+				<span class="castName">LIAM</span><br><span class="castName">NEESON</span>
+						<div class="crewrole">OSCAR SCHINDLER</div>
+					</li>
+
+					<li>
+						<div class="castimage">
+						<img src="https://images.celebnetworthpost.com/5/1943/ben-kingsley/ben-kingsley.jpg" alt="Ben Kingsley" onerror="this.onerror=null;this.src='../noimage.png';" title="Ben Kingsley">
+				        </div>
+				<span class="castName">BEN</span><br><span class="castName">KINGSLEY</span>
+						<div class="crewrole">ITZHAK STERN</div>
+					</li>
+
+					<li>
+						<div class="castimage">
+						<img src="https://in.bmscdn.com/iedb/artist/images/website/poster/large/ralph-fiennes-1811-24-03-2017-12-37-15.jpg" alt="Ralph Fiennes" onerror="this.onerror=null;this.src='../noimage.png';" title="Ralph Fiennes">
+				        </div>
+				<span class="castName">RALPH</span><br><span class="castName">FIENNES</span>
+						<div class="crewrole">AMON GOETH</div>
+					</li>
+
+					<li>
+						<div class="castimage">
+						<img src="https://pbs.twimg.com/profile_images/745328784295919616/qahPLU7B.jpg" alt="Embeth Davidtz" onerror="this.onerror=null;this.src='../noimage.png';" title="Embeth Davidtz">
+				        </div>
+				<span class="castName">EMBETH</span><br><span class="castName">DAVIDTZ</span>
+						<div class="crewrole">HELEN HIRSCH</div>
+					</li>
+
+					<li>
+						<div class="castimage">
+						<img src="http://qt.azureedge.net/resources/authors-images-large/steven-zaillian.jpg" alt="Steven Zaillian" onerror="this.onerror=null;this.src='../noimage.png';" title="Steven Zaillian">
+				        </div>
+				<span class="castName">STEVEN</span><br><span class="castName">ZAILLIAN</span>
+						<div class="crewrole">SCREENPLAY</div>
+					</li>
+
+					<li>
+						<div class="castimage">
+						<img src="https://media.newyorker.com/photos/5ee699d1044afe4ecdbf6784/2:2/w_989,h_989,c_limit/Ross-JohnWilliams01.jpg" alt="John Williams" onerror="this.onerror=null;this.src='../noimage.png';" title="John Williams">
+				        </div>
+				<span class="castName">JOHN</span><br><span class="castName">WILLIAMS</span>
+						<div class="crewrole">MUSIC</div>
+					</li>
+
+					<li>
+						<div class="castimage">
+						<img src="https://in.bmscdn.com/iedb/artist/images/website/poster/large/janusz-kaminski-iein007766-29-06-2017-21-25-29.jpg" alt="Janusz Kaminski" onerror="this.onerror=null;this.src='../noimage.png';" title="Janusz Kaminski">
+				        </div>
+				<span class="castName">JANUSZ</span><br><span class="castName">KAMINSKI</span>
+						<div class="crewrole">CINEMATOGRAPHY</div>
+					</li>
+			</ul>
+		</div>
+	</div>
+	<div class="Reviews"><br><br>
+		<span class="subhead">&nbsp;CRITICS REVIEWS&nbsp;&nbsp;&nbsp;<i id="star" class="fa fa-star" aria-hidden="true"></i>&nbsp;<i id="star" class="fa fa-star" aria-hidden="true"></i>&nbsp;<i id="star" class="fa fa-star" aria-hidden="true"></i>&nbsp;<i id="star" class="fa fa-star" aria-hidden="true"></i>&nbsp;<i id="star" class="fa fa-star" aria-hidden="true"></i></span>
+			<span class="showall"><a class="nodec" href="critic5.html">Show all(24)</a></span>
+		<br><br><br>
+		<div style="display: flex;">
+			<div class="review1">
+				<div class="reviewhead">THE WASHINGTON POST</div><br><br>
+				<div class="reviewdesc">This heavy-hitting fist lands with calculated deliberation. Despite Spielberg's obviously genuine commitment, "Schindler's List" feels strangely controlled -- more than impassioned. It's officially artistic, an engineered project of pride, Little Stevie's growing-up project, rather than an organically brilliant masterpiece.<br><br></div>
+				<div class="last">
+					<div class="author"><span class="authorreal">DESSON THOMSON</span><br><span class="crewrole">December 17, 1993</span></div>
+					<div class="showall1"><a class="nodec" href="http://www.washingtonpost.com/wp-srv/style/longterm/movies/review97/schindlerslisthowe.html" target="_blank">Read Full Article</a></div>
+				</div>
+			</div>
+			<div class="review1">
+				<div class="reviewhead2">ROLLING STONE</div><br><br>
+				<div class="reviewdesc">Schindler's List, despite blatant compromises, is a rending historical document. But the film's near-certain victory is based less on merit than on the marketing of its ambitious intentions. The academy doesn't judge movies, it weighs them by subject matter. On that basis, Spielberg's epic tips the scales.<br><br></div>
+				<div class="last">
+					<div class="author"><span class="authorreal">PETER TRAVERS</span><br></div>
+				</div></div>
+			<div class="review1">
+				<div class="reviewhead3">EMPIRE</div><br><br>
+				<div class="reviewdesc">Overall this film is truly a triumph, its greatness being revealed in its tiny moments - the close-up of a swastika badge that introduces Neeson or the bungled defiance of Fiennes at his hanging.<br><br></div>
+				<div class="last">
+					<div class="author"><span class="authorreal">KIM NEWMAN</span><br></div>
+				</div>
+			</div>
+		</div><br>
+	</div>
+	<div style="background-color:#e6e6e6;"><br><br>
+		<span class="subhead">&nbsp;RATINGS</span><br><br><br>
+		<div class="siterate">
+			<div class="rate">
+				<a class="" href="https://www.imdb.com/title/tt0108052/" target="_blank"><img class="rateimg" src="../imdb.png"></a><br>
+				<span class="ratex">IMDB</span><br><br><br>
+				<input type="range" value="8.9" min="0" max="10" id="myRange"><br>
+				<a class="nodec black" href="https://www.imdb.com/title/tt0108052/" target="_blank"><span class="ratex">8.9/10</span></a><br>
+				<a class="nodec" href="https://www.imdb.com/title/tt0108052/ratings?ref_=tt_ov_rt" target="_blank"><span class="ratex small">1,223,187 Ratings</span></a>
+			</div>
+			<div class="rate">
+				<a class="" href="https://www.rottentomatoes.com/m/interstellar_2014" target="_blank"><img style="width: 120px;" class="rateimg" src="../fresh.png"></a><br>
+				<span class="ratex">TOMATOMETER</span><br><br><br>
+				<input type="range" value="97" min="0" max="100" id="myRange"><br>
+				<a class="nodec black" href="https://www.rottentomatoes.com/m/schindlers_list" target="_blank"><span class="ratex">97%</span></a><br>
+				<a class="nodec" href="https://www.rottentomatoes.com/m/schindlers_list" target="_blank"><span class="ratex small">99 Reviews</span></a>
+			</div>
+			<div class="rate">
+				<a class="" href="https://www.rottentomatoes.com/m/schindlers_list" target="_blank"><img class="rateimg" src="../toaud.png"></a><br>
+				<span class="ratex">AUDIENCE SCORE</span><br><br>
+				<input type="range" value="97" min="0" max="100" id="myRange"><br>
+				<a class="nodec black" href="https://www.rottentomatoes.com/m/schindlers_list" target="_blank"><span class="ratex">97%</span></a><br>
+				<a class="nodec" href="https://www.rottentomatoes.com/m/schindlers_list" target="_blank"><span class="ratex small">250,000+ Ratings</span></a>
+			</div>
+			<div class="rate">
+				<img class="rateimg" src="../googleco.png"><br>
+				<span class="ratex">GOOGLE AUDIENCE</span><br><br>
+				<input type="range" value="94" min="0" max="100" id="myRange"><br>
+				<span class="ratex">94%</span><br>
+			</div>
+			<div class="rate">
+				<a class="nodecx" href="https://www.metacritic.com/movie/schindlers-list" target="_blank">
+					<div style="padding-left: 2.5em;">
+						<div class="metacritiq">
+						<br>94
+						</div>
+					</div>
+				</a>
+				<span class="ratex">METASCORE</span><br><br><br>
+				<input type="range" value="94" min="0" max="100" id="myRange"><br>
+				<span class="ratex small">Based on</span><br>
+				<a class="nodec" href="https://www.metacritic.com/movie/schindlers-list" target="_blank"><span class="ratex small">26 Critic Reviews</span></a>
+			</div>
+			<div class="rate">
+				<a class="nodecx" href="https://www.metacritic.com/movie/schindlers-list" target="_blank">
+					<div style="padding-left: 2.5em;">
+						<div class="metacritiq circle">
+						<br>8.8
+						</div>
+					</div>
+				</a>
+				<span class="ratex">META-USER SCORE</span><br><br>
+				<input type="range" value="88" min="0" max="100" id="myRange"><br>
+				<span class="ratex small">Based on</span><br>
+				<a class="nodec" href="https://www.metacritic.com/movie/schindlers-list" target="_blank"><span class="ratex small">1259 Ratings</span></a>
+			</div>
+		</div><br><br><br><br>
+		<div class="overall">
+				OVERALL RATINGS&nbsp;<i class="fa fa-question-circle-o" aria-hidden="true" title="Average of the above ratings (out of 10)"></i><br><br>
+				<div style="margin-left: 46.6%;">
+				<div class="overall-circle">
+					<br>9.3
+				</div>
+			    </div><br>
+		</div>
+	</div>
+	<div class="Reviews"><br><br>
+		&nbsp;<span class="subhead">MY TAKE</span>&nbsp;&nbsp;<i class="fa fa-user-secret fa-2x" aria-hidden="true"></i><br><br>
+		<div class="review_me">Its one of the best emotional films that i have watched. Steven Spielberg made it in black and white though it was rendered in the 1990s. That black and white touch made it into a film that we admire. Before watching it, I have heard that it was a touching film and that it made some people cry. Few minutes into the movie, I guessed it was another Nazi war film. But I was wrong. I sobbed when it ended.<br>It was an outstanding movie that would remain as the best film ever made. Also, the fact that it was 90% genuine trembled me. I think that's the reason that I cried too. It has everything to be a perfect film : A very powerful storyline, Direction, Cinematography, Actor's Performance, Visual Editing, Background Score, Production Design and everything.<br>The emotions were strongly portrayed as well. The use of simbolism by the director tells a lot about the theme of the movie. It is a must watch and you wont be disappointed
+		</div><br><br>
+	</div>
+	<div class="watch" style="background-color:#000;"><br><br>
+		&nbsp;<span class="subhead white">WHERE TO WATCH</span><br><br><br><br>
+		<div style="display: flex;">
+		<div class="watchnow">
+			<a href="https://www.microsoft.com/en-us/p/schindlers-list/8d6kgwzl59gc?ct=movie&ranMID=24542&ranEAID=TnL5HPStwNw&ranSiteID=TnL5HPStwNw-alDxX5AMutHeae4qsBDwLA&epi=TnL5HPStwNw-alDxX5AMutHeae4qsBDwLA&irgwc=1&OCID=AID2000142_aff_7593_1243925&tduid=(ir__jg9s1leldckfqj03kk0sohzz2n2xpqg32lrvyr3i00)(7593)(1243925)(TnL5HPStwNw-alDxX5AMutHeae4qsBDwLA)()&irclickid=_jg9s1leldckfqj03kk0sohzz2n2xpqg32lrvyr3i00&activetab=pivot%3aoverviewtab" target="_blank"><img src="../microsoft.jpg" class="channels"></a>
+			<div class="overall white"><br>
+			<a href="https://www.microsoft.com/en-us/p/schindlers-list/8d6kgwzl59gc?ct=movie&ranMID=24542&ranEAID=TnL5HPStwNw&ranSiteID=TnL5HPStwNw-alDxX5AMutHeae4qsBDwLA&epi=TnL5HPStwNw-alDxX5AMutHeae4qsBDwLA&irgwc=1&OCID=AID2000142_aff_7593_1243925&tduid=(ir__jg9s1leldckfqj03kk0sohzz2n2xpqg32lrvyr3i00)(7593)(1243925)(TnL5HPStwNw-alDxX5AMutHeae4qsBDwLA)()&irclickid=_jg9s1leldckfqj03kk0sohzz2n2xpqg32lrvyr3i00&activetab=pivot%3aoverviewtab" class="nodec white" target="_blank">MICROSOFT</a><br><span class="overall small hover">From &#8377;290</span>
+			</div>
+		</div>
+		<div class="watchnow">
+			<a href="https://www.amazon.com/gp/product/B00BEN0V8S?tag=deciderrg-20" target="_blank"><img src="../amazon.jpg" class="channels"></a>
+			<div class="overall white"><br>
+			<a href="https://www.amazon.com/gp/product/B00BEN0V8S?tag=deciderrg-20" class="nodec white" target="_blank">AMAZON</a><br><span class="overall small hover">Subscription</span>
+			</div>
+		</div>
+		<div class="watchnow">
+			<a href="https://www.vudu.com/content/movies/details/title/5436" target="_blank"><img src="../vudu.jpg" class="channels"></a>
+			<div class="overall white"><br>
+			<a href="https://www.vudu.com/content/movies/details/title/5436" target="_blank" class="nodec white">VUDU</a><br><span class="overall small hover">From &#8377;290</span>
+			</div>
+		</div>
+		<div class="watchnow">
+			<a href="https://www.peacocktv.com/watch-online/movies/drama/schindlers-list/b3c09538-f409-3369-b9ce-d5cac041fa29" target="_blank"><img src="../peacock.png" class="channels"></a>
+			<div class="overall white"><br>
+			<a href="https://www.peacocktv.com/watch-online/movies/drama/schindlers-list/b3c09538-f409-3369-b9ce-d5cac041fa29" target="_blank" class="nodec white">PEACOCK
+			</a><br><span class="overall small hover">FREE WITH ADS</span>
+			</div>
+		</div>
+		<div class="watchnow">
+			<a href="https://itunes.apple.com/WebObjects/MZStore.woa/wa/search?at=11lDJ&ct=1604007Xac3b3c4f6ab081e42c0c453cb1914d27&term=Schindler%27s%20List&app=itunes&mt=6" target="_blank"><img src="../itune.jpg" class="channels"></a>
+			<div class="overall white"><br>
+			<a href="https://itunes.apple.com/WebObjects/MZStore.woa/wa/search?at=11lDJ&ct=1604007Xac3b3c4f6ab081e42c0c453cb1914d27&term=Schindler%27s%20List&app=itunes&mt=6" target="_blank" class="nodec white">APPLE</a><br><span class="overall small hover">From &#8377;290</span>
+			</div>
+		</div>
+		<div class="watchnow">
+			<a href="https://play.google.com/store/movies/details/Schindler_s_List?id=TEY0dQAF4k4" target="_blank"><img src="../gplay.png" class="channels"></a>
+			<div class="overall white"><br>
+			<a href="https://play.google.com/store/movies/details/Schindler_s_List?id=TEY0dQAF4k4" target="_blank" class="nodec white">PLAY</a><br><span class="overall small hover">From &#8377;725</span>
+			</div>
+		</div>
+		<div class="watchnow">
+			<a href="https://www.youtube.com/watch?v=TEY0dQAF4k4" target="_blank"><img src="../youtube.jpg" class="channels"></a>
+			<div class="overall white"><br>
+			<a href="https://www.youtube.com/watch?v=TEY0dQAF4k4" target="_blank" class="nodec white">YOUTUBE</a><br><span class="overall small hover">From &#8377;725</span>
+			</div>
+		</div>
+		</div>
+	</div>
+	<div class="info" style="background-color:#e6e6e6;"><br><br>
+		&nbsp;<span class="subhead">MORE INFO</span><br><br><br><br>
+		<div style="display: flex;">
+		<div class="leftinfo">
+			<div class="que">Production companies :</div>
+			<div class="ans">Amblin Entertainment</div>
+			<br>
+			<div class="que">Budget :</div>
+			<div class="ans">&#36;22 Million<br>(&#8377;159 Crore)</div>
+		</div>
+		<div class="leftinfo">
+			<div class="que">Distribution :</div>
+			<div class="ans">Universal Pictures</div>
+			<br>
+			<div class="que">Language :</div>
+			<div class="ans">English</div>
+		</div>
+		<div class="leftinfo">
+			<div class="que">Release Date :</div>
+			<div class="ans">November 30, 1993<br>(Washington, DC)<br>December 15, 1993<br>(United States)</div>
+		</div>
+		<div class="leftinfo">
+			<div class="que">Running Time :</div>
+			<div class="ans">197 Minutes</div>
+			<br>
+			<div class="que">Country :</div>
+			<div class="ans">United States</div>
+			<br>
+			<div class="que">Box Office :</div>
+			<div class="ans">&#36;321.3 Million<br>(&#8377;2324 Crore)</div>
+		</div>
+	    </div><br><br>
+	</div>
+	<footer><br><br><br>
+           <a href="../index.html" class="bye"><i class="fa fa-home" aria-hidden="true"></i>&nbsp;BACK TO HOME</a><br>
+           <br>
+         &copy;BLIZZ
+        </footer>
+</body>
+</html>

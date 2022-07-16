@@ -1,0 +1,776 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+		Identity (2003) | BLIZZ
+	</title>
+	<link rel="icon" type="image/x-icon" href="../blizz.png">
+	<meta name="viewport" content="width=device-width, initial-scale=0.5">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat|Ubuntu" rel="stylesheet">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
+	<script src="https://kit.fontawesome.com/1230b940db.js" crossorigin="anonymous"></script>
+	<style>
+		body {font-family: Segoe UI; margin: 0;}
+		::selection {
+  			color: white;
+  			background: red;
+		}
+		.blizz {
+			font-weight: bold;
+			font-size: 22px;
+			padding-top: 2em;
+			text-decoration: none;
+			cursor: pointer;
+			color: black;
+		}
+		.TopRow {
+			padding-bottom: 0.2em;
+		}
+		img.logo {
+	            object-fit: cover;
+  				border-radius: 50%;
+    			height: 16px;
+    			width: 20px;
+		}
+		.TopRow input[type=text] {
+    			font-size: 20px;
+    			border: none;
+    			padding-left: 1em;
+    			border-left: solid;
+    			border-radius: 15px;
+    	}
+    	.TopRow input[type=text]:hover {
+    		background-color: #fafcb1;
+    	}
+    	.TopRow input[type=button] {
+    		padding-top: 5px;
+    		padding-left: 8px;
+    		padding-right: 8px;
+    		padding-bottom: 3px;
+    		border: none;
+    		border-radius: 10px;
+    	}
+    	.TopRow input[type=button]:hover {
+    		background-color: #0cf;
+    		cursor: pointer;
+    	}
+    	hr.top {
+    		border-top: 1px solid;
+    		border-color: #e0e0de;
+    	}
+    	div.heading {
+    		text-align: center; 
+    		color:  #626663; 
+    		font-size: 25px; 
+    		font-weight: bold;
+    	}
+    	.heading:hover {
+    		color: black;
+    	}
+    	.mainImage{
+    		height: 540px; 
+    		width: 100%; 
+    		background-color: black;
+    		background-image: url(main2.jpg); 
+    		background-repeat: no-repeat;
+    		background-position: 60% 50%;
+    		background-size: 68% 100%;
+    		color: white;
+    		font-size: 25px;
+    		font-weight: bold;
+    	}
+    	.youtube {
+    		font-size: 15px;
+    		text-decoration: none;
+    		color: #626663; 
+    	}
+    	.youtube:hover{
+    		text-decoration: underline;
+    		color: white;
+    	}
+    	.fa-play-circle-o{ 
+    		size: 15px;
+    		text-decoration: none;
+    		color: #626663; 
+    	}
+    	.fa-play-circle-o:hover{
+    		color: white;
+    	}
+    	.fa-star{
+    		color: white;
+    	}
+    	.ratingBG {
+    		color: #626663; 
+    		font-size: 20px;
+    	}
+    	.direct {
+    		font-weight: normal;
+    	    font-size: 18px;
+    	}
+    	.genre {
+    		font-weight: normal;
+    		font-size: 18px;
+    		color: #626663; 
+    	}
+    	.fa-clock-o {
+    		color: #626663; 
+    	}
+    	.column {
+    		float: left;
+    		width: 25%;
+    		text-align: center;
+    		font-size: 15px;
+    		color: #626663;
+    	}
+    	.row:after {
+    		content: "";
+    		display: table;
+    		clear: both;
+    	}
+    	.award-desc {
+    		font-weight: normal;
+    		color: #626663;
+    	}
+    	ul {
+    		list-style-type: none;
+    	}
+    	li {
+    		float: left;
+    		padding-left: 12px;
+    	}
+    	img {
+    		max-height: 100%;
+    		max-width: 100%;
+    		border-radius: 40px 0 40px 0;
+    	}
+    	.castimage {
+    		height: 170px;
+    		width: 163px;
+    	}
+    	.castimage:hover {
+    		opacity: 0.9;
+    	}
+    	div.name:hover {
+    		text-decoration: underline;
+    		color: #626663;
+    	}
+    	.castName {
+    		color: #626663;
+    		font-size: 18px;
+    		font-weight: bolder;
+    		padding-left: 8px;
+    	}
+    	.crewrole {
+    		color: #999999;
+    		padding-left: 8px;
+    		font-size: 15px;
+    		font-weight: bold;
+    	}
+    	.ExtraLarge {
+    		font-size: 30px;
+    	}
+    	.Reviews{
+    		clear: both;
+    		background-color: #faf0f9;
+    	}
+    	.smallheight {
+    		line-height: 16px;
+    	}
+    	.largeheight {
+    		line-height: 30px;
+    	}
+    	.subhead {
+    		color:#626663; 
+    		font-weight: bold;
+    		font-size: 20px;
+    	}
+    	.showall {
+    		float: right; 
+    		font-size: 15px;
+    	    color:#626663; 
+    		font-weight: bold;
+    	}
+    	.showall1{
+    		float: right; 
+    		font-size: 15px;
+    	    color:#626663; 
+    		font-weight: bold;
+    		padding-right: 1em;
+    	}
+    	#star{
+    		color: black;
+    	}
+    	#nostar{
+    		color: #bababa;
+    	}
+    	.review1 {
+    		float: left;
+    		width: 33%;
+    	}
+    	.reviewhead {
+    		text-align: center;
+    		font-size: 50px;
+    		font-family: Newyork;
+    		padding: 1em 1em 0 1em;
+    	}
+    	@font-face{
+    		font-family: Newyork;
+    		src:url("../chomsky.otf") format("opentype");
+    	}
+    	.reviewdesc {
+    		padding:0 10px 0 10px;
+    		font-size: 20px;
+    		font-family: "Montserrat";
+    	}
+    	.reviewdesc:after{
+    		content: "";  
+    		display: block;
+   			margin: 0 auto; 
+    		width: 99%; 
+    		padding-top: 20px;
+    		border-bottom: 3px solid black;
+    	}
+    	.author {
+    		float: left;
+    	}
+    	.last {
+    		padding-top: 10px;
+    	}
+    	.authorreal {
+    		padding-left: 8px;
+    		font-size: 18px;
+    		font-weight: bolder;
+    	}
+    	.nodec {
+    		text-decoration: none;
+    		color: #526663; 
+    	}
+    	.nodec:hover{
+    		text-decoration: underline;
+    	}
+    	.nodecx{
+    		text-decoration: none;
+    		color: white; 
+    	}
+    	.reviewhead2 {
+    		text-align: center;
+    		font-size: 50px;
+    		font-family: Rolling;
+    		padding: 1em 1em 0 1em;
+    	}
+    	@font-face{
+    		font-family: Rolling;
+    		src:url("../rolling.ttf") format("opentype");
+    	}
+    	.reviewhead3{
+    		text-align: center;
+    		font-size: 50px;
+    		padding: 1em 1em 0 1em;
+    		font-family: "Empire";
+    	}
+    	@font-face{
+    		font-family: Empire;
+    		src:url("../Empire.ttf") format("opentype");
+    	}
+    	.siterate {
+    		display: flex;
+    	}
+    	.rate{
+    		float: left;
+    		padding-left: 1em;
+    		width: 15%;
+    		text-align: center;
+    		font-family: "Audiowide", sans-serif;
+    		font-size: 25px;
+    		font-weight: bolder;
+    	}
+    	.overall {
+    		text-align: center;
+    		font-family: "Audiowide", sans-serif;
+    		font-size: 25px;
+    		font-weight: bolder;
+    		position: relative;
+    	}
+    	.overall-circle{
+    		font-family: "Audiowide", sans-serif;
+    		font-weight: bolder;
+    		height: 100px;
+    		width: 100px;
+    		border-radius: 50%;
+    		background-color: #31f705;
+    		font-size: 28px;
+    		color: white;
+    	}
+    	.fa-question-circle-o{
+    		cursor: pointer;
+    	}
+    	.rateimg{
+    		height: 100px;
+    		width: 100px;
+    		border-radius: 20%;
+    	}
+    	.rateimg:hover {
+    		opacity: 80%;
+    	}
+    	.ratex{
+    		color: black;
+    	}
+    	.metacritiq{
+    		height: 100px;
+    		width: 100px;
+    		border-radius: 20%;
+    		background-color: #31f705;
+    		font-size: 28px;
+    		text-decoration: none;
+    		color: white;
+    	}
+    	.metacritiq:hover{
+    		opacity: 0.8;
+    	}
+    	.circle{
+    		border-radius: 50%;
+    	}
+    	.small{
+    		font-size: 15px;
+    		color: #526663;    		
+    	}
+    	.small:hover {
+    		color: black;
+    	}
+    	.black:hover{
+    		text-decoration-color: black;
+    	}
+    	.review_me {
+    		text-align: center;
+    		font-size: 24px;
+    		font-family: "Montserrat";
+    		margin: 0 3em 0 3em;
+    		background-color: #fffec2;
+    		padding: 10px 20px 10px 20px;
+    	}
+    	.watchnow {
+    		float: left;
+    		width: 14%;
+    		color: white;
+    		padding-left: 2em;
+    		padding-right: 2em;
+    		height: 220px;
+    	}
+    	.white {
+    		color: white;
+    	}
+    	.channels {
+    		height: 100px;
+    		width: 150px;
+    		border-radius: 20px;
+    	}
+    	.channels:hover{
+    		border: solid yellow;
+    		opacity: 0.9;
+    	}
+    	.watchdesc {
+    		text-align: center;
+    	}
+    	.hover:hover {
+    		color: white;
+    	}
+    	.leftinfo {
+    		text-align: center;
+    		float: left;
+    		width: 24%;
+    		padding-left: 1em;
+    	}
+    	.que {
+    		font-size: 20px;
+    		color: #626663;
+    		font-weight: bolder;
+    	}
+    	.ans {
+    		color: #626663;
+    	}
+    	footer{
+    		font-size: 20px;
+    		background-color: black;
+    		color: white;
+    		text-align: center;
+    		font-weight: bold;
+    	}
+    	.bye {
+    		font-size: 25px;
+    		color: white;
+    		text-decoration: none;
+    	}
+    	.sign{
+    		float: right;
+    		padding:1em;
+    		background-color: black;
+    		color: white;
+    		font-size: 10px;
+    		font-weight: bold;
+    		font-family: "Montserrat";
+    		cursor: pointer;
+    		border-radius: 20px;
+    	}
+    	.sign:hover {
+    		background-color: white;
+    		color: black;
+    		box-shadow:0px 0px 0px 2px black inset;
+    		font-weight: bold;
+    	}
+        .synopsis{
+            margin-left: 3em;
+            margin-right: 3em;
+            padding-left: 3em;
+            padding-right: 3em;
+            border-left:3px solid #0066ff;
+            border-right:3px solid #ff3300;
+            font-size: 21px;
+        }
+    	@media screen and (-webkit-min-device-pixel-ratio:0) {
+	    input[type='range'] {
+	      overflow: hidden;
+	      width: 100px;
+	      -webkit-appearance: none;
+	      background-color: #fff;
+	    }
+	    
+	    input[type='range']::-webkit-slider-runnable-track {
+	      height: 10px;
+	      -webkit-appearance: none;
+	      color: #fff;
+	    }
+	    
+	    input[type='range']::-webkit-slider-thumb {
+	      width: 0px;
+	      -webkit-appearance: none;
+	      height: 10px;
+	      background: #000;
+	      box-shadow: -80px 0 0 80px #43e533;
+	    }
+    }   	
+	</style>
+	<script>
+        function search(string)
+        {
+        window.find(string);
+        }
+    </script>
+</head>
+<body class="body">
+	<div class="TopRow">
+		<span>
+			<a class="blizz" href="../index.html">BLIZZ</a> 
+			<img src="../blizz.png" class="logo">
+		</span>
+		<span style="float: right; margin-right: 2em;">
+			<input type="text" placeholder="Search.." id="search">
+			<input type="button" value="Go" onclick="search(document.getElementById('search').value)">
+		</span>
+		<hr class="top">
+		<br>
+	<div class="heading">
+		AWESOME, INTERESTING, ELEGANT CINEMA.
+		<a href="../signin.html"><button class="sign">SIGN IN</button></a>
+	</div><br>
+	<div class="mainImage"><br>
+		<div style="line-height: 8px;">
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		<i class="fa fa-star" aria-hidden="true"></i>&nbsp;7.3<span class="ratingBG">/10</span>
+		<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="font-size: 15px; color: #626663;"> 227,841 Ratings</span><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+	   </div>
+	   <span class="ExtraLarge">&nbsp;IDENTITY</span><br><br>
+	   <div class="smallheight">
+	   <span class="direct">&nbsp;Directed By <strong>James Mangold</strong></span><br>
+	   <span class="direct">&nbsp;United States, 2003</span>
+	   </div><br>
+	   <div class="largeheight">
+	   <div class="genre">&nbsp;Thriller/Mystery</div>&nbsp;
+	   <i class="fa fa-clock-o" aria-hidden="true"></i><span class="genre">&nbsp;91'</span>
+	   <div>
+	   		&nbsp;&nbsp;<a href="https://www.youtube.com/watch?v=zSWdZVtXT7E" target="_blank"><i class="fa fa-play-circle-o" aria-hidden="true"></i></a>&nbsp;<span class="youtube"><a class="youtube" href="https://www.youtube.com/watch?v=TQkG2x3qTf4" target="_blank">Watch trailer on YouTube</a></span>
+	   </div>
+	   </div>
+	</div>
+    <div><br><br>&nbsp;
+        <span class="subhead">SYNOPSIS</span><br><br>
+        <div class="synopsis">When a vicious storm breaks out in the Nevada desert, 10 people seek refuge in an isolated motel. At the same time, a serial killer (Pruitt Taylor Vince) under the care of psychiatrist Doctor Mallick (Alfred Molina) -- who has just found the killer's revealing journal -- awaits execution for murdering a group of motel guests. When the storm-stranded travelers realize they are being killed off one by one, limo driver Ed Dakota (John Cusack) bids to stay alive and reveal the murderer's identity.</div><br><br><br>
+    </div>
+	<div style="background-color:#e6e6e6;">
+		<div class="Awards"><br><br><br>&nbsp;
+			<span class="subhead">AWARDS AND FESTIVALS</span>
+			<span class="showall"><a class="nodec" href="seeallawards2.html">Show all (12)</a></span><br><br><br>
+			<div class="row">
+				<div class="column"><span style="font-weight: bolder;">Golden Schmoes</span><br>
+				<span class="award-desc">2003 | Winner: Most Underrated Movie of the Year</span>
+				</div>
+				<div class="column"><span style="font-weight: bolder;">Saturn Award</span><br>
+				<span class="award-desc">2004 | Nominee: Best Action/Adventure/Thriller Film</span>
+				</div>
+				<div class="column"><span style="font-weight: bolder;">Bram Stoker Award</span><br>
+				<span class="award-desc">2003 | Nominee: Screenplay</span>
+				</div>
+				<div class="column"><span style="font-weight: bolder;">Teen Choice Awards</span><br>
+				<span class="award-desc">2003 | Nominee: Choice Movie - Horror/Thriller</span>
+				</div>
+			</div>
+		</div><br><br><br>
+		<div class="Cast">&nbsp;
+			<span class="subhead">CAST AND CREW</span>
+			<span class="showall"><a href="cast2.html" class="nodec">Show all(24)</a></span><br><br><br>
+			<ul>
+					<li>
+						<div class="castimage">
+						<a href="../cast/james.html" target="_blank"><img src="https://superstarsbio.com/wp-content/uploads/2019/11/James-Mangold.jpg" alt="James Mangold" onerror="this.onerror=null;this.src='../noimage.png';" title="James Mangold"></a>
+				        </div>   <div class="name">
+					<span class="castName">JAMES</span><br><span class="castName">MANGOLD</span> </div>
+						<div class="crewrole">DIRECTOR</div> 
+					</li>
+
+					<li>
+						<div class="castimage">
+						<a href="../cast/john.html" target="_blank"><img src="https://m.media-amazon.com/images/M/MV5BODQ4ZjU4NWItM2RlMS00OWY3LWJhZjAtYmQ3NjRiMzA5YjdjXkEyXkFqcGdeQXVyOTAyMDgxODQ@._V1_.jpg" alt="John Cusack" onerror="this.onerror=null;this.src='../noimage.png';" title="John Cusack"></a>
+				        </div>
+				<span class="castName">JOHN CUSACK</span>
+						<div class="crewrole">ED</div>
+					</li>
+
+					<li>
+						<div class="castimage">
+						<img src="https://media1.popsugar-assets.com/files/thumbor/UYPKwp0gCaFUKrX04Z7rnXBEXJE/0x143:2328x2471/fit-in/2048xorig/filters:format_auto-!!-:strip_icc-!!-/2020/06/01/723/n/1922398/81b56a6b5ed52af67705f4.67925491_/i/Amanda-Peet.jpg" alt="Amanda Peet" onerror="this.onerror=null;this.src='../noimage.png';" title="Amanda Peet">
+				        </div>
+				<span class="castName">AMANDA PEET</span>
+						<div class="crewrole">PARIS</div>
+					</li>
+
+					<li>
+						<div class="castimage">
+						<img src="https://i.pinimg.com/236x/9f/7a/2f/9f7a2f0e2d972e9d7670f8148a1d8afd--taylors-dream-cast.jpg" alt="pruitt taylor vince" onerror="this.onerror=null;this.src='../noimage.png';" title="pruitt taylor vince">
+				        </div>
+				<span class="castName">PRUITT TAYLOR</span>
+						<div class="crewrole">MALCOLM RIVERS</div>
+					</li>
+
+					<li>
+						<div class="castimage">
+						<img src="https://www.biography.com/.image/t_share/MTE4MDAzNDEwNzcxNDc4MDMw/ray-liotta-9542538-1-402.jpg" alt="ray liotta" onerror="this.onerror=null;this.src='../noimage.png';" title="ray liotta">
+				        </div>
+				<span class="castName">RAY LIOTTA</span>
+						<div class="crewrole">RHODES</div>
+					</li>
+
+					<li>
+						<div class="castimage">
+						<img src="https://pbs.twimg.com/profile_images/694605417515601920/4ojjYW3R.jpg" alt="michael cooney" onerror="this.onerror=null;this.src='../noimage.png';" title="michael cooney">
+				        </div>
+				<span class="castName">MICHAEL COONEY</span>
+						<div class="crewrole">WRITER</div>
+					</li>
+
+					<li>
+						<div class="castimage">
+						<img src="https://www.soundtrack.net/img/composer/201.jpg" alt="alan silvestri" onerror="this.onerror=null;this.src='../noimage.png';" title="alan silvestri">
+				        </div>
+				<span class="castName">ALAN SILVESTRI</span>
+						<div class="crewrole">MUSIC</div>
+					</li>
+
+					<li>
+						<div class="castimage">
+						<img src="https://www.provideocoalition.com/wp-content/uploads/content-uploads/phedon-papamichael.jpg" alt="phedon papamichael" onerror="this.onerror=null;this.src='../noimage.png';" title="phedon papamichael">
+				        </div>
+				<span class="castName">PHEDON</span><br><span class="castName">PAPAMICHAEL</span>
+						<div class="crewrole">CINEMATOGRAPHY</div>
+					</li>
+			</ul>
+		</div>
+	</div>
+	<div class="Reviews"><br><br>
+		<span class="subhead">&nbsp;CRITICS REVIEWS&nbsp;&nbsp;&nbsp;<i id="star" class="fa fa-star" aria-hidden="true"></i>&nbsp;<i id="star" class="fa fa-star" aria-hidden="true"></i>&nbsp;<i id="star" class="fa fa-star" aria-hidden="true"></i>&nbsp;<i id="nostar" class="fa fa-star" aria-hidden="true"></i>&nbsp;<i id="nostar" class="fa fa-star" aria-hidden="true"></i></span>
+			<span class="showall"><a class="nodec" href="critic2.html">Show all(24)</a></span>
+		<br><br><br>
+		<div style="display: flex;">
+			<div class="review1">
+				<div class="reviewhead">NEW YORK TIMES</div><br><br>
+				<div class="reviewdesc">Reasonably well-executed thriller. It suffers not from awkwardness or silliness, which would make it more fun, but rather from its air-brushed, expensive pretentiousness.<br><br></div>
+				<div class="last">
+					<div class="author"><span class="authorreal">A.O SCOTT</span><br><span class="crewrole">April 25, 2003</span></div>
+					<div class="showall1"><a class="nodec" href="https://www.nytimes.com/2003/04/25/movies/film-review-when-all-or-nothing-is-what-it-seems.html" target="_blank">Read Full Article</a></div>
+				</div>
+			</div>
+			<div class="review1">
+				<div class="reviewhead">WASHINGTON POST</div><br><br>
+				<div class="reviewdesc">It's not art, but it's fun artfully done. And as long as you're paying less than the price of a cheapo motel for the night, it's worth checking into.<br><br></div>
+				<div class="last">
+					<div class="author"><span class="authorreal">DESSON THOMSON</span><br><span class="crewrole">June 13, 2014</span></div>
+					<div class="showall1"><a class="nodec" href="https://www.washingtonpost.com/?pagename=article&node=style/movies/reviews&contentId=A23562-2003Apr23&notFound=true" target="_blank">Read Full Article</a></div>
+				</div></div>
+			<div class="review1">
+				<div class="reviewhead3">EMPIRE</div><br><br>
+				<div class="reviewdesc">Despite a fresh approach, Identity tangles itself in such a heavyweight premise that it collapses and drowns out most of its plus points.<br><br></div>
+				<div class="last">
+					<div class="author"><span class="authorreal">SCOTT RUSSON</span><br><span class="crewrole">June 13, 2014</span></div>
+					<div class="showall1"><a class="nodec" href="https://www.empireonline.com/movies/reviews/identity-review/" target="_blank">Read Full Article</a></div>
+				</div>
+			</div>
+		</div><br>
+	</div>
+	<div style="background-color:#e6e6e6;"><br><br>
+		<span class="subhead">&nbsp;RATINGS</span><br><br><br>
+		<div class="siterate">
+			<div class="rate">
+				<a class="" href="https://www.imdb.com/title/tt00309698/" target="_blank"><img class="rateimg" src="../imdb.png"></a><br>
+				<span class="ratex">IMDB</span><br><br><br>
+				<input type="range" value="7.3" min="0" max="10" id="myRange"><br>
+				<a class="nodec black" href="https://www.imdb.com/title/tt00309698/" target="_blank"><span class="ratex">7.3/10</span></a><br>
+				<a class="nodec" href="https://www.imdb.com/title/tt0309698/ratings?ref_=tt_ov_rt" target="_blank"><span class="ratex small">227,841 Ratings</span></a>
+			</div>
+			<div class="rate">
+				<a class="" href="https://www.rottentomatoes.com/m/identity" target="_blank"><img style="width: 120px;" class="rateimg" src="../fresh.png"></a><br>
+				<span class="ratex">TOMATOMETER</span><br><br><br>
+				<input type="range" value="62" min="0" max="100" id="myRange"><br>
+				<a class="nodec black" href="https://www.rottentomatoes.com/m/identity" target="_blank"><span class="ratex">62%</span></a><br>
+				<a class="nodec" href="https://www.rottentomatoes.com/m/identity/reviews?intcmp=rt-scorecard_tomatometer-reviews" target="_blank"><span class="ratex small">173 Reviews</span></a>
+			</div>
+			<div class="rate">
+				<a class="" href="https://www.rottentomatoes.com/m/interstellar_2014" target="_blank"><img class="rateimg" src="../toaud.png"></a><br>
+				<span class="ratex">AUDIENCE SCORE</span><br><br>
+				<input type="range" value="75" min="0" max="100" id="myRange"><br>
+				<a class="nodec black" href="https://www.rottentomatoes.com/m/identity" target="_blank"><span class="ratex">75%</span></a><br>
+				<a class="nodec" href="https://www.rottentomatoes.com/m/identity/reviews?type=user&intcmp=rt-scorecard_audience-score-reviews" target="_blank"><span class="ratex small">100,000+ Ratings</span></a>
+			</div>
+			<div class="rate">
+				<img class="rateimg" src="../googleco.png"><br>
+				<span class="ratex">GOOGLE AUDIENCE</span><br><br>
+				<input type="range" value="84" min="0" max="100" id="myRange"><br>
+				<span class="ratex">84%</span><br>
+			</div>
+			<div class="rate">
+				<a class="nodecx" href="https://www.metacritic.com/movie/identity" target="_blank">
+					<div style="padding-left: 2.5em;">
+						<div class="metacritiq">
+						<br>64
+						</div>
+					</div>
+				</a>
+				<span class="ratex">METASCORE</span><br><br><br>
+				<input type="range" value="64" min="0" max="100" id="myRange"><br>
+				<span class="ratex small">Based on</span><br>
+				<a class="nodec" href="https://www.metacritic.com/movie/identity/critic-reviews" target="_blank"><span class="ratex small">34 Critic Reviews</span></a>
+			</div>
+			<div class="rate">
+				<a class="nodecx" href="https://www.metacritic.com/movie/identity" target="_blank">
+					<div style="padding-left: 2.5em;">
+						<div class="metacritiq circle">
+						<br>8.9
+						</div>
+					</div>
+				</a>
+				<span class="ratex">META-USER SCORE</span><br><br>
+				<input type="range" value="89" min="0" max="100" id="myRange"><br>
+				<span class="ratex small">Based on</span><br>
+				<a class="nodec" href="https://www.metacritic.com/movie/identity/user-reviews" target="_blank"><span class="ratex small">399 Ratings</span></a>
+			</div>
+		</div><br><br><br><br>
+		<div class="overall">
+				OVERALL RATINGS&nbsp;<i class="fa fa-question-circle-o" aria-hidden="true" title="Average of the above ratings (out of 10)"></i><br><br>
+				<div style="margin-left: 46.6%;">
+				<div class="overall-circle">
+					<br>7.4
+				</div>
+			    </div><br>
+		</div>
+	</div>
+	<div class="Reviews"><br><br>
+		&nbsp;<span class="subhead">MY TAKE</span>&nbsp;&nbsp;<i class="fa fa-user-secret fa-2x" aria-hidden="true"></i><br><br>
+		<div class="review_me">This movie will give you a mind-blowing experience. It is one of gems of Mystery/Thriller genre. I did not anticipate the ending at all. Also, the actors did their best. Their tremendous performance must be recognized.<br><br> John Cusack is exactly the hero that "identity" needs. I believe Cusack is one of the most underrated actors of our time. After watching, this flick stays with you. For me, Identity will remain as one of the best thrillers ever made.<br> The acting, the story, the directing...everything was perfect. This is one of the movie that I like to re-watch again and again.
+		</div><br><br>
+	</div>
+	<div class="watch" style="background-color:#000;"><br><br>
+		&nbsp;<span class="subhead white">WHERE TO WATCH</span><br><br><br><br>
+		<div style="display: flex;">
+		<div class="watchnow">
+			<a href="https://www.directv.com/movies/Identity-TVViQXRRSC9WMHg5M2wzditEMVM4QT09" target="_blank"><img src="../directv.png" class="channels"></a>
+			<div class="overall white"><br>
+			<a href="https://www.directv.com/movies/Identity-TVViQXRRSC9WMHg5M2wzditEMVM4QT09" class="nodec white" target="_blank">DIRECTV</a><br><span class="overall small hover">Subscription</span>
+			</div>
+		</div>
+		<div class="watchnow">
+			<a href="https://www.amazon.com/gp/video/detail/B000JCVXGE/ref=atv_dl_rdr?tag=justus1ktp-20" target="_blank"><img src="../amazon.jpg" class="channels"></a>
+			<div class="overall white"><br>
+			<a href="https://www.amazon.com/gp/video/detail/B000JCVXGE/ref=atv_dl_rdr?tag=justus1ktp-20" class="nodec white" target="_blank">AMAZON</a><br><span class="overall small hover">From &#8377;220</span>
+			</div>
+		</div>
+		<div class="watchnow">
+			<a href="https://www.vudu.com/content/movies/details/Identity/34878" target="_blank"><img src="../vudu.jpg" class="channels"></a>
+			<div class="overall white"><br>
+			<a href="https://www.vudu.com/content/movies/details/Identity/34878" target="_blank" class="nodec white">VUDU</a><br><span class="overall small hover">From &#8377;220</span>
+			</div>
+		</div>
+		<div class="watchnow">
+			<a href="https://www.microsoft.com/en-us/p/identity/8d6kgwzl524q?ct=movie&irgwc=1&OCID=AID2000142_aff_7806_1246483&tduid=(ir__jg9s1leldckfqj03kk0sohzz2n2xpg1aulrvyrrj00)(7806)(1246483)((e6af3193567018fdda40c21a11a5ca10)(81561)(2850890)(fa0c187209f14be3a0ff647108dba6d9)())(e6af3193567018fdda40c21a11a5ca10)&irclickid=_jg9s1leldckfqj03kk0sohzz2n2xpg1aulrvyrrj00&activetab=pivot%3aoverviewtab" target="_blank"><img src="../microsoft.jpg" class="channels"></a>
+			<div class="overall white"><br>
+			<a href="https://www.microsoft.com/en-us/p/identity/8d6kgwzl524q?ct=movie&irgwc=1&OCID=AID2000142_aff_7806_1246483&tduid=(ir__jg9s1leldckfqj03kk0sohzz2n2xpg1aulrvyrrj00)(7806)(1246483)((e6af3193567018fdda40c21a11a5ca10)(81561)(2850890)(fa0c187209f14be3a0ff647108dba6d9)())(e6af3193567018fdda40c21a11a5ca10)&irclickid=_jg9s1leldckfqj03kk0sohzz2n2xpg1aulrvyrrj00&activetab=pivot%3aoverviewtab" target="_blank" class="nodec white">MICROSOFT
+			</a><br><span class="overall small hover">From &#8377;290</span>
+			</div>
+		</div>
+		<div class="watchnow">
+			<a href="https://itunes.apple.com/us/movie/identity/id287644338?ign-mpt=uo%3D4" target="_blank"><img src="../itune.jpg" class="channels"></a>
+			<div class="overall white"><br>
+			<a href="https://itunes.apple.com/us/movie/identity/id287644338?ign-mpt=uo%3D4" target="_blank" class="nodec white">APPLE</a><br><span class="overall small hover">From &#8377;290</span>
+			</div>
+		</div>
+		<div class="watchnow">
+			<a href="https://play.google.com/store/movies/details/Identity?gl=US&hl=en&id=9M1XxLrWQFk" target="_blank"><img src="../gplay.png" class="channels"></a>
+			<div class="overall white"><br>
+			<a href="https://play.google.com/store/movies/details/Identity?gl=US&hl=en&id=9M1XxLrWQFk" target="_blank" class="nodec white">PLAY</a><br><span class="overall small hover">From &#8377;290</span>
+			</div>
+		</div>
+		<div class="watchnow">
+			<a href="https://www.starz.com/us/en/signup?UTM_Medium=affiliate&UTM_campaign=13426493_67a046043ea743909ae6ea24e5be50c2_8484082&UTM_source=CJ&cjevent=d381db416fb511eb8031019f0a180510" target="_blank"><img src="../starz.jpg" class="channels"></a>
+			<div class="overall white"><br>
+			<a href="https://www.starz.com/us/en/signup?UTM_Medium=affiliate&UTM_campaign=13426493_67a046043ea743909ae6ea24e5be50c2_8484082&UTM_source=CJ&cjevent=d381db416fb511eb8031019f0a180510" target="_blank" class="nodec white">STARZ</a><br><span class="overall small hover">Subscription</span>
+			</div>
+		</div>
+		</div>
+	</div>
+	<div class="info" style="background-color:#e6e6e6;"><br><br>
+		&nbsp;<span class="subhead">MORE INFO</span><br><br><br><br>
+		<div style="display: flex;">
+		<div class="leftinfo">
+			<div class="que">Production companies :</div>
+			<div class="ans">Columbia Pictures<br>Konrad Pictures</div>
+			<br>
+			<div class="que">Budget :</div>
+			<div class="ans">&#36;28 Million<br>(&#8377;203 Crore)</div>
+		</div>
+		<div class="leftinfo">
+			<div class="que">Distribution :</div>
+			<div class="ans">Sony Pictures Releasing</div>
+			<br>
+			<div class="que">Language :</div>
+			<div class="ans">English</div>
+		</div>
+		<div class="leftinfo">
+			<div class="que">Release Date :</div>
+			<div class="ans">April 25, 2003</div>
+			<br>
+			<div class="que">Box Office :</div>
+			<div class="ans">&#36;90.2 Million<br>(&#8377;655 Crore)</div>
+		</div>
+		<div class="leftinfo">
+			<div class="que">Running Time :</div>
+			<div class="ans">91 Minutes</div>
+			<br>
+			<div class="que">Country :</div>
+			<div class="ans">United States</div>
+		</div>
+	    </div><br><br>
+	</div>
+	
+	<footer><br><br><br>
+           <a href="../index.html" class="bye"><i class="fa fa-home" aria-hidden="true"></i>&nbsp;BACK TO HOME</a><br>
+           <br>
+         &copy;BLIZZ
+        </footer>
+</body>
+</html>
